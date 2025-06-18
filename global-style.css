@@ -1,0 +1,7893 @@
+.homepage {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.homepage .div {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 1440px;
+  height: 4567px;
+  position: relative;
+}
+
+.homepage .overlap {
+  position: absolute;
+  width: 1440px;
+  height: 785px;
+  top: 0;
+  left: 0;
+}
+
+.homepage .navigation {
+  position: absolute;
+  width: 1440px;
+  height: 196px;
+  top: 0;
+  left: 0;
+}
+
+.homepage .image {
+  width: 109px;
+  height: 109px;
+  top: 10px;
+  left: 314px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.homepage .text-wrapper {
+  position: absolute;
+  top: 47px;
+  left: 472px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.homepage .text-wrapper-2 {
+  position: absolute;
+  top: 47px;
+  left: 596px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.homepage .text-wrapper-3 {
+  position: absolute;
+  top: 47px;
+  left: 737px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.homepage .text-wrapper-4 {
+  position: absolute;
+  top: 47px;
+  left: 862px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.homepage .text-wrapper-5 {
+  position: absolute;
+  top: 47px;
+  left: 1006px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.homepage .hero-section {
+  position: absolute;
+  width: 1440px;
+  height: 648px;
+  top: 137px;
+  left: 0;
+}
+
+.homepage .about-section {
+  position: absolute;
+  width: 1440px;
+  height: 500px;
+  top: 785px;
+  left: 1px;
+}
+
+.homepage .overlap-group {
+  position: relative;
+  width: 1439px;
+  height: 500px;
+  background-image: url(https://c.animaapp.com/iffpXUN0/img/mask-group.png);
+  background-size: 100% 100%;
+}
+
+.homepage .overlap-2 {
+  position: absolute;
+  width: 966px;
+  height: 400px;
+  top: 3px;
+  left: 229px;
+}
+
+.homepage .group {
+  position: absolute;
+  width: 215px;
+  height: 60px;
+  top: 303px;
+  left: 500px;
+}
+
+.homepage .overlap-group-2 {
+  position: relative;
+  width: 213px;
+  height: 60px;
+}
+
+.homepage .rectangle {
+  width: 213px;
+  height: 56px;
+  top: 2px;
+  border-radius: 50px;
+  position: absolute;
+  left: 0;
+  background-color: #95d5d1;
+}
+
+.homepage .text-wrapper-6 {
+  top: 0;
+  left: 50px;
+  color: #ffffff;
+  line-height: 60px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 0;
+}
+
+.homepage .tiffany-woods-is-the {
+  width: 466px;
+  top: 125px;
+  left: 500px;
+  font-family: "Inter", Helvetica;
+  font-size: 21px;
+  line-height: 42px;
+  position: absolute;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+.homepage .overlap-3 {
+  position: absolute;
+  width: 539px;
+  height: 400px;
+  top: 0;
+  left: 0;
+}
+
+.homepage .overlap-4 {
+  position: absolute;
+  width: 453px;
+  height: 400px;
+  top: 0;
+  left: 0;
+}
+
+.homepage .text-wrapper-7 {
+  top: 20px;
+  left: 290px;
+  color: #000000;
+  line-height: normal;
+  position: absolute;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 0;
+}
+
+.homepage .img {
+  width: 371px;
+  height: 302px;
+  top: 97px;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.homepage .rectangle-2 {
+  position: absolute;
+  width: 2px;
+  height: 107px;
+  top: 0;
+  left: 346px;
+  background-color: #95d5d1;
+  transform: rotate(-90.00deg);
+}
+
+.homepage .text-wrapper-8 {
+  position: absolute;
+  top: 20px;
+  left: 437px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.homepage .rectangle-3 {
+  position: absolute;
+  width: 2px;
+  height: 24px;
+  top: 30px;
+  left: 415px;
+  background-color: #95d5d1;
+}
+
+.homepage .text-wrapper-9 {
+  position: absolute;
+  top: 23px;
+  left: 809px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.homepage .rectangle-4 {
+  position: absolute;
+  width: 2px;
+  height: 24px;
+  top: 33px;
+  left: 788px;
+  background-color: #95d5d1;
+}
+
+.homepage .chevron-left {
+  position: absolute;
+  width: 57px;
+  height: 57px;
+  top: 213px;
+  left: 32px;
+}
+
+.homepage .icons-chevron-left {
+  top: 213px;
+  left: 1337px;
+  position: absolute;
+  width: 57px;
+  height: 57px;
+}
+
+.homepage .services-section {
+  position: absolute;
+  width: 1440px;
+  height: 700px;
+  top: 1285px;
+  left: 1px;
+  background-color: #95d5d1;
+}
+
+.homepage .overlap-wrapper {
+  position: absolute;
+  width: 350px;
+  height: 622px;
+  top: 49px;
+  left: 116px;
+}
+
+.homepage .overlap-5 {
+  position: relative;
+  width: 374px;
+  height: 622px;
+  left: -13px;
+}
+
+.homepage .overlap-6 {
+  position: absolute;
+  width: 374px;
+  height: 602px;
+  top: 20px;
+  left: 0;
+}
+
+.homepage .overlap-group-wrapper {
+  top: 542px;
+  left: 80px;
+  position: absolute;
+  width: 215px;
+  height: 60px;
+}
+
+.homepage .rectangle-5 {
+  position: absolute;
+  width: 213px;
+  height: 56px;
+  top: 2px;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 50px;
+}
+
+.homepage .text-wrapper-10 {
+  left: 39px;
+  color: #95d5d1;
+  line-height: 60px;
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 0;
+}
+
+.homepage .group-2 {
+  position: absolute;
+  width: 317px;
+  height: 204px;
+  top: 315px;
+  left: 24px;
+}
+
+.homepage .group-3 {
+  position: absolute;
+  width: 218px;
+  height: 40px;
+  top: 0;
+  left: 51px;
+}
+
+.homepage .text-wrapper-11 {
+  left: 20px;
+  position: absolute;
+  top: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 40px;
+  white-space: nowrap;
+}
+
+.homepage .ellipse {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 13px;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 7px;
+}
+
+.homepage .group-4 {
+  position: absolute;
+  width: 230px;
+  height: 40px;
+  top: 123px;
+  left: 45px;
+}
+
+.homepage .text-wrapper-12 {
+  left: 19px;
+  position: absolute;
+  top: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 40px;
+  white-space: nowrap;
+}
+
+.homepage .group-5 {
+  position: absolute;
+  width: 319px;
+  height: 40px;
+  top: 82px;
+  left: 0;
+}
+
+.homepage .group-6 {
+  position: absolute;
+  width: 256px;
+  height: 40px;
+  top: 41px;
+  left: 32px;
+}
+
+.homepage .group-7 {
+  position: absolute;
+  width: 224px;
+  height: 40px;
+  top: 164px;
+  left: 48px;
+}
+
+.homepage .text-wrapper-13 {
+  position: absolute;
+  top: 0;
+  left: 17px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 40px;
+  white-space: nowrap;
+}
+
+.homepage .image-2 {
+  width: 374px;
+  height: 273px;
+  top: 20px;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.homepage .rectangle-6 {
+  position: absolute;
+  width: 2px;
+  height: 50px;
+  top: -24px;
+  left: 288px;
+  background-color: #ffffff;
+  transform: rotate(-90.00deg);
+}
+
+.homepage .rectangle-7 {
+  position: absolute;
+  width: 2px;
+  height: 50px;
+  top: 279px;
+  left: 186px;
+  background-color: #ffffff;
+  transform: rotate(-90.00deg);
+}
+
+.homepage .rectangle-8 {
+  position: absolute;
+  width: 2px;
+  height: 50px;
+  top: 504px;
+  left: 186px;
+  background-color: #ffffff;
+  transform: rotate(-90.00deg);
+}
+
+.homepage .rectangle-9 {
+  position: absolute;
+  width: 2px;
+  height: 50px;
+  top: -24px;
+  left: 82px;
+  background-color: #ffffff;
+  transform: rotate(-90.00deg);
+}
+
+.homepage .text-wrapper-14 {
+  left: 119px;
+  color: #ffffff;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 0;
+}
+
+.homepage .group-8 {
+  position: absolute;
+  width: 665px;
+  height: 622px;
+  top: 49px;
+  left: 649px;
+}
+
+.homepage .div-wrapper {
+  top: 562px;
+  left: 226px;
+  position: absolute;
+  width: 215px;
+  height: 60px;
+}
+
+.homepage .image-3 {
+  position: absolute;
+  width: 691px;
+  height: 498px;
+  top: 40px;
+  left: -13px;
+  object-fit: cover;
+}
+
+.homepage .group-9 {
+  position: absolute;
+  width: 385px;
+  height: 38px;
+  top: 0;
+  left: 141px;
+}
+
+.homepage .lease-sale-horses {
+  position: absolute;
+  top: 0;
+  left: 59px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.homepage .rectangle-10 {
+  position: absolute;
+  width: 2px;
+  height: 50px;
+  top: -4px;
+  left: 357px;
+  background-color: #ffffff;
+  transform: rotate(-90.00deg);
+}
+
+.homepage .rectangle-11 {
+  position: absolute;
+  width: 2px;
+  height: 50px;
+  top: -4px;
+  left: 24px;
+  background-color: #ffffff;
+  transform: rotate(-90.00deg);
+}
+
+.homepage .rectangle-12 {
+  height: 620px;
+  top: 49px;
+  left: 560px;
+  background-color: #ffffff;
+  position: absolute;
+  width: 2px;
+}
+
+.homepage .events-section {
+  position: absolute;
+  width: 1440px;
+  height: 575px;
+  top: 1985px;
+  left: 1px;
+}
+
+.homepage .overlap-7 {
+  position: relative;
+  height: 575px;
+  left: -1px;
+}
+
+.homepage .image-4 {
+  width: 722px;
+  height: 575px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.homepage .image-5 {
+  width: 719px;
+  height: 575px;
+  top: 0;
+  left: 721px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.homepage .group-10 {
+  position: absolute;
+  width: 430px;
+  height: 86px;
+  top: 241px;
+  left: 152px;
+}
+
+.homepage .overlap-group-3 {
+  position: relative;
+  width: 428px;
+  height: 86px;
+  background-color: #ffffffbf;
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px 5px #95d5d1b2;
+}
+
+.homepage .text-wrapper-15 {
+  position: absolute;
+  top: 24px;
+  left: 102px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.homepage .group-11 {
+  position: absolute;
+  width: 430px;
+  height: 86px;
+  top: 245px;
+  left: 883px;
+}
+
+.homepage .text-wrapper-16 {
+  position: absolute;
+  top: 24px;
+  left: 97px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.homepage .gallery-section {
+  position: absolute;
+  width: 1440px;
+  height: 519px;
+  top: 2560px;
+  left: 0;
+}
+
+.homepage .testimonials-section {
+  position: absolute;
+  width: 1441px;
+  height: 519px;
+  top: 3079px;
+  left: 0;
+}
+
+.homepage .text-wrapper-17 {
+  position: absolute;
+  top: 21px;
+  left: 634px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.homepage .rectangle-13 {
+  height: 150px;
+  top: 185px;
+  left: 505px;
+  background-color: #95d5d1;
+  transform: rotate(180.00deg);
+  position: absolute;
+  width: 2px;
+}
+
+.homepage .rectangle-14 {
+  position: absolute;
+  width: 2px;
+  height: 150px;
+  top: 185px;
+  left: 932px;
+  background-color: #95d5d1;
+  transform: rotate(180.00deg);
+}
+
+.homepage .group-12 {
+  position: absolute;
+  width: 341px;
+  height: 304px;
+  top: 113px;
+  left: 124px;
+}
+
+.homepage .group-13 {
+  position: absolute;
+  width: 240px;
+  height: 48px;
+  top: 0;
+  left: 0;
+}
+
+.homepage .star {
+  left: 1px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.homepage .star-2 {
+  left: 49px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.homepage .star-3 {
+  left: 97px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.homepage .star-4 {
+  left: 145px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.homepage .star-5 {
+  left: 193px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.homepage .overlap-group-4 {
+  position: absolute;
+  width: 337px;
+  height: 244px;
+  top: 60px;
+  left: 0;
+}
+
+.homepage .text-wrapper-18 {
+  top: 0;
+  left: 0;
+  font-family: "Marcellus SC", Helvetica;
+  font-size: 30px;
+  line-height: normal;
+  position: absolute;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+.homepage .rectangle-15 {
+  position: absolute;
+  width: 2px;
+  height: 70px;
+  top: 13px;
+  left: 36px;
+  background-color: #95d5d1;
+  transform: rotate(-90.00deg);
+}
+
+.homepage .p {
+  position: absolute;
+  width: 333px;
+  top: 68px;
+  left: 4px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.homepage .group-14 {
+  position: absolute;
+  width: 341px;
+  height: 304px;
+  top: 113px;
+  left: 551px;
+}
+
+.homepage .group-15 {
+  position: absolute;
+  width: 341px;
+  height: 304px;
+  top: 113px;
+  left: 978px;
+}
+
+.homepage .chevron-left-2 {
+  top: 241px;
+  left: 1357px;
+  position: absolute;
+  width: 57px;
+  height: 57px;
+}
+
+.homepage .vector {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  top: 247px;
+  left: 25px;
+}
+
+.homepage .contact-section {
+  position: absolute;
+  width: 1140px;
+  height: 438px;
+  top: 200px;
+  left: 126px;
+}
+
+.homepage .image-6 {
+  width: 608px;
+  height: 486px;
+  top: -15px;
+  left: -15px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.homepage .overlap-8 {
+  position: absolute;
+  width: 703px;
+  height: 928px;
+  top: -162px;
+  left: 611px;
+}
+
+.homepage .overlap-9 {
+  position: absolute;
+  width: 703px;
+  height: 928px;
+  top: 0;
+  left: 0;
+}
+
+.homepage .image-7 {
+  width: 508px;
+  height: 928px;
+  left: 195px;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+}
+
+.homepage .phone {
+  position: absolute;
+  width: 499px;
+  top: 440px;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.homepage .element-ave-NE {
+  width: 285px;
+  top: 247px;
+  font-family: "Inter", Helvetica;
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.homepage .text-wrapper-19 {
+  top: 193px;
+  font-family: "Marcellus SC", Helvetica;
+  font-size: 30px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.homepage .text-wrapper-20 {
+  position: absolute;
+  top: 386px;
+  left: 0;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.homepage .footer-section {
+  position: absolute;
+  width: 1441px;
+  height: 263px;
+  top: 781px;
+  left: 0;
+}
+
+.homepage .overlap-10 {
+  position: relative;
+  width: 1442px;
+  height: 374px;
+  top: -87px;
+  left: -1px;
+}
+
+.homepage .rectangle-16 {
+  width: 1442px;
+  height: 288px;
+  top: 86px;
+  border: 1px solid;
+  border-color: #000000;
+  position: absolute;
+  left: 0;
+  background-color: #95d5d1;
+}
+
+.homepage .image-8 {
+  width: 197px;
+  height: 197px;
+  left: 623px;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+}
+
+.homepage .group-16 {
+  position: absolute;
+  width: 287px;
+  height: 132px;
+  top: 211px;
+  left: 579px;
+}
+
+.homepage .overlap-group-5 {
+  position: relative;
+  width: 285px;
+  height: 132px;
+}
+
+.homepage .follow-us-on-social {
+  position: absolute;
+  width: 285px;
+  top: 0;
+  left: 0;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.homepage .ic-outline-facebook {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 66px;
+  left: 79px;
+}
+
+.homepage .mdi-instagram {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 66px;
+  left: 150px;
+}
+
+.homepage .about-owner-facility {
+  position: absolute;
+  width: 225px;
+  top: 164px;
+  left: 142px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.homepage .span {
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+}
+
+.homepage .text-wrapper-21 {
+  font-size: 24px;
+}
+
+.homepage .services-programs {
+  position: absolute;
+  width: 225px;
+  top: 164px;
+  left: 408px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.homepage .events-show-schedule {
+  position: absolute;
+  width: 225px;
+  top: 164px;
+  left: 904px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.homepage .text-wrapper-22 {
+  position: absolute;
+  width: 225px;
+  top: 164px;
+  left: 1130px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+
+/* Content merged from style.css on 2025-05-15 08:12:16 */
+
+.trainers {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.trainers .div {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 1440px;
+  height: 4567px;
+  position: relative;
+}
+
+.trainers .overlap {
+  position: absolute;
+  width: 1440px;
+  height: 1971px;
+  top: 0;
+  left: 0;
+}
+
+.trainers .navigation {
+  position: absolute;
+  width: 1440px;
+  height: 196px;
+  top: 0;
+  left: 0;
+}
+
+.trainers .image {
+  width: 109px;
+  height: 109px;
+  top: 10px;
+  left: 314px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.trainers .text-wrapper {
+  position: absolute;
+  top: 47px;
+  left: 472px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.trainers .text-wrapper-2 {
+  position: absolute;
+  top: 47px;
+  left: 596px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.trainers .text-wrapper-3 {
+  position: absolute;
+  top: 47px;
+  left: 737px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.trainers .text-wrapper-4 {
+  position: absolute;
+  top: 47px;
+  left: 862px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.trainers .text-wrapper-5 {
+  position: absolute;
+  top: 47px;
+  left: 1006px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.trainers .img {
+  width: 589px;
+  height: 895px;
+  top: 1076px;
+  left: 851px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.trainers .image-2 {
+  width: 648px;
+  height: 895px;
+  top: 196px;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.trainers .image-3 {
+  width: 858px;
+  height: 692px;
+  top: 164px;
+  left: 291px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.trainers .text-wrapper-6 {
+  top: 882px;
+  left: 597px;
+  position: absolute;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.trainers .owner-head-trainer {
+  position: absolute;
+  top: 933px;
+  left: 580px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.trainers .originally-from {
+  position: absolute;
+  width: 954px;
+  top: 1011px;
+  left: 243px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 35px;
+}
+
+.trainers .events-section {
+  position: absolute;
+  width: 1440px;
+  height: 575px;
+  top: 1985px;
+  left: 1px;
+}
+
+.trainers .overlap-group {
+  position: relative;
+  height: 575px;
+  left: -1px;
+}
+
+.trainers .image-4 {
+  width: 722px;
+  height: 575px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.trainers .image-5 {
+  width: 719px;
+  height: 575px;
+  top: 0;
+  left: 721px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.trainers .group {
+  position: absolute;
+  width: 430px;
+  height: 86px;
+  top: 241px;
+  left: 152px;
+}
+
+.trainers .div-wrapper {
+  position: relative;
+  width: 428px;
+  height: 86px;
+  background-color: #ffffffbf;
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px 5px #95d5d1b2;
+}
+
+.trainers .text-wrapper-7 {
+  position: absolute;
+  top: 24px;
+  left: 102px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.trainers .overlap-wrapper {
+  position: absolute;
+  width: 430px;
+  height: 86px;
+  top: 245px;
+  left: 883px;
+}
+
+.trainers .text-wrapper-8 {
+  position: absolute;
+  top: 24px;
+  left: 97px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.trainers .gallery-section {
+  position: absolute;
+  width: 1441px;
+  height: 519px;
+  top: 2560px;
+  left: 0;
+  background-color: #111111;
+}
+
+.trainers .image-6 {
+  width: 321px;
+  height: 217px;
+  top: 89px;
+  left: 135px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.trainers .image-7 {
+  width: 321px;
+  height: 217px;
+  top: 89px;
+  left: 560px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.trainers .image-8 {
+  width: 321px;
+  height: 217px;
+  top: 89px;
+  left: 983px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.trainers .overlap-group-wrapper {
+  position: absolute;
+  width: 430px;
+  height: 86px;
+  top: 366px;
+  left: 506px;
+}
+
+.trainers .text-wrapper-9 {
+  position: absolute;
+  top: 24px;
+  left: 99px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.trainers .testimonials-section {
+  position: absolute;
+  width: 1441px;
+  height: 519px;
+  top: 3079px;
+  left: 0;
+}
+
+.trainers .text-wrapper-10 {
+  position: absolute;
+  top: 21px;
+  left: 634px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.trainers .rectangle {
+  width: 2px;
+  height: 150px;
+  top: 185px;
+  left: 505px;
+  transform: rotate(180.00deg);
+  position: absolute;
+  background-color: #95d5d1;
+}
+
+.trainers .rectangle-2 {
+  width: 2px;
+  height: 150px;
+  top: 185px;
+  left: 932px;
+  transform: rotate(180.00deg);
+  position: absolute;
+  background-color: #95d5d1;
+}
+
+.trainers .group-2 {
+  position: absolute;
+  width: 341px;
+  height: 304px;
+  top: 113px;
+  left: 124px;
+}
+
+.trainers .group-3 {
+  position: absolute;
+  width: 240px;
+  height: 48px;
+  top: 0;
+  left: 0;
+}
+
+.trainers .star {
+  left: 1px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.trainers .star-2 {
+  left: 49px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.trainers .star-3 {
+  left: 97px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.trainers .star-4 {
+  left: 145px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.trainers .star-5 {
+  left: 193px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.trainers .overlap-group-2 {
+  position: absolute;
+  width: 337px;
+  height: 244px;
+  top: 60px;
+  left: 0;
+}
+
+.trainers .text-wrapper-11 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.trainers .rectangle-3 {
+  width: 2px;
+  height: 70px;
+  top: 13px;
+  left: 36px;
+  transform: rotate(-90.00deg);
+  position: absolute;
+  background-color: #95d5d1;
+}
+
+.trainers .p {
+  position: absolute;
+  width: 333px;
+  top: 68px;
+  left: 4px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.trainers .group-4 {
+  position: absolute;
+  width: 341px;
+  height: 304px;
+  top: 113px;
+  left: 551px;
+}
+
+.trainers .group-5 {
+  position: absolute;
+  width: 341px;
+  height: 304px;
+  top: 113px;
+  left: 978px;
+}
+
+.trainers .chevron-left {
+  position: absolute;
+  width: 57px;
+  height: 57px;
+  top: 241px;
+  left: 1357px;
+}
+
+.trainers .vector {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  top: 247px;
+  left: 25px;
+}
+
+.trainers .contact-section {
+  position: absolute;
+  width: 1140px;
+  height: 438px;
+  top: 3632px;
+  left: 126px;
+}
+
+.trainers .image-9 {
+  width: 608px;
+  height: 486px;
+  top: -15px;
+  left: -15px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.trainers .overlap-2 {
+  position: absolute;
+  width: 703px;
+  height: 928px;
+  top: -162px;
+  left: 611px;
+}
+
+.trainers .overlap-3 {
+  position: absolute;
+  width: 703px;
+  height: 928px;
+  top: 0;
+  left: 0;
+}
+
+.trainers .image-10 {
+  width: 508px;
+  height: 928px;
+  left: 195px;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+}
+
+.trainers .phone {
+  position: absolute;
+  width: 499px;
+  top: 440px;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.trainers .element-ave-NE {
+  width: 285px;
+  top: 247px;
+  font-family: "Inter", Helvetica;
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.trainers .text-wrapper-12 {
+  top: 193px;
+  font-family: "Marcellus SC", Helvetica;
+  font-size: 30px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.trainers .text-wrapper-13 {
+  position: absolute;
+  top: 386px;
+  left: 0;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.trainers .footer-section {
+  position: absolute;
+  width: 1441px;
+  height: 263px;
+  top: 4281px;
+  left: 1px;
+}
+
+.trainers .overlap-4 {
+  position: relative;
+  width: 1442px;
+  height: 374px;
+  top: -87px;
+  left: -1px;
+}
+
+.trainers .rectangle-4 {
+  width: 1442px;
+  height: 288px;
+  top: 86px;
+  left: 0;
+  border: 1px solid;
+  border-color: #000000;
+  position: absolute;
+  background-color: #95d5d1;
+}
+
+.trainers .image-11 {
+  width: 197px;
+  height: 197px;
+  left: 623px;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+}
+
+.trainers .group-6 {
+  position: absolute;
+  width: 287px;
+  height: 132px;
+  top: 211px;
+  left: 579px;
+}
+
+.trainers .overlap-group-3 {
+  position: relative;
+  width: 285px;
+  height: 132px;
+}
+
+.trainers .follow-us-on-social {
+  position: absolute;
+  width: 285px;
+  top: 0;
+  left: 0;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.trainers .ic-outline-facebook {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 66px;
+  left: 79px;
+}
+
+.trainers .mdi-instagram {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 66px;
+  left: 150px;
+}
+
+.trainers .about-owner-facility {
+  position: absolute;
+  width: 225px;
+  top: 164px;
+  left: 142px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.trainers .span {
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+}
+
+.trainers .text-wrapper-14 {
+  font-size: 24px;
+}
+
+.trainers .services-programs {
+  position: absolute;
+  width: 225px;
+  top: 164px;
+  left: 408px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.trainers .events-show-schedule {
+  position: absolute;
+  width: 225px;
+  top: 164px;
+  left: 904px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.trainers .text-wrapper-15 {
+  position: absolute;
+  width: 225px;
+  top: 164px;
+  left: 1130px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+
+/* Content merged from style.css on 2025-05-15 08:16:48 */
+
+.event-schedule {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.event-schedule .div {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 1440px;
+  height: 4624px;
+  position: relative;
+}
+
+.event-schedule .navigation {
+  position: absolute;
+  width: 1440px;
+  height: 196px;
+  top: 0;
+  left: 0;
+}
+
+.event-schedule .image {
+  width: 109px;
+  height: 109px;
+  top: 10px;
+  left: 314px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.event-schedule .text-wrapper {
+  position: absolute;
+  top: 47px;
+  left: 472px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.event-schedule .text-wrapper-2 {
+  position: absolute;
+  top: 47px;
+  left: 596px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.event-schedule .text-wrapper-3 {
+  position: absolute;
+  top: 47px;
+  left: 737px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.event-schedule .text-wrapper-4 {
+  position: absolute;
+  top: 47px;
+  left: 862px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.event-schedule .text-wrapper-5 {
+  position: absolute;
+  top: 47px;
+  left: 1006px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.event-schedule .overlap {
+  position: absolute;
+  width: 1440px;
+  height: 1775px;
+  top: 196px;
+  left: 0;
+}
+
+.event-schedule .overlap-group {
+  position: absolute;
+  width: 1440px;
+  height: 1775px;
+  top: 0;
+  left: 0;
+}
+
+.event-schedule .img {
+  width: 587px;
+  height: 895px;
+  top: 880px;
+  left: 853px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.event-schedule .image-2 {
+  width: 648px;
+  height: 895px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.event-schedule .group {
+  position: absolute;
+  width: 349px;
+  height: 332px;
+  top: 28px;
+  left: 122px;
+}
+
+.event-schedule .p {
+  position: absolute;
+  width: 347px;
+  top: 264px;
+  left: 0;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.event-schedule .span {
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+}
+
+.event-schedule .text-wrapper-6 {
+  font-size: 16px;
+}
+
+.event-schedule .image-3 {
+  position: absolute;
+  width: 377px;
+  height: 278px;
+  top: -15px;
+  left: -15px;
+  object-fit: cover;
+}
+
+.event-schedule .group-2 {
+  position: absolute;
+  width: 349px;
+  height: 332px;
+  top: 412px;
+  left: 122px;
+}
+
+.event-schedule .group-3 {
+  position: absolute;
+  width: 349px;
+  height: 332px;
+  top: 872px;
+  left: 122px;
+}
+
+.event-schedule .group-4 {
+  position: absolute;
+  width: 349px;
+  height: 332px;
+  top: 28px;
+  left: 546px;
+}
+
+.event-schedule .group-5 {
+  position: absolute;
+  width: 349px;
+  height: 408px;
+  top: 412px;
+  left: 546px;
+}
+
+.event-schedule .overlap-group-wrapper {
+  position: absolute;
+  width: 215px;
+  height: 60px;
+  top: 348px;
+  left: 67px;
+}
+
+.event-schedule .overlap-group-2 {
+  position: relative;
+  width: 213px;
+  height: 60px;
+}
+
+.event-schedule .rectangle {
+  width: 213px;
+  height: 56px;
+  top: 2px;
+  left: 0;
+  border-radius: 50px;
+  position: absolute;
+  background-color: #95d5d1;
+}
+
+.event-schedule .text-wrapper-7 {
+  position: absolute;
+  top: 0;
+  left: 73px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 60px;
+  white-space: nowrap;
+}
+
+.event-schedule .group-6 {
+  position: absolute;
+  width: 349px;
+  height: 408px;
+  top: 1256px;
+  left: 546px;
+}
+
+.event-schedule .group-7 {
+  position: absolute;
+  width: 349px;
+  height: 332px;
+  top: 872px;
+  left: 546px;
+}
+
+.event-schedule .group-8 {
+  position: absolute;
+  width: 349px;
+  height: 332px;
+  top: 1256px;
+  left: 968px;
+}
+
+.event-schedule .group-9 {
+  position: absolute;
+  width: 349px;
+  height: 332px;
+  top: 872px;
+  left: 968px;
+}
+
+.event-schedule .group-10 {
+  position: absolute;
+  width: 349px;
+  height: 332px;
+  top: 1256px;
+  left: 122px;
+}
+
+.event-schedule .group-11 {
+  position: absolute;
+  width: 349px;
+  height: 332px;
+  top: 28px;
+  left: 968px;
+}
+
+.event-schedule .group-12 {
+  position: absolute;
+  width: 349px;
+  height: 332px;
+  top: 412px;
+  left: 968px;
+}
+
+.event-schedule .group-13 {
+  position: absolute;
+  width: 1442px;
+  height: 2544px;
+  top: 2080px;
+  left: 0;
+}
+
+.event-schedule .events-section {
+  position: absolute;
+  width: 1440px;
+  height: 575px;
+  top: 0;
+  left: 1px;
+}
+
+.event-schedule .overlap-2 {
+  position: relative;
+  height: 575px;
+  left: -1px;
+}
+
+.event-schedule .image-4 {
+  width: 722px;
+  height: 575px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.event-schedule .image-5 {
+  width: 719px;
+  height: 575px;
+  top: 0;
+  left: 721px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.event-schedule .div-wrapper {
+  position: absolute;
+  width: 430px;
+  height: 86px;
+  top: 241px;
+  left: 152px;
+}
+
+.event-schedule .overlap-group-3 {
+  position: relative;
+  width: 428px;
+  height: 86px;
+  background-color: #ffffffbf;
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px 5px #95d5d1b2;
+}
+
+.event-schedule .text-wrapper-8 {
+  position: absolute;
+  top: 24px;
+  left: 102px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.event-schedule .overlap-wrapper {
+  position: absolute;
+  width: 430px;
+  height: 86px;
+  top: 245px;
+  left: 883px;
+}
+
+.event-schedule .text-wrapper-9 {
+  position: absolute;
+  top: 24px;
+  left: 97px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.event-schedule .gallery-section {
+  position: absolute;
+  width: 1441px;
+  height: 519px;
+  top: 575px;
+  left: 0;
+  background-color: #111111;
+}
+
+.event-schedule .image-6 {
+  width: 321px;
+  height: 217px;
+  top: 89px;
+  left: 135px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.event-schedule .image-7 {
+  width: 321px;
+  height: 217px;
+  top: 89px;
+  left: 560px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.event-schedule .image-8 {
+  width: 321px;
+  height: 217px;
+  top: 89px;
+  left: 983px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.event-schedule .group-14 {
+  position: absolute;
+  width: 430px;
+  height: 86px;
+  top: 366px;
+  left: 506px;
+}
+
+.event-schedule .text-wrapper-10 {
+  position: absolute;
+  top: 24px;
+  left: 99px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.event-schedule .testimonials-section {
+  position: absolute;
+  width: 1441px;
+  height: 519px;
+  top: 1094px;
+  left: 0;
+}
+
+.event-schedule .text-wrapper-11 {
+  position: absolute;
+  top: 21px;
+  left: 634px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.event-schedule .rectangle-2 {
+  width: 2px;
+  height: 150px;
+  top: 185px;
+  left: 505px;
+  transform: rotate(180.00deg);
+  position: absolute;
+  background-color: #95d5d1;
+}
+
+.event-schedule .rectangle-3 {
+  width: 2px;
+  height: 150px;
+  top: 185px;
+  left: 932px;
+  transform: rotate(180.00deg);
+  position: absolute;
+  background-color: #95d5d1;
+}
+
+.event-schedule .group-15 {
+  position: absolute;
+  width: 341px;
+  height: 304px;
+  top: 113px;
+  left: 124px;
+}
+
+.event-schedule .group-16 {
+  position: absolute;
+  width: 240px;
+  height: 48px;
+  top: 0;
+  left: 0;
+}
+
+.event-schedule .star {
+  left: 1px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.event-schedule .star-2 {
+  left: 49px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.event-schedule .star-3 {
+  left: 97px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.event-schedule .star-4 {
+  left: 145px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.event-schedule .star-5 {
+  left: 193px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.event-schedule .overlap-group-4 {
+  position: absolute;
+  width: 337px;
+  height: 244px;
+  top: 60px;
+  left: 0;
+}
+
+.event-schedule .text-wrapper-12 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.event-schedule .rectangle-4 {
+  width: 2px;
+  height: 70px;
+  top: 13px;
+  left: 36px;
+  transform: rotate(-90.00deg);
+  position: absolute;
+  background-color: #95d5d1;
+}
+
+.event-schedule .text-wrapper-13 {
+  position: absolute;
+  width: 333px;
+  top: 68px;
+  left: 4px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.event-schedule .group-17 {
+  position: absolute;
+  width: 341px;
+  height: 304px;
+  top: 113px;
+  left: 551px;
+}
+
+.event-schedule .group-18 {
+  position: absolute;
+  width: 341px;
+  height: 304px;
+  top: 113px;
+  left: 978px;
+}
+
+.event-schedule .chevron-left {
+  position: absolute;
+  width: 57px;
+  height: 57px;
+  top: 241px;
+  left: 1357px;
+}
+
+.event-schedule .vector {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  top: 247px;
+  left: 25px;
+}
+
+.event-schedule .contact-section {
+  position: absolute;
+  width: 1140px;
+  height: 438px;
+  top: 1647px;
+  left: 126px;
+}
+
+.event-schedule .image-9 {
+  width: 608px;
+  height: 486px;
+  top: -15px;
+  left: -15px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.event-schedule .overlap-3 {
+  position: absolute;
+  width: 703px;
+  height: 928px;
+  top: -162px;
+  left: 611px;
+}
+
+.event-schedule .overlap-4 {
+  position: absolute;
+  width: 703px;
+  height: 928px;
+  top: 0;
+  left: 0;
+}
+
+.event-schedule .image-10 {
+  width: 508px;
+  height: 928px;
+  left: 195px;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+}
+
+.event-schedule .phone {
+  position: absolute;
+  width: 499px;
+  top: 440px;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.event-schedule .element-ave-NE {
+  position: absolute;
+  width: 285px;
+  top: 247px;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.event-schedule .text-wrapper-14 {
+  position: absolute;
+  top: 193px;
+  left: 0;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.event-schedule .text-wrapper-15 {
+  position: absolute;
+  top: 386px;
+  left: 0;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.event-schedule .footer-section {
+  position: absolute;
+  width: 1441px;
+  height: 263px;
+  top: 2281px;
+  left: 1px;
+}
+
+.event-schedule .overlap-5 {
+  position: relative;
+  width: 1442px;
+  height: 374px;
+  top: -87px;
+  left: -1px;
+}
+
+.event-schedule .rectangle-5 {
+  position: absolute;
+  width: 1442px;
+  height: 288px;
+  top: 86px;
+  left: 0;
+  background-color: #95d5d1;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.event-schedule .image-11 {
+  width: 197px;
+  height: 197px;
+  left: 623px;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+}
+
+.event-schedule .group-19 {
+  position: absolute;
+  width: 287px;
+  height: 132px;
+  top: 211px;
+  left: 579px;
+}
+
+.event-schedule .overlap-group-5 {
+  position: relative;
+  width: 285px;
+  height: 132px;
+}
+
+.event-schedule .follow-us-on-social {
+  position: absolute;
+  width: 285px;
+  top: 0;
+  left: 0;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.event-schedule .ic-outline-facebook {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 66px;
+  left: 79px;
+}
+
+.event-schedule .mdi-instagram {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 66px;
+  left: 150px;
+}
+
+.event-schedule .about-owner-facility {
+  position: absolute;
+  width: 225px;
+  top: 164px;
+  left: 142px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.event-schedule .text-wrapper-16 {
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+}
+
+.event-schedule .text-wrapper-17 {
+  font-size: 24px;
+}
+
+.event-schedule .services-programs {
+  position: absolute;
+  width: 225px;
+  top: 164px;
+  left: 408px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.event-schedule .events-show-schedule {
+  position: absolute;
+  width: 225px;
+  top: 164px;
+  left: 904px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.event-schedule .text-wrapper-18 {
+  position: absolute;
+  width: 225px;
+  top: 164px;
+  left: 1130px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+
+/* Content merged from style.css on 2025-05-15 08:25:36 */
+
+.facility {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.facility .div {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 1440px;
+  height: 4567px;
+  position: relative;
+}
+
+.facility .overlap {
+  position: absolute;
+  width: 1440px;
+  height: 1971px;
+  top: 0;
+  left: 0;
+}
+
+.facility .overlap-group {
+  position: absolute;
+  width: 1440px;
+  height: 1123px;
+  top: 0;
+  left: 0;
+}
+
+.facility .navigation {
+  position: absolute;
+  width: 1440px;
+  height: 196px;
+  top: 0;
+  left: 0;
+}
+
+.facility .image {
+  width: 109px;
+  height: 109px;
+  top: 10px;
+  left: 314px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.facility .text-wrapper {
+  position: absolute;
+  top: 47px;
+  left: 472px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.facility .text-wrapper-2 {
+  position: absolute;
+  top: 47px;
+  left: 596px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.facility .text-wrapper-3 {
+  position: absolute;
+  top: 47px;
+  left: 737px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.facility .text-wrapper-4 {
+  position: absolute;
+  top: 47px;
+  left: 862px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.facility .text-wrapper-5 {
+  position: absolute;
+  top: 47px;
+  left: 1006px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.facility .img {
+  width: 648px;
+  height: 895px;
+  top: 196px;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.facility .p {
+  position: absolute;
+  top: 786px;
+  left: 349px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.facility .text-wrapper-6 {
+  position: absolute;
+  top: 1085px;
+  left: 350px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.facility .image-2 {
+  width: 857px;
+  height: 581px;
+  top: 181px;
+  left: 270px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.facility .overlap-2 {
+  position: absolute;
+  width: 679px;
+  height: 895px;
+  top: 1076px;
+  left: 761px;
+}
+
+.facility .image-3 {
+  width: 580px;
+  height: 895px;
+  top: 0;
+  left: 99px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.facility .image-4 {
+  width: 493px;
+  height: 377px;
+  top: 102px;
+  left: 76px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.facility .image-5 {
+  width: 338px;
+  height: 261px;
+  top: 581px;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.facility .overlap-3 {
+  position: absolute;
+  width: 588px;
+  height: 785px;
+  top: 1133px;
+  left: 122px;
+}
+
+.facility .tranquil-setting {
+  position: absolute;
+  width: 588px;
+  top: 0;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 60px;
+}
+
+.facility .image-6 {
+  width: 338px;
+  height: 261px;
+  top: 524px;
+  left: 174px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.facility .events-section {
+  position: absolute;
+  width: 1440px;
+  height: 575px;
+  top: 1985px;
+  left: 1px;
+}
+
+.facility .overlap-4 {
+  position: relative;
+  height: 575px;
+  left: -1px;
+}
+
+.facility .image-7 {
+  width: 722px;
+  height: 575px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.facility .image-8 {
+  width: 719px;
+  height: 575px;
+  top: 0;
+  left: 721px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.facility .group {
+  position: absolute;
+  width: 430px;
+  height: 86px;
+  top: 241px;
+  left: 152px;
+}
+
+.facility .div-wrapper {
+  position: relative;
+  width: 428px;
+  height: 86px;
+  background-color: #ffffffbf;
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px 5px #95d5d1b2;
+}
+
+.facility .text-wrapper-7 {
+  position: absolute;
+  top: 24px;
+  left: 102px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.facility .overlap-wrapper {
+  position: absolute;
+  width: 430px;
+  height: 86px;
+  top: 245px;
+  left: 883px;
+}
+
+.facility .text-wrapper-8 {
+  position: absolute;
+  top: 24px;
+  left: 97px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.facility .gallery-section {
+  position: absolute;
+  width: 1441px;
+  height: 519px;
+  top: 2560px;
+  left: 0;
+  background-color: #111111;
+}
+
+.facility .image-9 {
+  width: 321px;
+  height: 217px;
+  top: 89px;
+  left: 135px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.facility .image-10 {
+  width: 321px;
+  height: 217px;
+  top: 89px;
+  left: 560px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.facility .image-11 {
+  width: 321px;
+  height: 217px;
+  top: 89px;
+  left: 983px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.facility .overlap-group-wrapper {
+  position: absolute;
+  width: 430px;
+  height: 86px;
+  top: 366px;
+  left: 506px;
+}
+
+.facility .text-wrapper-9 {
+  position: absolute;
+  top: 24px;
+  left: 99px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.facility .testimonials-section {
+  position: absolute;
+  width: 1441px;
+  height: 519px;
+  top: 3079px;
+  left: 0;
+}
+
+.facility .text-wrapper-10 {
+  position: absolute;
+  top: 21px;
+  left: 634px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.facility .rectangle {
+  width: 2px;
+  height: 150px;
+  top: 185px;
+  left: 505px;
+  transform: rotate(180.00deg);
+  position: absolute;
+  background-color: #95d5d1;
+}
+
+.facility .rectangle-2 {
+  width: 2px;
+  height: 150px;
+  top: 185px;
+  left: 932px;
+  transform: rotate(180.00deg);
+  position: absolute;
+  background-color: #95d5d1;
+}
+
+.facility .group-2 {
+  position: absolute;
+  width: 341px;
+  height: 304px;
+  top: 113px;
+  left: 124px;
+}
+
+.facility .group-3 {
+  position: absolute;
+  width: 240px;
+  height: 48px;
+  top: 0;
+  left: 0;
+}
+
+.facility .star {
+  left: 1px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.facility .star-2 {
+  left: 49px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.facility .star-3 {
+  left: 97px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.facility .star-4 {
+  left: 145px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.facility .star-5 {
+  left: 193px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.facility .overlap-group-2 {
+  position: absolute;
+  width: 337px;
+  height: 244px;
+  top: 60px;
+  left: 0;
+}
+
+.facility .text-wrapper-11 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.facility .rectangle-3 {
+  width: 2px;
+  height: 70px;
+  top: 13px;
+  left: 36px;
+  transform: rotate(-90.00deg);
+  position: absolute;
+  background-color: #95d5d1;
+}
+
+.facility .text-wrapper-12 {
+  position: absolute;
+  width: 333px;
+  top: 68px;
+  left: 4px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.facility .group-4 {
+  position: absolute;
+  width: 341px;
+  height: 304px;
+  top: 113px;
+  left: 551px;
+}
+
+.facility .group-5 {
+  position: absolute;
+  width: 341px;
+  height: 304px;
+  top: 113px;
+  left: 978px;
+}
+
+.facility .chevron-left {
+  position: absolute;
+  width: 57px;
+  height: 57px;
+  top: 241px;
+  left: 1357px;
+}
+
+.facility .vector {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  top: 247px;
+  left: 25px;
+}
+
+.facility .contact-section {
+  position: absolute;
+  width: 1140px;
+  height: 438px;
+  top: 3632px;
+  left: 126px;
+}
+
+.facility .image-12 {
+  width: 608px;
+  height: 486px;
+  top: -15px;
+  left: -15px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.facility .overlap-5 {
+  position: absolute;
+  width: 703px;
+  height: 928px;
+  top: -162px;
+  left: 611px;
+}
+
+.facility .overlap-6 {
+  position: absolute;
+  width: 703px;
+  height: 928px;
+  top: 0;
+  left: 0;
+}
+
+.facility .image-13 {
+  width: 508px;
+  height: 928px;
+  left: 195px;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+}
+
+.facility .phone {
+  position: absolute;
+  width: 499px;
+  top: 440px;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.facility .element-ave-NE {
+  width: 285px;
+  top: 247px;
+  font-family: "Inter", Helvetica;
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.facility .text-wrapper-13 {
+  top: 193px;
+  font-family: "Marcellus SC", Helvetica;
+  font-size: 30px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.facility .text-wrapper-14 {
+  position: absolute;
+  top: 386px;
+  left: 0;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.facility .footer-section {
+  position: absolute;
+  width: 1441px;
+  height: 263px;
+  top: 4281px;
+  left: -1px;
+}
+
+.facility .overlap-7 {
+  position: relative;
+  width: 1442px;
+  height: 374px;
+  top: -87px;
+  left: -1px;
+}
+
+.facility .rectangle-4 {
+  width: 1442px;
+  height: 288px;
+  top: 86px;
+  left: 0;
+  border: 1px solid;
+  border-color: #000000;
+  position: absolute;
+  background-color: #95d5d1;
+}
+
+.facility .image-14 {
+  width: 197px;
+  height: 197px;
+  left: 623px;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+}
+
+.facility .group-6 {
+  position: absolute;
+  width: 287px;
+  height: 132px;
+  top: 211px;
+  left: 579px;
+}
+
+.facility .overlap-group-3 {
+  position: relative;
+  width: 285px;
+  height: 132px;
+}
+
+.facility .follow-us-on-social {
+  position: absolute;
+  width: 285px;
+  top: 0;
+  left: 0;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.facility .ic-outline-facebook {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 66px;
+  left: 79px;
+}
+
+.facility .mdi-instagram {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 66px;
+  left: 150px;
+}
+
+.facility .about-owner-facility {
+  position: absolute;
+  width: 225px;
+  top: 164px;
+  left: 142px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.facility .span {
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+}
+
+.facility .text-wrapper-15 {
+  font-size: 24px;
+}
+
+.facility .services-programs {
+  position: absolute;
+  width: 225px;
+  top: 164px;
+  left: 408px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.facility .events-show-schedule {
+  position: absolute;
+  width: 225px;
+  top: 164px;
+  left: 904px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.facility .text-wrapper-16 {
+  position: absolute;
+  width: 225px;
+  top: 164px;
+  left: 1130px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+
+/* Content merged from style.css on 2025-05-15 08:32:31 */
+
+.gallery {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.gallery .div {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 1440px;
+  height: 4624px;
+  position: relative;
+}
+
+.gallery .navigation {
+  position: absolute;
+  width: 1440px;
+  height: 196px;
+  top: 0;
+  left: 0;
+}
+
+.gallery .image {
+  width: 109px;
+  height: 109px;
+  top: 10px;
+  left: 314px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.gallery .text-wrapper {
+  position: absolute;
+  top: 47px;
+  left: 472px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gallery .text-wrapper-2 {
+  position: absolute;
+  top: 47px;
+  left: 596px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gallery .text-wrapper-3 {
+  position: absolute;
+  top: 47px;
+  left: 737px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gallery .text-wrapper-4 {
+  position: absolute;
+  top: 47px;
+  left: 862px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gallery .text-wrapper-5 {
+  position: absolute;
+  top: 47px;
+  left: 1006px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gallery .overlap {
+  position: absolute;
+  width: 1440px;
+  height: 1775px;
+  top: 196px;
+  left: 0;
+}
+
+.gallery .overlap-group {
+  position: absolute;
+  width: 1334px;
+  height: 1237px;
+  top: 538px;
+  left: 106px;
+}
+
+.gallery .img {
+  width: 587px;
+  height: 895px;
+  top: 342px;
+  left: 747px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.gallery .image-2 {
+  width: 493px;
+  height: 647px;
+  top: 0;
+  left: 731px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.gallery .image-3 {
+  width: 1225px;
+  height: 433px;
+  top: 720px;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.gallery .overlap-2 {
+  position: absolute;
+  width: 831px;
+  height: 1122px;
+  top: 0;
+  left: 0;
+}
+
+.gallery .image-4 {
+  width: 648px;
+  height: 895px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.gallery .group {
+  position: absolute;
+  width: 590px;
+  height: 473px;
+  top: 28px;
+  left: 122px;
+}
+
+.gallery .p {
+  position: absolute;
+  width: 588px;
+  top: 448px;
+  left: 0;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gallery .image-5 {
+  width: 618px;
+  height: 450px;
+  top: -15px;
+  left: -15px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.gallery .group-2 {
+  position: absolute;
+  width: 709px;
+  height: 569px;
+  top: 553px;
+  left: 122px;
+}
+
+.gallery .text-wrapper-6 {
+  position: absolute;
+  width: 707px;
+  top: 539px;
+  left: 0;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gallery .image-6 {
+  width: 737px;
+  height: 535px;
+  top: -15px;
+  left: -15px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.gallery .group-3 {
+  position: absolute;
+  width: 590px;
+  height: 473px;
+  top: 28px;
+  left: 727px;
+}
+
+.gallery .group-4 {
+  position: absolute;
+  width: 1442px;
+  height: 2544px;
+  top: 2080px;
+  left: 0;
+}
+
+.gallery .events-section {
+  position: absolute;
+  width: 1440px;
+  height: 575px;
+  top: 0;
+  left: 1px;
+}
+
+.gallery .overlap-3 {
+  position: relative;
+  height: 575px;
+  left: -1px;
+}
+
+.gallery .image-7 {
+  width: 722px;
+  height: 575px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.gallery .image-8 {
+  width: 719px;
+  height: 575px;
+  top: 0;
+  left: 721px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.gallery .overlap-group-wrapper {
+  position: absolute;
+  width: 430px;
+  height: 86px;
+  top: 241px;
+  left: 152px;
+}
+
+.gallery .div-wrapper {
+  position: relative;
+  width: 428px;
+  height: 86px;
+  background-color: #ffffffbf;
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px 5px #95d5d1b2;
+}
+
+.gallery .text-wrapper-7 {
+  position: absolute;
+  top: 24px;
+  left: 102px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gallery .overlap-wrapper {
+  position: absolute;
+  width: 430px;
+  height: 86px;
+  top: 245px;
+  left: 883px;
+}
+
+.gallery .text-wrapper-8 {
+  position: absolute;
+  top: 24px;
+  left: 97px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gallery .gallery-section {
+  position: absolute;
+  width: 1441px;
+  height: 519px;
+  top: 575px;
+  left: 0;
+  background-color: #111111;
+}
+
+.gallery .image-9 {
+  width: 321px;
+  height: 217px;
+  top: 89px;
+  left: 135px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.gallery .image-10 {
+  width: 321px;
+  height: 217px;
+  top: 89px;
+  left: 560px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.gallery .image-11 {
+  width: 321px;
+  height: 217px;
+  top: 89px;
+  left: 983px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.gallery .group-5 {
+  position: absolute;
+  width: 430px;
+  height: 86px;
+  top: 366px;
+  left: 506px;
+}
+
+.gallery .text-wrapper-9 {
+  position: absolute;
+  top: 24px;
+  left: 99px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gallery .testimonials-section {
+  position: absolute;
+  width: 1441px;
+  height: 519px;
+  top: 1094px;
+  left: 0;
+}
+
+.gallery .text-wrapper-10 {
+  position: absolute;
+  top: 21px;
+  left: 634px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gallery .rectangle {
+  width: 2px;
+  height: 150px;
+  top: 185px;
+  left: 505px;
+  transform: rotate(180.00deg);
+  position: absolute;
+  background-color: #95d5d1;
+}
+
+.gallery .rectangle-2 {
+  width: 2px;
+  height: 150px;
+  top: 185px;
+  left: 932px;
+  transform: rotate(180.00deg);
+  position: absolute;
+  background-color: #95d5d1;
+}
+
+.gallery .group-6 {
+  position: absolute;
+  width: 341px;
+  height: 304px;
+  top: 113px;
+  left: 124px;
+}
+
+.gallery .group-7 {
+  position: absolute;
+  width: 240px;
+  height: 48px;
+  top: 0;
+  left: 0;
+}
+
+.gallery .star {
+  left: 1px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.gallery .star-2 {
+  left: 49px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.gallery .star-3 {
+  left: 97px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.gallery .star-4 {
+  left: 145px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.gallery .star-5 {
+  left: 193px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.gallery .overlap-group-2 {
+  position: absolute;
+  width: 337px;
+  height: 244px;
+  top: 60px;
+  left: 0;
+}
+
+.gallery .text-wrapper-11 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gallery .rectangle-3 {
+  width: 2px;
+  height: 70px;
+  top: 13px;
+  left: 36px;
+  transform: rotate(-90.00deg);
+  position: absolute;
+  background-color: #95d5d1;
+}
+
+.gallery .text-wrapper-12 {
+  position: absolute;
+  width: 333px;
+  top: 68px;
+  left: 4px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gallery .group-8 {
+  position: absolute;
+  width: 341px;
+  height: 304px;
+  top: 113px;
+  left: 551px;
+}
+
+.gallery .group-9 {
+  position: absolute;
+  width: 341px;
+  height: 304px;
+  top: 113px;
+  left: 978px;
+}
+
+.gallery .chevron-left {
+  position: absolute;
+  width: 57px;
+  height: 57px;
+  top: 241px;
+  left: 1357px;
+}
+
+.gallery .vector {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  top: 247px;
+  left: 25px;
+}
+
+.gallery .contact-section {
+  position: absolute;
+  width: 1140px;
+  height: 438px;
+  top: 1647px;
+  left: 126px;
+}
+
+.gallery .image-12 {
+  width: 608px;
+  height: 486px;
+  top: -15px;
+  left: -15px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.gallery .overlap-4 {
+  position: absolute;
+  width: 703px;
+  height: 928px;
+  top: -162px;
+  left: 611px;
+}
+
+.gallery .overlap-5 {
+  position: absolute;
+  width: 703px;
+  height: 928px;
+  top: 0;
+  left: 0;
+}
+
+.gallery .image-13 {
+  width: 508px;
+  height: 928px;
+  left: 195px;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+}
+
+.gallery .phone {
+  position: absolute;
+  width: 499px;
+  top: 440px;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.gallery .element-ave-NE {
+  width: 285px;
+  top: 247px;
+  font-family: "Inter", Helvetica;
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gallery .text-wrapper-13 {
+  top: 193px;
+  font-family: "Marcellus SC", Helvetica;
+  font-size: 30px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gallery .text-wrapper-14 {
+  position: absolute;
+  top: 386px;
+  left: 0;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gallery .footer-section {
+  position: absolute;
+  width: 1441px;
+  height: 263px;
+  top: 2281px;
+  left: 1px;
+}
+
+.gallery .overlap-6 {
+  position: relative;
+  width: 1442px;
+  height: 374px;
+  top: -87px;
+  left: -1px;
+}
+
+.gallery .rectangle-4 {
+  width: 1442px;
+  height: 288px;
+  top: 86px;
+  left: 0;
+  border: 1px solid;
+  border-color: #000000;
+  position: absolute;
+  background-color: #95d5d1;
+}
+
+.gallery .image-14 {
+  width: 197px;
+  height: 197px;
+  left: 623px;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+}
+
+.gallery .group-10 {
+  position: absolute;
+  width: 287px;
+  height: 132px;
+  top: 211px;
+  left: 579px;
+}
+
+.gallery .overlap-group-3 {
+  position: relative;
+  width: 285px;
+  height: 132px;
+}
+
+.gallery .follow-us-on-social {
+  position: absolute;
+  width: 285px;
+  top: 0;
+  left: 0;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gallery .ic-outline-facebook {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 66px;
+  left: 79px;
+}
+
+.gallery .mdi-instagram {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 66px;
+  left: 150px;
+}
+
+.gallery .about-owner-facility {
+  position: absolute;
+  width: 225px;
+  top: 164px;
+  left: 142px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gallery .span {
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+}
+
+.gallery .text-wrapper-15 {
+  font-size: 24px;
+}
+
+.gallery .services-programs {
+  position: absolute;
+  width: 225px;
+  top: 164px;
+  left: 408px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gallery .events-show-schedule {
+  position: absolute;
+  width: 225px;
+  top: 164px;
+  left: 904px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gallery .text-wrapper-16 {
+  position: absolute;
+  width: 225px;
+  top: 164px;
+  left: 1130px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+
+/* Content merged from style.css on 2025-05-15 08:51:58 */
+
+.lease-sale-horses {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.lease-sale-horses .div {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 1440px;
+  height: 7076px;
+  position: relative;
+}
+
+.lease-sale-horses .navigation {
+  position: absolute;
+  width: 1440px;
+  height: 196px;
+  top: 0;
+  left: 0;
+}
+
+.lease-sale-horses .image {
+  width: 109px;
+  height: 109px;
+  top: 10px;
+  left: 314px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.lease-sale-horses .text-wrapper {
+  position: absolute;
+  top: 47px;
+  left: 472px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.lease-sale-horses .text-wrapper-2 {
+  position: absolute;
+  top: 47px;
+  left: 596px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.lease-sale-horses .text-wrapper-3 {
+  position: absolute;
+  top: 47px;
+  left: 737px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.lease-sale-horses .text-wrapper-4 {
+  position: absolute;
+  top: 47px;
+  left: 862px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.lease-sale-horses .text-wrapper-5 {
+  position: absolute;
+  top: 47px;
+  left: 1006px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.lease-sale-horses .please-contact {
+  position: absolute;
+  width: 406px;
+  top: 198px;
+  left: 519px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.lease-sale-horses .p {
+  position: absolute;
+  top: 147px;
+  left: 539px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.lease-sale-horses .overlap {
+  position: absolute;
+  width: 1440px;
+  height: 1822px;
+  top: 196px;
+  left: 0;
+}
+
+.lease-sale-horses .overlap-group {
+  position: absolute;
+  width: 1440px;
+  height: 1822px;
+  top: 0;
+  left: 0;
+}
+
+.lease-sale-horses .img {
+  width: 648px;
+  height: 895px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.lease-sale-horses .DIAMOND-z-BEAR {
+  top: 931px;
+  left: 525px;
+  position: absolute;
+  width: 347px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.lease-sale-horses .tall-dark-handsome {
+  position: absolute;
+  width: 954px;
+  top: 1136px;
+  left: 243px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 35px;
+}
+
+.lease-sale-horses .safe-and-kind {
+  position: absolute;
+  width: 954px;
+  top: 1409px;
+  left: 243px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 35px;
+}
+
+.lease-sale-horses .available-for-lease {
+  position: absolute;
+  width: 954px;
+  top: 1647px;
+  left: 243px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 35px;
+}
+
+.lease-sale-horses .image-2 {
+  position: absolute;
+  width: 983px;
+  height: 711px;
+  top: 183px;
+  left: 228px;
+  object-fit: cover;
+}
+
+.lease-sale-horses .image-3 {
+  width: 587px;
+  height: 895px;
+  top: 880px;
+  left: 853px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.lease-sale-horses .phone {
+  position: absolute;
+  width: 499px;
+  top: 53px;
+  left: 472px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.lease-sale-horses .text-wrapper-6 {
+  position: absolute;
+  width: 463px;
+  top: 1091px;
+  left: 243px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.lease-sale-horses .text-wrapper-7 {
+  position: absolute;
+  width: 463px;
+  top: 1364px;
+  left: 243px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.lease-sale-horses .text-wrapper-8 {
+  position: absolute;
+  width: 463px;
+  top: 1602px;
+  left: 243px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.lease-sale-horses .currently-at {
+  position: absolute;
+  width: 954px;
+  top: 2071px;
+  left: 243px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.lease-sale-horses .group {
+  position: absolute;
+  width: 1442px;
+  height: 2544px;
+  top: 4509px;
+  left: -1px;
+}
+
+.lease-sale-horses .events-section {
+  position: absolute;
+  width: 1440px;
+  height: 575px;
+  top: 0;
+  left: 1px;
+}
+
+.lease-sale-horses .overlap-2 {
+  position: relative;
+  height: 575px;
+}
+
+.lease-sale-horses .image-4 {
+  width: 721px;
+  height: 575px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.lease-sale-horses .image-5 {
+  width: 720px;
+  height: 575px;
+  top: 0;
+  left: 720px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.lease-sale-horses .overlap-group-wrapper {
+  position: absolute;
+  width: 430px;
+  height: 86px;
+  top: 241px;
+  left: 151px;
+}
+
+.lease-sale-horses .div-wrapper {
+  position: relative;
+  width: 428px;
+  height: 86px;
+  background-color: #ffffffbf;
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px 5px #95d5d1b2;
+}
+
+.lease-sale-horses .text-wrapper-9 {
+  position: absolute;
+  top: 24px;
+  left: 102px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.lease-sale-horses .overlap-wrapper {
+  position: absolute;
+  width: 430px;
+  height: 86px;
+  top: 245px;
+  left: 882px;
+}
+
+.lease-sale-horses .text-wrapper-10 {
+  position: absolute;
+  top: 24px;
+  left: 97px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.lease-sale-horses .gallery-section {
+  position: absolute;
+  width: 1441px;
+  height: 519px;
+  top: 575px;
+  left: 0;
+  background-color: #111111;
+}
+
+.lease-sale-horses .image-6 {
+  width: 321px;
+  height: 217px;
+  top: 89px;
+  left: 135px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.lease-sale-horses .image-7 {
+  width: 321px;
+  height: 217px;
+  top: 89px;
+  left: 560px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.lease-sale-horses .image-8 {
+  width: 321px;
+  height: 217px;
+  top: 89px;
+  left: 983px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.lease-sale-horses .group-2 {
+  position: absolute;
+  width: 430px;
+  height: 86px;
+  top: 366px;
+  left: 506px;
+}
+
+.lease-sale-horses .text-wrapper-11 {
+  position: absolute;
+  top: 24px;
+  left: 99px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.lease-sale-horses .testimonials-section {
+  position: absolute;
+  width: 1441px;
+  height: 519px;
+  top: 1094px;
+  left: 0;
+}
+
+.lease-sale-horses .text-wrapper-12 {
+  position: absolute;
+  top: 21px;
+  left: 634px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.lease-sale-horses .rectangle {
+  width: 2px;
+  height: 150px;
+  top: 185px;
+  left: 505px;
+  transform: rotate(180.00deg);
+  position: absolute;
+  background-color: #95d5d1;
+}
+
+.lease-sale-horses .rectangle-2 {
+  width: 2px;
+  height: 150px;
+  top: 185px;
+  left: 932px;
+  transform: rotate(180.00deg);
+  position: absolute;
+  background-color: #95d5d1;
+}
+
+.lease-sale-horses .group-3 {
+  position: absolute;
+  width: 341px;
+  height: 304px;
+  top: 113px;
+  left: 124px;
+}
+
+.lease-sale-horses .group-4 {
+  position: absolute;
+  width: 240px;
+  height: 48px;
+  top: 0;
+  left: 0;
+}
+
+.lease-sale-horses .star {
+  left: 1px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.lease-sale-horses .star-2 {
+  left: 49px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.lease-sale-horses .star-3 {
+  left: 97px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.lease-sale-horses .star-4 {
+  left: 145px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.lease-sale-horses .star-5 {
+  left: 193px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.lease-sale-horses .overlap-group-2 {
+  position: absolute;
+  width: 337px;
+  height: 244px;
+  top: 60px;
+  left: 0;
+}
+
+.lease-sale-horses .text-wrapper-13 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.lease-sale-horses .rectangle-3 {
+  width: 2px;
+  height: 70px;
+  top: 13px;
+  left: 36px;
+  transform: rotate(-90.00deg);
+  position: absolute;
+  background-color: #95d5d1;
+}
+
+.lease-sale-horses .text-wrapper-14 {
+  position: absolute;
+  width: 333px;
+  top: 68px;
+  left: 4px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.lease-sale-horses .group-5 {
+  position: absolute;
+  width: 341px;
+  height: 304px;
+  top: 113px;
+  left: 551px;
+}
+
+.lease-sale-horses .group-6 {
+  position: absolute;
+  width: 341px;
+  height: 304px;
+  top: 113px;
+  left: 978px;
+}
+
+.lease-sale-horses .chevron-left {
+  position: absolute;
+  width: 57px;
+  height: 57px;
+  top: 241px;
+  left: 1357px;
+}
+
+.lease-sale-horses .vector {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  top: 247px;
+  left: 25px;
+}
+
+.lease-sale-horses .contact-section {
+  position: absolute;
+  width: 1140px;
+  height: 438px;
+  top: 1647px;
+  left: 126px;
+}
+
+.lease-sale-horses .image-9 {
+  width: 608px;
+  height: 486px;
+  top: -15px;
+  left: -15px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.lease-sale-horses .overlap-3 {
+  position: absolute;
+  width: 704px;
+  height: 928px;
+  top: -162px;
+  left: 611px;
+}
+
+.lease-sale-horses .overlap-4 {
+  position: absolute;
+  width: 704px;
+  height: 928px;
+  top: 0;
+  left: 0;
+}
+
+.lease-sale-horses .image-10 {
+  width: 509px;
+  height: 928px;
+  left: 195px;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+}
+
+.lease-sale-horses .input {
+  position: absolute;
+  width: 499px;
+  top: 440px;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.lease-sale-horses .element-ave-NE {
+  position: absolute;
+  width: 285px;
+  top: 247px;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.lease-sale-horses .text-wrapper-15 {
+  position: absolute;
+  top: 193px;
+  left: 0;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.lease-sale-horses .text-wrapper-16 {
+  position: absolute;
+  top: 386px;
+  left: 0;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.lease-sale-horses .footer-section {
+  position: absolute;
+  width: 1441px;
+  height: 263px;
+  top: 2281px;
+  left: 1px;
+}
+
+.lease-sale-horses .overlap-5 {
+  position: relative;
+  width: 1442px;
+  height: 374px;
+  top: -87px;
+  left: -1px;
+}
+
+.lease-sale-horses .rectangle-4 {
+  position: absolute;
+  width: 1442px;
+  height: 288px;
+  top: 86px;
+  left: 0;
+  background-color: #95d5d1;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.lease-sale-horses .image-11 {
+  width: 197px;
+  height: 197px;
+  left: 623px;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+}
+
+.lease-sale-horses .group-7 {
+  position: absolute;
+  width: 287px;
+  height: 132px;
+  top: 211px;
+  left: 579px;
+}
+
+.lease-sale-horses .overlap-group-3 {
+  position: relative;
+  width: 285px;
+  height: 132px;
+}
+
+.lease-sale-horses .follow-us-on-social {
+  position: absolute;
+  width: 285px;
+  top: 0;
+  left: 0;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.lease-sale-horses .ic-outline-facebook {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 66px;
+  left: 79px;
+}
+
+.lease-sale-horses .mdi-instagram {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 66px;
+  left: 150px;
+}
+
+.lease-sale-horses .about-owner-facility {
+  position: absolute;
+  width: 225px;
+  top: 164px;
+  left: 142px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.lease-sale-horses .span {
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+}
+
+.lease-sale-horses .text-wrapper-17 {
+  font-size: 24px;
+}
+
+.lease-sale-horses .services-programs {
+  position: absolute;
+  width: 225px;
+  top: 164px;
+  left: 408px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.lease-sale-horses .events-show-schedule {
+  position: absolute;
+  width: 225px;
+  top: 164px;
+  left: 904px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.lease-sale-horses .text-wrapper-18 {
+  position: absolute;
+  width: 225px;
+  top: 164px;
+  left: 1130px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.lease-sale-horses .line {
+  position: absolute;
+  width: 1175px;
+  height: 1px;
+  top: 2357px;
+  left: 118px;
+  object-fit: cover;
+}
+
+.lease-sale-horses .overlap-6 {
+  position: absolute;
+  width: 1440px;
+  height: 1831px;
+  top: 2454px;
+  left: 0;
+}
+
+.lease-sale-horses .overlap-7 {
+  position: absolute;
+  width: 1440px;
+  height: 1775px;
+  top: 0;
+  left: 0;
+}
+
+.lease-sale-horses .image-12 {
+  position: absolute;
+  width: 634px;
+  height: 895px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.lease-sale-horses .DIAMOND-z-BEAR-2 {
+  top: 750px;
+  left: 511px;
+  position: sticky;
+  width: 347px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.lease-sale-horses .group-8 {
+  position: absolute;
+  width: 522px;
+  height: 158px;
+  top: 906px;
+  left: 429px;
+}
+
+.lease-sale-horses .for-sale-wrapper {
+  position: relative;
+  width: 520px;
+  height: 158px;
+  background-color: #95d5d1;
+  border-radius: 20px;
+}
+
+.lease-sale-horses .for-sale {
+  position: absolute;
+  width: 347px;
+  top: 23px;
+  left: 87px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 45px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.lease-sale-horses .currently-at-2 {
+  position: absolute;
+  width: 954px;
+  top: 1634px;
+  left: 229px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.lease-sale-horses .safe-and-kind-2 {
+  position: absolute;
+  width: 954px;
+  top: 1168px;
+  left: 229px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 35px;
+}
+
+.lease-sale-horses .available-for-lease-2 {
+  position: absolute;
+  width: 954px;
+  top: 1406px;
+  left: 229px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 35px;
+}
+
+.lease-sale-horses .image-13 {
+  width: 983px;
+  height: 711px;
+  top: 2px;
+  left: 214px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.lease-sale-horses .image-14 {
+  position: absolute;
+  width: 601px;
+  height: 895px;
+  top: 880px;
+  left: 839px;
+  object-fit: cover;
+}
+
+.lease-sale-horses .text-wrapper-19 {
+  position: absolute;
+  width: 463px;
+  top: 1123px;
+  left: 229px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.lease-sale-horses .text-wrapper-20 {
+  position: absolute;
+  width: 463px;
+  top: 1361px;
+  left: 229px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.lease-sale-horses .group-9 {
+  position: absolute;
+  width: 215px;
+  height: 60px;
+  top: 1771px;
+  left: 599px;
+}
+
+.lease-sale-horses .overlap-8 {
+  position: relative;
+  width: 213px;
+  height: 60px;
+}
+
+.lease-sale-horses .rectangle-5 {
+  width: 213px;
+  height: 56px;
+  top: 2px;
+  left: 0;
+  border-radius: 50px;
+  position: absolute;
+  background-color: #95d5d1;
+}
+
+.lease-sale-horses .text-wrapper-21 {
+  position: absolute;
+  top: 0;
+  left: 68px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 60px;
+  white-space: nowrap;
+}
+
+.lease-sale-horses .group-10 {
+  position: absolute;
+  width: 215px;
+  height: 60px;
+  top: 2201px;
+  left: 599px;
+}
+
+
+/* Content merged from style.css on 2025-05-15 11:17:52 */
+
+.meet-the-horses {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.meet-the-horses .div {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 1440px;
+  height: 5967px;
+  position: relative;
+}
+
+.meet-the-horses .navigation {
+  position: absolute;
+  width: 1440px;
+  height: 196px;
+  top: 0;
+  left: 0;
+}
+
+.meet-the-horses .image {
+  width: 109px;
+  height: 109px;
+  top: 10px;
+  left: 314px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.meet-the-horses .text-wrapper {
+  position: absolute;
+  top: 47px;
+  left: 472px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.meet-the-horses .text-wrapper-2 {
+  position: absolute;
+  top: 47px;
+  left: 596px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.meet-the-horses .text-wrapper-3 {
+  position: absolute;
+  top: 47px;
+  left: 737px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.meet-the-horses .text-wrapper-4 {
+  position: absolute;
+  top: 47px;
+  left: 862px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.meet-the-horses .text-wrapper-5 {
+  position: absolute;
+  top: 47px;
+  left: 1006px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.meet-the-horses .overlap {
+  position: absolute;
+  width: 1440px;
+  height: 3052px;
+  top: 196px;
+  left: 0;
+}
+
+.meet-the-horses .overlap-group {
+  position: absolute;
+  width: 724px;
+  height: 1156px;
+  top: 0;
+  left: 0;
+}
+
+.meet-the-horses .img {
+  width: 648px;
+  height: 895px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.meet-the-horses .island-bordeaux-aka {
+  position: absolute;
+  top: 447px;
+  left: 295px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.meet-the-horses .IMG {
+  position: absolute;
+  width: 271px;
+  height: 403px;
+  top: 29px;
+  left: 282px;
+  object-fit: cover;
+}
+
+.meet-the-horses .IMG-2 {
+  position: absolute;
+  width: 612px;
+  height: 403px;
+  top: 753px;
+  left: 112px;
+  object-fit: cover;
+}
+
+.meet-the-horses .overlap-2 {
+  position: absolute;
+  width: 1440px;
+  height: 2299px;
+  top: 753px;
+  left: 0;
+}
+
+.meet-the-horses .overlap-3 {
+  position: absolute;
+  width: 1208px;
+  height: 1382px;
+  top: 917px;
+  left: 0;
+}
+
+.meet-the-horses .image-2 {
+  width: 648px;
+  height: 895px;
+  top: 105px;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.meet-the-horses .text-wrapper-6 {
+  position: absolute;
+  top: 409px;
+  left: 357px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.meet-the-horses .p {
+  position: absolute;
+  width: 574px;
+  top: 502px;
+  left: 131px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 35px;
+}
+
+.meet-the-horses .DSC {
+  position: absolute;
+  width: 279px;
+  height: 403px;
+  top: 0;
+  left: 278px;
+  object-fit: cover;
+}
+
+.meet-the-horses .rectangle {
+  position: absolute;
+  width: 934px;
+  height: 434px;
+  top: 948px;
+  left: 274px;
+  background-color: #d9d9d9;
+}
+
+.meet-the-horses .to-save-space-in-the {
+  position: absolute;
+  top: 1067px;
+  left: 309px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: 70px;
+}
+
+.meet-the-horses .overlap-4 {
+  position: absolute;
+  width: 699px;
+  height: 1315px;
+  top: 0;
+  left: 741px;
+}
+
+.meet-the-horses .image-3 {
+  width: 588px;
+  height: 895px;
+  top: 127px;
+  left: 111px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.meet-the-horses .frappachino-aka {
+  top: 409px;
+  left: 204px;
+  font-family: "Marcellus SC", Helvetica;
+  font-size: 30px;
+  text-align: center;
+  line-height: normal;
+  position: absolute;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+.meet-the-horses .text-wrapper-7 {
+  width: 574px;
+  top: 502px;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-size: 20px;
+  line-height: 35px;
+  position: absolute;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+.meet-the-horses .DSC-2 {
+  position: absolute;
+  width: 279px;
+  height: 403px;
+  top: 0;
+  left: 147px;
+  object-fit: cover;
+}
+
+.meet-the-horses .IMG-3 {
+  position: absolute;
+  width: 279px;
+  height: 403px;
+  top: 912px;
+  left: 147px;
+  object-fit: cover;
+}
+
+.meet-the-horses .alderwood-aka-dublin {
+  position: absolute;
+  top: 1321px;
+  left: 950px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.meet-the-horses .text-wrapper-8 {
+  position: absolute;
+  width: 574px;
+  top: 1414px;
+  left: 741px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 35px;
+}
+
+.meet-the-horses .mastermind-aka {
+  top: 1162px;
+  left: 339px;
+  font-family: "Marcellus SC", Helvetica;
+  font-size: 30px;
+  text-align: center;
+  line-height: normal;
+  position: absolute;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+.meet-the-horses .mastermind-aka-2 {
+  width: 574px;
+  top: 1255px;
+  left: 136px;
+  font-family: "Inter", Helvetica;
+  font-size: 20px;
+  line-height: 35px;
+  position: absolute;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+.meet-the-horses .capelo-du-milon-aka {
+  position: absolute;
+  top: 643px;
+  left: 907px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.meet-the-horses .text-wrapper-9 {
+  position: absolute;
+  width: 574px;
+  top: 736px;
+  left: 737px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 35px;
+}
+
+.meet-the-horses .IMG-4 {
+  position: absolute;
+  width: 552px;
+  height: 403px;
+  top: 225px;
+  left: 753px;
+  object-fit: cover;
+}
+
+.meet-the-horses .group {
+  position: absolute;
+  width: 1441px;
+  height: 2085px;
+  top: 3408px;
+  left: 0;
+}
+
+.meet-the-horses .events-section {
+  position: absolute;
+  width: 1440px;
+  height: 575px;
+  top: 0;
+  left: 1px;
+}
+
+.meet-the-horses .overlap-5 {
+  position: relative;
+  height: 575px;
+  left: -1px;
+}
+
+.meet-the-horses .image-4 {
+  width: 722px;
+  height: 575px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.meet-the-horses .image-5 {
+  width: 719px;
+  height: 575px;
+  top: 0;
+  left: 721px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.meet-the-horses .overlap-group-wrapper {
+  position: absolute;
+  width: 430px;
+  height: 86px;
+  top: 241px;
+  left: 152px;
+}
+
+.meet-the-horses .div-wrapper {
+  position: relative;
+  width: 428px;
+  height: 86px;
+  background-color: #ffffffbf;
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px 5px #95d5d1b2;
+}
+
+.meet-the-horses .text-wrapper-10 {
+  position: absolute;
+  top: 24px;
+  left: 102px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.meet-the-horses .overlap-wrapper {
+  position: absolute;
+  width: 430px;
+  height: 86px;
+  top: 245px;
+  left: 883px;
+}
+
+.meet-the-horses .text-wrapper-11 {
+  position: absolute;
+  top: 24px;
+  left: 97px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.meet-the-horses .gallery-section {
+  position: absolute;
+  width: 1441px;
+  height: 519px;
+  top: 575px;
+  left: 0;
+  background-color: #111111;
+}
+
+.meet-the-horses .image-6 {
+  width: 321px;
+  height: 217px;
+  top: 89px;
+  left: 135px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.meet-the-horses .image-7 {
+  position: absolute;
+  width: 321px;
+  height: 217px;
+  top: 89px;
+  left: 560px;
+  object-fit: cover;
+}
+
+.meet-the-horses .image-8 {
+  width: 321px;
+  height: 217px;
+  top: 89px;
+  left: 983px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.meet-the-horses .group-2 {
+  position: absolute;
+  width: 430px;
+  height: 86px;
+  top: 366px;
+  left: 506px;
+}
+
+.meet-the-horses .text-wrapper-12 {
+  position: absolute;
+  top: 24px;
+  left: 99px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.meet-the-horses .testimonials-section {
+  position: absolute;
+  width: 1441px;
+  height: 519px;
+  top: 1094px;
+  left: 0;
+}
+
+.meet-the-horses .text-wrapper-13 {
+  position: absolute;
+  top: 21px;
+  left: 634px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.meet-the-horses .rectangle-2 {
+  position: absolute;
+  width: 2px;
+  height: 150px;
+  top: 185px;
+  left: 505px;
+  background-color: #95d5d1;
+  transform: rotate(180.00deg);
+}
+
+.meet-the-horses .rectangle-3 {
+  position: absolute;
+  width: 2px;
+  height: 150px;
+  top: 185px;
+  left: 932px;
+  background-color: #95d5d1;
+  transform: rotate(180.00deg);
+}
+
+.meet-the-horses .group-3 {
+  position: absolute;
+  width: 341px;
+  height: 304px;
+  top: 113px;
+  left: 124px;
+}
+
+.meet-the-horses .group-4 {
+  position: absolute;
+  width: 240px;
+  height: 48px;
+  top: 0;
+  left: 0;
+}
+
+.meet-the-horses .star {
+  left: 1px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.meet-the-horses .star-2 {
+  left: 49px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.meet-the-horses .star-3 {
+  left: 97px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.meet-the-horses .star-4 {
+  left: 145px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.meet-the-horses .star-5 {
+  left: 193px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.meet-the-horses .overlap-group-2 {
+  position: absolute;
+  width: 337px;
+  height: 244px;
+  top: 60px;
+  left: 0;
+}
+
+.meet-the-horses .text-wrapper-14 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.meet-the-horses .rectangle-4 {
+  position: absolute;
+  width: 2px;
+  height: 70px;
+  top: 13px;
+  left: 36px;
+  background-color: #95d5d1;
+  transform: rotate(-90.00deg);
+}
+
+.meet-the-horses .text-wrapper-15 {
+  position: absolute;
+  width: 333px;
+  top: 68px;
+  left: 4px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.meet-the-horses .group-5 {
+  position: absolute;
+  width: 341px;
+  height: 304px;
+  top: 113px;
+  left: 551px;
+}
+
+.meet-the-horses .group-6 {
+  position: absolute;
+  width: 341px;
+  height: 304px;
+  top: 113px;
+  left: 978px;
+}
+
+.meet-the-horses .chevron-left {
+  position: absolute;
+  width: 57px;
+  height: 57px;
+  top: 241px;
+  left: 1357px;
+}
+
+.meet-the-horses .vector {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  top: 247px;
+  left: 25px;
+}
+
+.meet-the-horses .contact-section {
+  position: absolute;
+  width: 1140px;
+  height: 438px;
+  top: 1647px;
+  left: 126px;
+}
+
+.meet-the-horses .image-9 {
+  width: 608px;
+  height: 486px;
+  top: -15px;
+  left: -15px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.meet-the-horses .overlap-6 {
+  position: absolute;
+  width: 703px;
+  height: 928px;
+  top: -162px;
+  left: 611px;
+}
+
+.meet-the-horses .overlap-7 {
+  position: absolute;
+  width: 703px;
+  height: 928px;
+  top: 0;
+  left: 0;
+}
+
+.meet-the-horses .image-10 {
+  width: 508px;
+  height: 928px;
+  left: 195px;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+}
+
+.meet-the-horses .phone {
+  position: absolute;
+  width: 499px;
+  top: 440px;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.meet-the-horses .element-ave-NE {
+  position: absolute;
+  width: 285px;
+  top: 247px;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.meet-the-horses .text-wrapper-16 {
+  position: absolute;
+  top: 193px;
+  left: 0;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.meet-the-horses .text-wrapper-17 {
+  position: absolute;
+  top: 386px;
+  left: 0;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.meet-the-horses .footer-section {
+  position: absolute;
+  width: 1441px;
+  height: 263px;
+  top: 5714px;
+  left: -2px;
+}
+
+.meet-the-horses .overlap-8 {
+  position: relative;
+  width: 1442px;
+  height: 374px;
+  top: -87px;
+  left: -1px;
+}
+
+.meet-the-horses .rectangle-5 {
+  position: absolute;
+  width: 1442px;
+  height: 288px;
+  top: 86px;
+  left: 0;
+  background-color: #95d5d1;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.meet-the-horses .image-11 {
+  width: 197px;
+  height: 197px;
+  left: 623px;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+}
+
+.meet-the-horses .group-7 {
+  position: absolute;
+  width: 287px;
+  height: 132px;
+  top: 211px;
+  left: 579px;
+}
+
+.meet-the-horses .overlap-group-3 {
+  position: relative;
+  width: 285px;
+  height: 132px;
+}
+
+.meet-the-horses .follow-us-on-social {
+  position: absolute;
+  width: 285px;
+  top: 0;
+  left: 0;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.meet-the-horses .ic-outline-facebook {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 66px;
+  left: 79px;
+}
+
+.meet-the-horses .mdi-instagram {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 66px;
+  left: 150px;
+}
+
+.meet-the-horses .about-owner-facility {
+  position: absolute;
+  width: 225px;
+  top: 164px;
+  left: 142px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.meet-the-horses .span {
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+}
+
+.meet-the-horses .text-wrapper-18 {
+  font-size: 24px;
+}
+
+.meet-the-horses .services-programs {
+  position: absolute;
+  width: 225px;
+  top: 164px;
+  left: 408px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.meet-the-horses .events-show-schedule {
+  position: absolute;
+  width: 225px;
+  top: 164px;
+  left: 904px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.meet-the-horses .text-wrapper-19 {
+  position: absolute;
+  width: 225px;
+  top: 164px;
+  left: 1130px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+
+/* Content merged from style.css on 2025-05-15 11:24:15 */
+
+.programs {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.programs .div {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 1440px;
+  height: 5222px;
+  position: relative;
+}
+
+.programs .navigation {
+  position: absolute;
+  width: 1440px;
+  height: 196px;
+  top: 0;
+  left: 0;
+}
+
+.programs .image {
+  width: 109px;
+  height: 109px;
+  top: 10px;
+  left: 314px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.programs .text-wrapper {
+  position: absolute;
+  top: 47px;
+  left: 472px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.programs .text-wrapper-2 {
+  position: absolute;
+  top: 47px;
+  left: 596px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.programs .text-wrapper-3 {
+  position: absolute;
+  top: 47px;
+  left: 737px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.programs .text-wrapper-4 {
+  position: absolute;
+  top: 47px;
+  left: 862px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.programs .text-wrapper-5 {
+  position: absolute;
+  top: 47px;
+  left: 1006px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.programs .overlap {
+  position: absolute;
+  width: 663px;
+  height: 911px;
+  top: 196px;
+  left: 0;
+}
+
+.programs .img {
+  width: 648px;
+  height: 895px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.programs .IMG {
+  top: 60px;
+  position: absolute;
+  width: 552px;
+  height: 403px;
+  left: 111px;
+  object-fit: cover;
+}
+
+.programs .IMG-2 {
+  top: 508px;
+  position: absolute;
+  width: 552px;
+  height: 403px;
+  left: 111px;
+  object-fit: cover;
+}
+
+.programs .text-wrapper-6 {
+  position: absolute;
+  width: 347px;
+  top: 270px;
+  left: 824px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.programs .text-wrapper-7 {
+  position: absolute;
+  width: 347px;
+  top: 718px;
+  left: 824px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.programs .overlap-group {
+  position: absolute;
+  width: 703px;
+  height: 1026px;
+  top: 1076px;
+  left: 737px;
+}
+
+.programs .text-wrapper-8 {
+  position: absolute;
+  width: 469px;
+  top: 90px;
+  left: 26px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.programs .text-wrapper-9 {
+  position: absolute;
+  width: 469px;
+  top: 648px;
+  left: 26px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.programs .element-per-hour-student {
+  position: absolute;
+  width: 574px;
+  top: 153px;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 35px;
+}
+
+.programs .p {
+  position: absolute;
+  width: 574px;
+  top: 711px;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 35px;
+}
+
+.programs .image-2 {
+  width: 586px;
+  height: 895px;
+  top: 0;
+  left: 117px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.programs .text-wrapper-10 {
+  position: absolute;
+  width: 469px;
+  top: 2177px;
+  left: 763px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.programs .element-per-hour {
+  position: absolute;
+  width: 574px;
+  top: 333px;
+  left: 737px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 35px;
+}
+
+.programs .element-per-lesson {
+  position: absolute;
+  width: 574px;
+  top: 781px;
+  left: 737px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 35px;
+}
+
+.programs .customizable {
+  position: absolute;
+  width: 574px;
+  top: 2240px;
+  left: 737px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 35px;
+}
+
+.programs .IMG-3 {
+  top: 1152px;
+  position: absolute;
+  width: 552px;
+  height: 403px;
+  left: 111px;
+  object-fit: cover;
+}
+
+.programs .IMG-4 {
+  top: 1710px;
+  position: absolute;
+  width: 552px;
+  height: 403px;
+  left: 111px;
+  object-fit: cover;
+}
+
+.programs .IMG-5 {
+  top: 2163px;
+  position: absolute;
+  width: 552px;
+  height: 403px;
+  left: 111px;
+  object-fit: cover;
+}
+
+.programs .group {
+  position: absolute;
+  width: 1442px;
+  height: 2544px;
+  top: 2663px;
+  left: 0;
+}
+
+.programs .events-section {
+  position: absolute;
+  width: 1440px;
+  height: 575px;
+  top: 0;
+  left: 1px;
+}
+
+.programs .overlap-2 {
+  position: relative;
+  height: 575px;
+  left: -1px;
+}
+
+.programs .image-3 {
+  width: 722px;
+  height: 575px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.programs .image-4 {
+  width: 719px;
+  height: 575px;
+  top: 0;
+  left: 721px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.programs .overlap-group-wrapper {
+  position: absolute;
+  width: 430px;
+  height: 86px;
+  top: 241px;
+  left: 152px;
+}
+
+.programs .div-wrapper {
+  position: relative;
+  width: 428px;
+  height: 86px;
+  background-color: #ffffffbf;
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px 5px #95d5d1b2;
+}
+
+.programs .text-wrapper-11 {
+  position: absolute;
+  top: 24px;
+  left: 102px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.programs .overlap-wrapper {
+  position: absolute;
+  width: 430px;
+  height: 86px;
+  top: 245px;
+  left: 883px;
+}
+
+.programs .text-wrapper-12 {
+  position: absolute;
+  top: 24px;
+  left: 97px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.programs .gallery-section {
+  position: absolute;
+  width: 1441px;
+  height: 519px;
+  top: 575px;
+  left: 0;
+  background-color: #111111;
+}
+
+.programs .image-5 {
+  width: 321px;
+  height: 217px;
+  top: 89px;
+  left: 135px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.programs .image-6 {
+  width: 321px;
+  height: 217px;
+  top: 89px;
+  left: 560px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.programs .image-7 {
+  width: 321px;
+  height: 217px;
+  top: 89px;
+  left: 983px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.programs .group-2 {
+  position: absolute;
+  width: 430px;
+  height: 86px;
+  top: 366px;
+  left: 506px;
+}
+
+.programs .text-wrapper-13 {
+  position: absolute;
+  top: 24px;
+  left: 99px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.programs .testimonials-section {
+  position: absolute;
+  width: 1441px;
+  height: 519px;
+  top: 1094px;
+  left: 0;
+}
+
+.programs .text-wrapper-14 {
+  position: absolute;
+  top: 21px;
+  left: 634px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.programs .rectangle {
+  width: 2px;
+  height: 150px;
+  top: 185px;
+  left: 505px;
+  transform: rotate(180.00deg);
+  position: absolute;
+  background-color: #95d5d1;
+}
+
+.programs .rectangle-2 {
+  width: 2px;
+  height: 150px;
+  top: 185px;
+  left: 932px;
+  transform: rotate(180.00deg);
+  position: absolute;
+  background-color: #95d5d1;
+}
+
+.programs .group-3 {
+  position: absolute;
+  width: 341px;
+  height: 304px;
+  top: 113px;
+  left: 124px;
+}
+
+.programs .group-4 {
+  position: absolute;
+  width: 240px;
+  height: 48px;
+  top: 0;
+  left: 0;
+}
+
+.programs .star {
+  left: 1px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.programs .star-2 {
+  left: 49px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.programs .star-3 {
+  left: 97px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.programs .star-4 {
+  left: 145px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.programs .star-5 {
+  left: 193px;
+  position: absolute;
+  width: 46px;
+  height: 43px;
+  top: 0;
+}
+
+.programs .overlap-group-2 {
+  position: absolute;
+  width: 337px;
+  height: 244px;
+  top: 60px;
+  left: 0;
+}
+
+.programs .text-wrapper-15 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.programs .rectangle-3 {
+  width: 2px;
+  height: 70px;
+  top: 13px;
+  left: 36px;
+  transform: rotate(-90.00deg);
+  position: absolute;
+  background-color: #95d5d1;
+}
+
+.programs .text-wrapper-16 {
+  position: absolute;
+  width: 333px;
+  top: 68px;
+  left: 4px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.programs .group-5 {
+  position: absolute;
+  width: 341px;
+  height: 304px;
+  top: 113px;
+  left: 551px;
+}
+
+.programs .group-6 {
+  position: absolute;
+  width: 341px;
+  height: 304px;
+  top: 113px;
+  left: 978px;
+}
+
+.programs .chevron-left {
+  position: absolute;
+  width: 57px;
+  height: 57px;
+  top: 241px;
+  left: 1357px;
+}
+
+.programs .vector {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  top: 247px;
+  left: 25px;
+}
+
+.programs .contact-section {
+  position: absolute;
+  width: 1140px;
+  height: 438px;
+  top: 1647px;
+  left: 126px;
+}
+
+.programs .image-8 {
+  width: 608px;
+  height: 486px;
+  top: -15px;
+  left: -15px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.programs .overlap-3 {
+  position: absolute;
+  width: 703px;
+  height: 928px;
+  top: -162px;
+  left: 611px;
+}
+
+.programs .overlap-4 {
+  position: absolute;
+  width: 703px;
+  height: 928px;
+  top: 0;
+  left: 0;
+}
+
+.programs .image-9 {
+  width: 508px;
+  height: 928px;
+  left: 195px;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+}
+
+.programs .phone {
+  position: absolute;
+  width: 499px;
+  top: 440px;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.programs .element-ave-NE {
+  width: 285px;
+  top: 247px;
+  font-family: "Inter", Helvetica;
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.programs .text-wrapper-17 {
+  top: 193px;
+  font-family: "Marcellus SC", Helvetica;
+  font-size: 30px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.programs .text-wrapper-18 {
+  position: absolute;
+  top: 386px;
+  left: 0;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.programs .footer-section {
+  position: absolute;
+  width: 1441px;
+  height: 263px;
+  top: 2281px;
+  left: 1px;
+}
+
+.programs .overlap-5 {
+  position: relative;
+  width: 1442px;
+  height: 374px;
+  top: -87px;
+  left: -1px;
+}
+
+.programs .rectangle-4 {
+  width: 1442px;
+  height: 288px;
+  top: 86px;
+  left: 0;
+  border: 1px solid;
+  border-color: #000000;
+  position: absolute;
+  background-color: #95d5d1;
+}
+
+.programs .image-10 {
+  width: 197px;
+  height: 197px;
+  left: 623px;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+}
+
+.programs .group-7 {
+  position: absolute;
+  width: 287px;
+  height: 132px;
+  top: 211px;
+  left: 579px;
+}
+
+.programs .overlap-group-3 {
+  position: relative;
+  width: 285px;
+  height: 132px;
+}
+
+.programs .follow-us-on-social {
+  position: absolute;
+  width: 285px;
+  top: 0;
+  left: 0;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.programs .ic-outline-facebook {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 66px;
+  left: 79px;
+}
+
+.programs .mdi-instagram {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 66px;
+  left: 150px;
+}
+
+.programs .about-owner-facility {
+  position: absolute;
+  width: 225px;
+  top: 164px;
+  left: 142px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.programs .span {
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+}
+
+.programs .text-wrapper-19 {
+  font-size: 24px;
+}
+
+.programs .services-programs {
+  position: absolute;
+  width: 225px;
+  top: 164px;
+  left: 408px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.programs .events-show-schedule {
+  position: absolute;
+  width: 225px;
+  top: 164px;
+  left: 904px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.programs .text-wrapper-20 {
+  position: absolute;
+  width: 225px;
+  top: 164px;
+  left: 1130px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+
+
+.gallery-section {
+  position: relative;
+  width: 1441px;
+  height: 519px;
+  background-color: #111111;
+}
+
+.gallery-section .image {
+  left: 135px;
+  position: absolute;
+  width: 321px;
+  height: 217px;
+  top: 89px;
+  object-fit: cover;
+}
+
+.gallery-section .img {
+  position: absolute;
+  width: 321px;
+  height: 217px;
+  top: 89px;
+  left: 560px;
+  object-fit: cover;
+}
+
+.gallery-section .image-2 {
+  left: 983px;
+  position: absolute;
+  width: 321px;
+  height: 217px;
+  top: 89px;
+  object-fit: cover;
+}
+
+.gallery-section .group {
+  position: absolute;
+  width: 430px;
+  height: 86px;
+  top: 366px;
+  left: 506px;
+}
+
+.gallery-section .overlap-group {
+  position: relative;
+  width: 428px;
+  height: 86px;
+  background-color: #ffffffbf;
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px 5px #95d5d1b2;
+}
+
+.gallery-section .text-wrapper {
+  position: absolute;
+  top: 24px;
+  left: 99px;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+
+/* ensure .group elements behave like your other buttons */
+.group {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none; /* remove underline */
+}
+
+/* tint the text on hover */
+.group:hover .text-wrapper {
+  color: #4a90e2;
+  transition: color 0.2s ease;
+}
+
+/* remove the page-wide mask behind just the gallery button */
+.gallery-section .overlap-group {
+  background-image: none;
+  /* re-apply the white-tint background that the button needs: */
+  background-color: #ffffffbf;
+  border-radius: 50px;            /* match your pill shape */
+  box-shadow: 0px 0px 10px 5px #95d5d1b2;
+}
+
+.instagram-link {
+  display: inline-block;
+}
+.instagram-link .mdi-instagram {
+  transition: filter 0.2s ease;
+  cursor: pointer;
+}
+.instagram-link:hover .mdi-instagram {
+  /* filter to approximate #4A90E2 */
+  filter: brightness(0) invert(36%) sepia(95%) saturate(2730%) hue-rotate(185deg) brightness(99%) contrast(102%);
+}
+
+.facebook-link {
+  display: inline-block;
+}
+
+.facebook-link .ic-outline-facebook {
+  cursor: pointer;
+  transition: filter 0.2s ease;
+}
+
+.facebook-link:hover .ic-outline-facebook {
+  /* same light‐blue tint filter as your other buttons */
+  filter: brightness(0) invert(36%) sepia(95%) saturate(2730%) hue-rotate(185deg) brightness(99%) contrast(102%);
+}
+
+/* Trainers text tint on hover */
+.group:hover .text-wrapper-6 {
+  color: #4a90e2;
+  transition: color 0.2s ease;
+}
+
+.group, .overlap-wrapper, .overlap-group-wrapper {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.group:hover .text-wrapper-7,
+.overlap-wrapper:hover .text-wrapper-8,
+.overlap-group-wrapper:hover .text-wrapper-9 {
+  color: #4a90e2;
+  transition: color 0.2s ease;
+}
+
+/* Ensure links look like the surrounding text */
+.link-facility,
+.link-meet {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+/* Blue tint on hover */
+.link-facility:hover,
+.link-meet:hover {
+  color: #4a90e2;
+}
+
+/* Base link styles to match surrounding text */
+.services-programs .text-wrapper-21 a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+/* Blue tint on hover */
+.services-programs .text-wrapper-21 a:hover {
+  color: #4a90e2;
+}
+
+.element-ave-NE a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.element-ave-NE a:hover {
+  color: #4a90e2;
+}
+
+/* Base style for phone/email links */
+.contact-info .phone a {
+  color: #000; /* black by default */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+/* Blue tint on hover */
+.contact-info .phone a:hover {
+  color: #4a90e2; /* your desired blue tint */
+}
+
+.div-wrapper-link,
+.div-wrapper-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #000; /* default black */
+  transition: color 0.2s ease;
+}
+
+/* Make the nested text turn blue on hover */
+.div-wrapper-link:hover .text-wrapper-8,
+.div-wrapper-button:hover .text-wrapper-8 {
+  color: #4a90e2; /* your desired blue tint */
+  transition: color 0.2s ease;
+}
+
+/* Make the entire block clickable, inherit site font/color */
+.overlap-wrapper-link {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hover effect: blue tint on text */
+.overlap-wrapper-link:hover .text-wrapper-9 {
+  color: #4a90e2;
+  transition: color 0.2s ease;
+}
+
+.group-14-link {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hover tint for text */
+.group-14-link:hover .text-wrapper-10 {
+  color: #4a90e2;
+  transition: color 0.2s ease;
+}
+
+/* Ensure phone/email links are black by default */
+.contact-info .phone a {
+  color: #000 !important;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+/* Apply blue tint on hover */
+.contact-info .phone a:hover {
+  color: #4a90e2 !important;
+}
+
+.text-wrapper-17,
+.text-wrapper-18 {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.text-wrapper-17:hover,
+.text-wrapper-18:hover {
+  color: #4a90e2;
+}
+
+.link-owner,
+.link-owner:visited,
+.link-facility,
+.link-facility:visited,
+.link-meet,
+.link-meet:visited {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.link-owner:hover,
+.link-facility:hover,
+.link-meet:hover {
+  color: #4a90e2;
+}
+
+.text-wrapper-22,
+.text-wrapper-22:visited {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.text-wrapper-22:hover {
+  color: #4a90e2;
+}
+
+.text-wrapper-21,
+.text-wrapper-21:visited {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.text-wrapper-21:hover {
+  color: #4a90e2;
+}
+
+.flyer-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.flyer-link:hover .text-wrapper-7 {
+  color: #4a90e2;
+  transition: color 0.2s ease;
+}
+
+.text-wrapper-15,
+.text-wrapper-15:visited {
+  color: #000 !important;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+
+.text-wrapper-16,
+.text-wrapper-16:visited {
+  color: #000 !important;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.text-wrapper-16:hover {
+  color: #4a90e2 !important;
+}
+
+.events-calendar-link {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+}
+
+.events-calendar-link:hover .text-wrapper-7 {
+  color: #4a90e2;
+  transition: color 0.2s ease;
+}
+
+.gallery-link {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+}
+
+.gallery-link:hover .text-wrapper-9 {
+  color: #4a90e2;
+  transition: color 0.2s ease;
+}
+
+.horse-description {
+  font-family: "Inter", Helvetica, sans-serif;
+  font-size: 20px;
+  color: #000;
+  line-height: 35px;
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+.tall-dark-handsome,
+.safe-and-kind,
+.available-for-lease {
+  font-family: "Inter", Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: left;
+  color: #000;
+}
+
+.lease-sale-link {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.lease-sale-link:hover .text-wrapper-11 {
+  color: #4a90e2;
+  transition: color 0.2s ease;
+}
+
+.visit-gallery-link {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.visit-gallery-link:hover .text-wrapper-12 {
+  color: #4a90e2;
+  transition: color 0.2s ease;
+}
+
+.services-programs .text-wrapper-21 a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.services-programs .text-wrapper-21 a:hover {
+  color: #4a90e2;
+}
+
+.overlap-wrapper:hover .text-wrapper-10 {
+  color: #4a90e2;
+  transition: color 0.2s ease;
+}
+
+.group-2:hover .text-wrapper-11 {
+  color: #4a90e2;
+  transition: color 0.2s ease;
+}
+
+/* Phone/email links tint on hover */
+.phone a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.phone a:hover {
+  color: #4a90e2;
+}
+
+/* Push it below the "Contact Info" title and enlarge text */
+.lease-sale-horses .phone {
+  position: absolute;
+  top: 440px;       /* adjust this so it sits right under the Contact Info label */
+  left: 0px;       /* fine-tune horizontally to align with the heading */
+  width: 400px;      /* shrink or grow to taste */
+  font-size: 24px;   /* up from 16px */
+  line-height: 1.4;  /* give a bit more breathing room */
+  text-align: left;  /* match the rest of your contact section */
+}
+
+.group-10:hover .text-wrapper-15 {
+  color: #4a90e2 !important;
+  transition: color 0.2s ease;
+}
+
+.group-10 {
+  display: inline-block;
+  width: 430px;
+  height: 86px;
+  cursor: pointer;
+}
+
+.group-11:hover .text-wrapper-16 {
+  color: #4a90e2 !important;
+  transition: color 0.2s ease;
+}
+
+.lease-sale-horses {
+  position: relative !important;
+  z-index: 10 !important;
+  color: black !important;
+}
+
+.lease-sale-horses {
+  position: relative !important;
+  z-index: 2 !important;
+  color: rgb(255, 255, 255) !important;
+  background-color: rgba(180, 230, 228, 0) !important; /* Tiffany gradient base */
+  padding: 0px 20px;
+  display: inline-block;
+  font-family: "Marcellus SC", serif;
+  font-size: 24px;
+  top: 2px !important;
+  line-height: 1 !important;
+  left: 41px !important;
+
+}
+
+.group-2 {
+  pointer-events: none !important;
+  cursor: default !important;
+}
+
+.lease-sale-horses {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+/* 1. Disable all pointer events and pointer cursor by default */
+.group * {
+  pointer-events: none;
+  cursor: default;
+}
+
+/* 2. Re-enable pointer events and cursor only for actual links and their children */
+.group a,
+.group a *,
+.group .div-wrapper,
+.group .div-wrapper * {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.footer-section .about-owner-facility a.text-wrapper-15:hover {
+  color: #4a90e2 !important;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-section .services-programs a.text-wrapper-15:hover {
+  color: #4a90e2 !important;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-section .events-show-schedule a.text-wrapper-15:hover {
+  color: #4a90e2 !important;
+  transition: color 0.2s ease-in-out;
+}
+
+
+.lease-sale-horses .group {
+  cursor: default;
+}
+
+.group-9 {
+  top: 1890px !important; /* or adjust to your liking */
+  position: absolute !important;
+}
+
+.currently-at-2 {
+  position: relative; /* or absolute if you want pixel-perfect control */
+  top: 1760px !important; /* adjust this value to move up/down */
+  left: 0; /* adjust if needed */
+  font-family: "Inter", Helvetica;
+  font-size: 20px;
+  color: #000000;
+  line-height: 1.4;
+}
+
+.available-for-lease-2 {
+
+  position: relative;
+  top: 1500px !important; /* adjust this value to move up/down */
+  left: 0; /* adjust if needed */
+  font-family: "Inter", Helvetica;
+  font-size: 22px;
+  color: #000000;
+  line-height: 1.4;
+}
+
+.text-wrapper-20 {
+  position: relative; /* use 'absolute' if it's in an absolutely positioned container */
+  top: 1450px !important;           /* adjust this value to move it down or up */
+  left: 0;             /* adjust if needed for horizontal movement */
+  font-family: "Marcellus SC", serif;
+  font-size: 30px;
+  color: #000000;
+  line-height: normal;
+  letter-spacing: 0;
+}
+
+.safe-and-kind-2 {
+
+  position: relative;
+  top: 1270px !important; /* adjust this value to move up/down */
+  left: 0; /* adjust if needed */
+  font-family: "Inter", Helvetica;
+  font-size: 22px;
+  color: #000000;
+  line-height: 1.4;
+}
+
+.text-wrapper-19 {
+   position: relative; /* use 'absolute' if it's in an absolutely positioned container */
+  top: 1220px !important; /* adjust this value to move it down or up */
+}
+
+.meet-the-horses .group {
+
+  cursor: default;
+}
+
+.meet-the-horses .footer-section {
+  top: 2300px !important; /* Match homepage/trainers positioning */
+}
+.meet-the-horses .div {
+  overflow: visible; /* Prevent clipping */
+}
+
+.meet-the-horses .text-wrapper-19 {
+  top: 160px !important;
+ 
+}
+
+.meet-the-horses .about-owner-facility .text-wrapper-17:nth-child(2) { /* Owner */
+  top: 45px !important; /* Adjust this value to move it down or up */
+  font-size: 25px !important; /* Adjust font size if needed */
+
+}
+
+.meet-the-horses .about-owner-facility .text-wrapper-17:nth-child(4) { 
+  top: 79px !important; 
+  font-size: 25px !important; /* Adjust font size if needed */
+  left: 0;
+}
+
+.meet-the-horses .about-owner-facility .text-wrapper-17:nth-child(6) { /* Meet The Horses */
+  top: 115px !important;
+  font-size: 25px !important;
+  left: 0;
+}
+
+.meet-the-horses .services-programs .text-wrapper-17:nth-child(2) { /* Programs */
+  top: 45px !important; /* Adjust this value to move it down or up */
+  font-size: 25px !important; /* Adjust font size if needed */
+  left: 0;
+}
+
+.meet-the-horses .services-programs .text-wrapper-17:nth-child(4) { /* Lease/Sale Horses */
+  top: 81px !important;
+  font-size: 25px !important; /* Adjust font size if needed */
+  left: 0;
+}
+
+.meet-the-horses .events-show-schedule .text-wrapper-17:nth-child(2) { /* Show Schedule */
+  top: 45px !important; 
+  font-size: 25px !important; 
+} 
+
+.meet-the-horses .events-show-schedule .text-wrapper-17:nth-child(4) { /* Pony Camps */
+  top: 81px !important;
+  left: 0;
+  font-size: 25px !important;
+}
+
+.meet-the-horses .text-wrapper-19:hover {
+  color: #4a90e2;
+  transition: color 0.2s ease-in-out;
+}
+
+.meet-the-horses .overlap-group-wrapper .events-calendar-link:hover .text-wrapper-10 {
+  color: #4a90e2;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Restrict hover effect to the Programs button */
+.overlap-group-wrapper {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.overlap-group-wrapper:hover .text-wrapper-10 {
+  color: #4a90e2 !important;
+  transition: color 0.2s ease;
+}
+
+/* Prevent parent elements from affecting the button */
+.overlap-5:hover .text-wrapper-10,
+.overlap-6:hover .text-wrapper-10 {
+  cursor: default;
+}
+
+
+.text-wrapper-14:hover {
+  color: #4a90e2 !important;
+  cursor: pointer;
+}
+
+/* Ensure the Programs element shows a clickable cursor */
+.text-wrapper-10 {
+  cursor: pointer !important;
+}
+
+/* Override group-2's pointer-events: none for text-wrapper-10 */
+.group-2 .text-wrapper-10 {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+/* Ensure hover effect for clickable appearance */
+.text-wrapper-10:hover {
+  color: #4a90e2 !important;
+  transition: color 0.2s ease;
+}
+.group-9 {
+  position: absolute !important;
+  top: 1px !important; /* Adjusted to overlay the large horse image */
+  left: 150px !important; /* Aligned with the right side of the large image */
+  width: 385px;
+  height: 38px;
+  z-index: 1000 !important; /* Ensure it appears above other elements */
+}
+
+.lease-sale-horses {
+  position: relative !important;
+  z-index: 10 !important;
+  color: #ffffff !important;
+  background-color: rgba(180, 230, 228, 0) !important;
+  padding: 0px 20px;
+  display: inline-block;
+  font-family: "Marcellus SC", serif;
+  font-size: 24px;
+  top: 2px !important;
+  line-height: 1 !important;
+  left: 41px !important;
+}
+
+.rectangle-10 {
+  position: absolute;
+  width: 2px;
+  height: 50px;
+  top: -4px;
+  left: 357px;
+  background-color: #ffffff;
+  transform: rotate(-90.00deg);
+}
+
+.rectangle-11 {
+  position: absolute;
+  width: 2px;
+  height: 50px;
+  top: -4px;
+  left: 24px;
+  background-color: #ffffff;
+  transform: rotate(-90.00deg);
+}
+
+.programs a.event-link:hover .text-wrapper-11 {
+  color: #4a90e2;
+  transition: color 0.2s ease;
+}
+
+.programs a.programs-lease-link:hover .text-wrapper-12 {
+  color: #4a90e2;
+  transition: color 0.2s ease;
+}
+
+.programs a.programs-gallery-link:hover .text-wrapper-13 {
+  color: #4a90e2;
+  transition: color 0.2s ease;
+}
+
+.programs .about-owner-facility a.footer-link-owner {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-size: 24px !important;
+}
+
+.programs .about-owner-facility a.footer-link-owner:hover {
+  color: #4a90e2;
+}
+
+.programs .services-programs a.footer-link-services {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-size: 24px !important;
+}
+
+.programs .services-programs a.footer-link-services:hover {
+  color: #4a90e2;
+}
+
+.programs .events-show-schedule a.footer-link-events {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.2s ease;
+   font-size: 24px !important;
+}
+
+.programs .events-show-schedule a.footer-link-events:hover {
+  color: #4a90e2;
+}
+
+.programs a.footer-gallery-link {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.programs a.footer-gallery-link:hover {
+  color: #4a90e2;
+}
+
+.programs a.footer-gallery-link.text-wrapper-20 {
+  top: 155px !important; /* Adjust this value as needed */
+}
+
+.programs .group {
+
+  cursor: default;
+}
+
+.trainers .about-owner-facility a.trainer-footer-link {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-size: 24px !important;
+}
+
+.trainers .about-owner-facility a.trainer-footer-link:hover {
+  color: #4a90e2;
+}
+
+.trainers .services-programs a.trainer-footer-link {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-size: 24px !important;
+}
+
+.trainers .services-programs a.trainer-footer-link:hover {
+  color: #4a90e2;
+}
+
+.trainers .events-show-schedule a.trainer-footer-link {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-size: 24px !important;
+}
+
+.trainers .events-show-schedule a.trainer-footer-link:hover {
+  color: #4a90e2;
+}
+
+.trainers a.trainer-footer-link {
+  display: inline; /* ensures only the text is clickable */
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.trainers a.trainer-footer-link:hover {
+  color: #4a90e2;
+}
+
+.event-schedule .group-9 {
+  position: relative;
+  top: 873px !important; /* adjust as needed */
+  left: 968px !important; /* adjust as needed */
+}
+
+
+
+
+
+
+
+

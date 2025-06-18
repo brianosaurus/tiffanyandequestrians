@@ -1,0 +1,100 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Marcellus+SC:400|Inter:400");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  color: #4a90e2; /* light blue */
+  transition: color 0.2s ease-in-out;
+}
+
+.navigation {
+  background: linear-gradient(to bottom, rgba(180, 230, 228, 0.8), rgba(255, 255, 255, 0.6));
+  backdrop-filter: blur(2px); /* Optional for extra softness */
+}
+
+.group-10,
+.group-11 {
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Text tint on hover */
+.group-10:hover .text-wrapper-15,
+.group-11:hover .text-wrapper-16 {
+  color: #4a90e2;
+  transition: color 0.2s ease;
+}
+
+.overlap-group-wrapper {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.overlap-group-wrapper > .overlap-group-2:hover > .text-wrapper-10 {
+  color: #4a90e2 !important;
+  transition: color 0.2s ease;
+}
+
+
+/* make the rectangle+text a self-contained button */
+.button {
+  display: inline-block;
+  position: relative;   /* so absolutely positioned children still align */
+  text-decoration: none; /* remove underline */
+  cursor: pointer;
+}
+
+/* if .rectangle-5 and .text-wrapper-10 rely on absolute positioning,
+   they will still work inside .button */
+
+/* blue-text hover effect */
+.button:hover .text-wrapper-10 {
+  color: #4a90e2;
+  transition: color 0.2s ease;
+}
+
+.mdi-instagram {
+  cursor: pointer;
+}
+
+
+.lease-sale-horses .phone {
+  position: absolute;
+  width: 499px;
+  top: 53px;
+  left: 472px;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  /* …etc… */
+}
+
+.group-2 .text-wrapper-10,
+.group-2 .text-wrapper-10:hover {
+  color: white !important;
+  pointer-events: none;
+}
+
+.group-2 {
+  pointer-events: none !important;
+}
+
+
+
+
+
