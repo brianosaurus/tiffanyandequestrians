@@ -1,113 +1,208 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="global-style.css" />
-  </head>
-  <body>
-    <div class="homepage" data-model-id="2:2">
-      <div class="div">
-        <div class="overlap">
-          <div class="navigation">
-            <img class="image" src="img/image-1.png" />
-              <a href="index.html" class="text-wrapper">About</a>
-              <a href="programs.html" class="text-wrapper-2">Services</a>
-              <a href="events.html" class="text-wrapper-3">Events</a>
-              <a href="gallery.html" class="text-wrapper-4">Gallery</a>
-              <a href="contact.html" class="text-wrapper-5">Contact</a>
-          </div>
-        </div>
-      </div>
-        <div class="contact-section">
-          <img class="image-6" src="img/image.png" />
-          <div class="overlap-8">
-            <div class="overlap-9">
-              <img class="image-7" src="img/image-1-1.png" />
-              <address class="contact-info">
-                <p class="phone">
-                  Phone: <a href="tel:+12069002700">(206) 900-2700</a><br>
-                  Email: <a href="mailto:tiffany@tiffanyandequestrians.com">TIFFANY@TIFFANYANDEQUESTRIANS.COM</a>
-                </p>
-              </address>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Tiffany & Equestrians</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Marcellus+SC&display=swap" rel="stylesheet">
+    
+    <script>
+        // Custom Tailwind CSS configuration
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'marcellus': ['"Marcellus SC"', 'serif'],
+                        'inter': ['"Inter"', 'sans-serif']
+                    },
+                    colors: {
+                        'brand-teal': '#95D5D1',
+                        'brand-teal-dark': '#7CBFB8',
+                        'brand-gray': '#F3F4F6',
+                        'brand-dark': '#111111',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Basic body styling */
+        body {
+            font-family: 'inter', sans-serif;
+            background-color: #ffffff;
+        }
+        .text-shadow {
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+        }
+        /* Custom gradient for navigation */
+        .nav-gradient {
+            background: linear-gradient(to bottom, rgba(180, 230, 228, 0.9), rgba(255, 255, 255, 0.7));
+        }
+    </style>
+</head>
+<body class="bg-white">
 
+    <!-- Main Container -->
+    <div class="w-full max-w-screen-xl mx-auto">
 
-              <p class="element-ave-NE">
-                <a
-                  href="https://www.google.com/maps/search/?api=1&query=7620+260th+Ave+NE+Redmond+WA+98053"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  7620 260th Ave NE<br />
-                  Redmond, WA 98053
-                </a>
-              </p>
+        <!-- Header and Navigation -->
+        <header class="relative z-20 font-marcellus">
+            <nav class="nav-gradient backdrop-blur-sm shadow-md fixed top-0 left-0 right-0">
+                <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex items-center justify-between md:justify-center h-20">
+                        
+                        <!-- Desktop Centered Nav -->
+                        <div class="hidden md:flex items-center space-x-8">
+                             <a href="index.html" title="Home" class="flex-shrink-0">
+                                <img class="h-16 w-auto" src="img/image-1.png" alt="Tiffany & Equestrians Logo" onerror="this.onerror=null;this.src='https://placehold.co/109x109/FFFFFF/000000?text=Logo';">
+                            </a>
+                            <div class="flex items-baseline space-x-4">
+                                <a href="index.html" class="text-black hover:text-[#4a90e2] px-3 py-2 rounded-md text-lg">About</a>
+                                <a href="programs.html" class="text-black hover:text-[#4a90e2] px-3 py-2 rounded-md text-lg">Services</a>
+                                <a href="events.html" class="text-black hover:text-[#4a90e2] px-3 py-2 rounded-md text-lg">Events</a>
+                                <a href="gallery.html" class="text-black hover:text-[#4a90e2] px-3 py-2 rounded-md text-lg">Gallery</a>
+                                <a href="contact.html" class="text-black hover:text-[#4a90e2] px-3 py-2 rounded-md text-lg">Contact</a>
+                            </div>
+                        </div>
 
+                        <!-- Mobile Nav -->
+                        <div class="flex items-center justify-between w-full md:hidden">
+                            <a href="index.html" title="Home" class="flex-shrink-0">
+                                <img class="h-16 w-auto" src="img/image-1.png" alt="Tiffany & Equestrians Logo" onerror="this.onerror=null;this.src='https://placehold.co/109x109/FFFFFF/000000?text=Logo';">
+                            </a>
+                            <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-white hover:bg-brand-teal-dark focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                                <span class="sr-only">Open main menu</span>
+                                <svg id="menu-open-icon" class="h-6 w-6 block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                                </svg>
+                                <svg id="menu-close-icon" class="h-6 w-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Mobile Menu, show/hide based on menu state. -->
+                <div id="mobile-menu" class="md:hidden hidden">
+                    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                        <a href="index.html" class="text-black hover:bg-brand-teal hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+                        <a href="programs.html" class="text-black hover:bg-brand-teal hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                        <a href="events.html" class="text-black hover:bg-brand-teal hover:text-white block px-3 py-2 rounded-md text-base font-medium">Events</a>
+                        <a href="gallery.html" class="text-black hover:bg-brand-teal hover:text-white block px-3 py-2 rounded-md text-base font-medium">Gallery</a>
+                        <a href="contact.html" class="text-black hover:bg-brand-teal hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="pt-20">
+            <!-- Contact Section -->
+            <section class="relative min-h-[70vh] flex items-center justify-center py-12 md:py-20">
+                <!-- Background Image -->
+                <div class="absolute inset-0">
+                    <img src="img/image.png" alt="Rider on a horse" class="w-full h-full object-cover" onerror="this.onerror=null;this.src='https://placehold.co/1440x960/CCCCCC/FFFFFF?text=Contact+Background';">
+                    <div class="absolute inset-0 bg-black/30"></div>
+                </div>
+
+                <!-- Contact Info Card -->
+                <div class="relative z-10 bg-white/80 backdrop-blur-md p-8 sm:p-12 rounded-lg shadow-2xl max-w-lg w-full mx-4 text-center">
+                    <h1 class="font-marcellus text-4xl md:text-5xl text-gray-800 mb-6 text-shadow">Contact Us</h1>
+                    
+                    <div class="space-y-6 font-inter text-lg text-gray-700">
+                        <div>
+                            <h2 class="font-marcellus text-2xl text-gray-800">Address</h2>
+                            <div class="w-16 h-0.5 bg-brand-teal mx-auto my-2"></div>
+                            <a href="https://www.google.com/maps/search/?api=1&query=7620+260th+Ave+NE+Redmond+WA+98053" target="_blank" rel="noopener noreferrer" class="hover:text-brand-teal-dark transition-colors">
+                                7620 260th Ave NE<br>Redmond, WA 98053
+                            </a>
+                        </div>
+
+                        <div>
+                            <h2 class="font-marcellus text-2xl text-gray-800">Contact Info</h2>
+                            <div class="w-16 h-0.5 bg-brand-teal mx-auto my-2"></div>
+                            <p>Phone: <a href="tel:+12069002700" class="hover:text-brand-teal-dark transition-colors">(206) 900-2700</a></p>
+                            <p>Email: <a href="mailto:tiffany@tiffanyandequestrians.com" class="hover:text-brand-teal-dark transition-colors uppercase">tiffany@tiffanyandequestrians.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Footer -->
+       <footer class="bg-brand-teal text-black border-t border-black">
+            <div class="container mx-auto px-6 lg:px-8 py-8 relative">
+                <!-- Footer Logo -->
+                <div class="flex justify-center mb-6 -mt-20">
+                     <img class="h-32 w-32 bg-white rounded-full p-2 shadow-lg border-4 border-brand-teal" src="img/image-1-2@2x.png" alt="Tiffany & Equestrians Logo" onerror="this.onerror=null;this.src='https://placehold.co/197x197/FFFFFF/000000?text=Logo';">
+                </div>
+                
+                <!-- Social Media -->
+                <div class="text-center mb-8">
+                    <h3 class="font-marcellus text-2xl mb-2">Follow Us On <br class="sm:hidden">Social Media</h3>
+                    <div class="flex justify-center space-x-6">
+                        <a href="https://facebook.com/tpmaulden" target="_blank" rel="noopener noreferrer" class="text-black hover:text-white transition-colors">
+                           <img src="img/ic-outline-facebook.png" alt="Facebook" class="h-10 w-10" onerror="this.onerror=null;this.src='https://placehold.co/50x50/000000/FFFFFF?text=F';">
+                        </a>
+                        <a href="https://instagram.com/tiffany_and_eq" target="_blank" rel="noopener noreferrer" class="text-black hover:text-white transition-colors">
+                           <img src="img/mdi-instagram.png" alt="Instagram" class="h-10 w-10" onerror="this.onerror=null;this.src='https://placehold.co/50x50/000000/FFFFFF?text=I';">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Footer Links -->
+                 <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center font-marcellus text-lg leading-loose">
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">About</h4>
+                        <a href="trainers.html" class="block hover:text-white">Owner</a>
+                        <a href="facility.html" class="block hover:text-white">Facility</a>
+                        <a href="meet-the-horses.html" class="block hover:text-white">Meet The Horses</a>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Services</h4>
+                        <a href="programs.html" class="block hover:text-white">Programs</a>
+                        <a href="lease-sale-horses.html" class="block hover:text-white">Lease/Sale horses</a>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Events</h4>
+                        <a href="events.html" class="block hover:text-white">Show Schedule</a>
+                        <a href="pony-camps.html" class="block hover:text-white">Pony Camps</a>
+                    </div>
+                     <div>
+                        <h4 class="text-xl font-bold mb-2">Gallery</h4>
+                        <a href="gallery.html" class="block hover:text-white">Visit Gallery</a>
+                    </div>
+                </div>
+                 <!-- Contact Info -->
+                <div class="mt-10 pt-6 border-t border-black/20 text-center font-inter text-sm">
+                     <p class="font-bold"><a href="https://www.google.com/maps/search/?api=1&query=7620+260th+Ave+NE+Redmond+WA+98053" target="_blank" rel="noopener noreferrer" class="hover:text-white">7620 260th Ave NE, Redmond, WA 98053</a></p>
+                     <p>Phone: <a href="tel:+12069002700" class="hover:text-white">(206) 900-2700</a> | Email: <a href="mailto:tiffany@tiffanyandequestrians.com" class="hover:text-white uppercase">tiffany@tiffanyandequestrians.com</a></p>
+                </div>
             </div>
-            <!--div class="text-wrapper-19">Address</div>
-            <div class="text-wrapper-20">Contact Info</div-->
-          </div>
-        </div>
-        <div class="footer-section">
-          <div class="overlap-10">
-            <div class="rectangle-16"></div>
-            <img class="image-8" src="img/image-1-2@2x.png" />
-            <div class="group-16">
-              <div class="overlap-group-5">
-                <p class="follow-us-on-social">Follow Us On <br />Social Media</p>
-                <a
-                  href="https://facebook.com/tpmaulden"
-                  class="facebook-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    class="ic-outline-facebook"
-                    src="img/ic-outline-facebook.png"
-                    alt="Facebook"
-                  />
-                </a>
-
-                <a
-                href="https://instagram.com/tiffany_and_eq"
-                class="instagram-link"
-                rel="noopener noreferrer"
-                >
-                  <img
-                    class="mdi-instagram"
-                    src="img/mdi-instagram.png"
-                    alt="Instagram"
-                  />
-                </a>
-              </div>
-            </div>
-            <p class="about-owner-facility">
-              <span class="span">About<br /></span>
-                <span class="text-wrapper-21">
-                  <a href="trainers.html" class="link-owner">Owner</a><br />
-                  <a href="facility.html" class="link-facility">Facility</a><br />
-                  <a href="meet-the-horses.html" class="link-meet">Meet The Horses</a>
-                </span>
-
-
-            <p class="services-programs">
-              <span class="span">Services<br /></span>
-              <span class="text-wrapper-21">
-                <a href="programs.html" class="link-programs">Programs</a><br />
-                <a href="lease-sale-horses.html" class="link-lease">Lease/Sale Horses</a>
-              </span>
-            </p>
-            <p class="events-show-schedule">
-              <span class="span">Events<br /></span>
-              <a href="events.html" class="text-wrapper-21">Show Schedule</a><br/>
-              <a href="pony-camps.html" class="text-wrapper-21">Pony Camps</a>
-            </p>
-
-            <a href ="gallery.html" class="text-wrapper-22">Gallery</a>
-          </div>
-        </div>
-      </div>
+        </footer>
     </div>
-  </body>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const openIcon = document.getElementById('menu-open-icon');
+        const closeIcon = document.getElementById('menu-close-icon');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            openIcon.classList.toggle('hidden');
+            openIcon.classList.toggle('block');
+            closeIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('block');
+        });
+    </script>
+</body>
 </html>
