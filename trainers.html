@@ -1,228 +1,276 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="global-style.css" />
-  </head>
-  <body>
-    <div class="trainers" data-model-id="46:266">
-      <div class="div">
-        <div class="overlap">
-          <div class="navigation">
-            <img class="image" src="img/image-1@2x.png" />
-              <a href="index.html" class="text-wrapper">About</a>
-              <a href="programs.html" class="text-wrapper-2">Services</a>
-              <a href="events.html" class="text-wrapper-3">Events</a>
-              <a href="gallery.html" class="text-wrapper-4">Gallery</a>
-              <a href="contact.html" class="text-wrapper-5">Contact</a>
-          </div>
-          <img class="img" src="img/image-5.png" />
-          <!--img class="image-2" src="img/image-4.png" /-->
-          <img class="image-3" src="img/image-10.png" />
-          <div class="text-wrapper-6">Tiffany Woods</div>
-          <p class="owner-head-trainer">Owner &amp; Head Trainer of<br />Tiffany &amp; Equestrians</p>
-          <p class="originally-from">
-            Originally from Portland, Tiffany Woods has been a part of the Hunter/Jumper community since the age of 7.
-            She got her start in the pony divisions and progressed up the ladder of the junior ranks into the junior
-            hunters, equitation and jumpers; achieving many prestigious medals and awards. She has shown up and down the
-            West Coast the likes of which include Thunderbird and Spruce Meadows. Her foundation was built by top
-            trainers from the PNW, California, and Virginia, including the likes of Kevin Freeman an Olympic Silver
-            Medalist. She played a pivotal role in the establishment of the horse-riding program at Oregon State
-            University and was the driving force in getting the team back east to compete. She continues to further her
-            own education and growth through participating in clinics with top technicians in the industry as she has
-            for years. Her understanding of dressage gives her a more in depth understanding and knowledge of flatwork
-            at the core of the sport.<br /><br />Tiffany is the owner and head trainer of Tiffany &amp; Equestrians. She
-            focuses on building a partnership between horse and rider through proper horsemanship knowledge and skills.
-            She prides herself on teaching of proper position, balance, and harmony between horse and rider. She is
-            dedicated to teaching the foundations of equitation and the art and beauty of the hunters. Each helps
-            develop a great jumper rider if that is the desired discipline. As many have commented, she has a knack for
-            finding the perfect match between horse and rider. She believes in a strong sense of community and comradery
-            at the barn that makes everyone feel welcome.<br /><br />Her passion is helping her students to achieve
-            their goals by building a strong foundation and helping riders to see their full potential. In addition to
-            her training program, Tiffany is also involved in IEA, a program for middle and high school students where
-            they can compete at events on horses provided by donations. She has coached her students to top placings at
-            the national level including reserve champion middle school team and champion high school team in 2022.
-          </p>
-        </div>
-        <div class="events-section">
-  <div class="overlap-group">
-    <img class="image-4" src="img/image-7.png" />
-    <img class="image-5" src="img/image-8.png" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainers - Tiffany & Equestrians</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Marcellus+SC&display=swap" rel="stylesheet">
+    
+    <script>
+        // Custom Tailwind CSS configuration
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'marcellus': ['"Marcellus SC"', 'serif'],
+                        'inter': ['"Inter"', 'sans-serif']
+                    },
+                    colors: {
+                        'brand-teal': '#95D5D1',
+                        'brand-teal-dark': '#7CBFB8',
+                        'brand-gray': '#F3F4F6',
+                        'brand-dark': '#111111',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Basic body styling */
+        body {
+            font-family: 'inter', sans-serif;
+            background-color: #ffffff;
+        }
+        .text-shadow {
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+        }
+        /* Custom gradient for navigation */
+        .nav-gradient {
+            background: linear-gradient(to bottom, rgba(180, 230, 228, 0.9), rgba(255, 255, 255, 0.7));
+        }
+        .btn-fancy {
+            background-color: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(5px);
+            box-shadow: 0px 0px 10px 5px rgba(149, 213, 209, 0.7);
+        }
+        .btn-fancy:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #4a90e2;
+        }
+    </style>
+</head>
+<body class="bg-white">
 
-    <!-- Events Calendar button -->
-    <a href="events.html" class="group">
-      <div class="div-wrapper">
-        <div class="text-wrapper-7">Events Calendar</div>
-      </div>
-    </a>
+    <!-- Main Container -->
+    <div class="w-full max-w-screen-xl mx-auto">
 
-    <!-- Lease/Sale Horses button -->
-    <a href="lease-sale-horses.html" class="overlap-wrapper">
-      <div class="div-wrapper">
-        <div class="text-wrapper-8">Lease/Sale Horses</div>
-      </div>
-    </a>
-  </div>
-</div>
+        <!-- Header and Navigation -->
+        <header class="relative z-20 font-marcellus">
+            <nav class="nav-gradient backdrop-blur-sm shadow-md fixed top-0 left-0 right-0">
+                <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex items-center justify-between md:justify-center h-20">
+                        
+                        <!-- Desktop Centered Nav -->
+                        <div class="hidden md:flex items-center space-x-8">
+                             <a href="index.html" title="Home" class="flex-shrink-0">
+                                <img class="h-16 w-auto" src="img/image-1@2x.png" alt="Tiffany & Equestrians Logo" onerror="this.onerror=null;this.src='https://placehold.co/109x109/FFFFFF/000000?text=Logo';">
+                            </a>
+                            <div class="flex items-baseline space-x-4">
+                                <a href="index.html" class="text-black hover:text-[#4a90e2] px-3 py-2 rounded-md text-lg">About</a>
+                                <a href="programs.html" class="text-black hover:text-[#4a90e2] px-3 py-2 rounded-md text-lg">Services</a>
+                                <a href="events.html" class="text-black hover:text-[#4a90e2] px-3 py-2 rounded-md text-lg">Events</a>
+                                <a href="gallery.html" class="text-black hover:text-[#4a90e2] px-3 py-2 rounded-md text-lg">Gallery</a>
+                                <a href="contact.html" class="text-black hover:text-[#4a90e2] px-3 py-2 rounded-md text-lg">Contact</a>
+                            </div>
+                        </div>
 
-<div class="gallery-section">
-  <img class="image-6" src="img/image-9@2x.png" />
-  <img class="image-7" src="img/image@2x.png" />
-  <img class="image-8" src="img/image-2@2x.png" />
+                        <!-- Mobile Nav -->
+                        <div class="flex items-center justify-between w-full md:hidden">
+                            <a href="index.html" title="Home" class="flex-shrink-0">
+                                <img class="h-16 w-auto" src="img/image-1@2x.png" alt="Tiffany & Equestrians Logo" onerror="this.onerror=null;this.src='https://placehold.co/109x109/FFFFFF/000000?text=Logo';">
+                            </a>
+                            <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-white hover:bg-brand-teal-dark focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                                <span class="sr-only">Open main menu</span>
+                                <svg id="menu-open-icon" class="h-6 w-6 block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                                </svg>
+                                <svg id="menu-close-icon" class="h-6 w-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
 
-  <!-- Visit The Gallery button -->
-  <a href="gallery.html" class="overlap-group-wrapper">
-    <div class="div-wrapper">
-      <div class="text-wrapper-9">Visit The Gallery</div>
+                    </div>
+                </div>
+                <!-- Mobile Menu, show/hide based on menu state. -->
+                <div id="mobile-menu" class="md:hidden hidden">
+                    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                        <a href="index.html" class="text-black hover:bg-brand-teal hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+                        <a href="programs.html" class="text-black hover:bg-brand-teal hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                        <a href="events.html" class="text-black hover:bg-brand-teal hover:text-white block px-3 py-2 rounded-md text-base font-medium">Events</a>
+                        <a href="gallery.html" class="text-black hover:bg-brand-teal hover:text-white block px-3 py-2 rounded-md text-base font-medium">Gallery</a>
+                        <a href="contact.html" class="text-black hover:bg-brand-teal hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="pt-20">
+            <!-- Trainer Intro Section -->
+            <section class="relative py-12 md:py-20 bg-white overflow-hidden">
+                <div class="container mx-auto px-6 lg:px-8 text-center">
+                    <div class="flex flex-col gap-8 items-center">
+                        <!-- Image at the top -->
+                        <div class="relative w-full max-w-3xl">
+                           <img src="img/image-10.png" alt="Tiffany Woods" class="rounded-lg shadow-2xl mx-auto w-full" onerror="this.onerror=null;this.src='https://placehold.co/858x692/CCCCCC/FFFFFF?text=Tiffany+Woods';">
+                        </div>
+                        <!-- Text content below -->
+                        <div class="w-full text-center">
+                            <h1 class="font-marcellus text-4xl md:text-6xl font-bold text-gray-800 text-shadow mt-8">Tiffany Woods</h1>
+                            <p class="font-marcellus text-xl md:text-2xl text-gray-600 mt-2">Owner &amp; Head Trainer of<br>Tiffany &amp; Equestrians</p>
+                            <div class="mt-8 max-w-4xl mx-auto text-left leading-relaxed text-gray-700 text-lg">
+                                <p class="mb-6">Originally from Portland, Tiffany Woods has been a part of the Hunter/Jumper community since the age of 7. She got her start in the pony divisions and progressed up the ladder of the junior ranks into the junior hunters, equitation and jumpers; achieving many prestigious medals and awards. She has shown up and down the West Coast the likes of which include Thunderbird and Spruce Meadows. Her foundation was built by top trainers from the PNW, California, and Virginia, including the likes of Kevin Freeman an Olympic Silver Medalist. She played a pivotal role in the establishment of the horse-riding program at Oregon State University and was the driving force in getting the team back east to compete. She continues to further her own education and growth through participating in clinics with top technicians in the industry as she has for years. Her understanding of dressage gives her a more in depth understanding and knowledge of flatwork at the core of the sport.</p>
+                                <p class="mb-6">Tiffany is the owner and head trainer of Tiffany & Equestrians. She focuses on building a partnership between horse and rider through proper horsemanship knowledge and skills. She prides herself on teaching of proper position, balance, and harmony between horse and rider. She is dedicated to teaching the foundations of equitation and the art and beauty of the hunters. Each helps develop a great jumper rider if that is the desired discipline. As many have commented, she has a knack for finding the perfect match between horse and rider. She believes in a strong sense of community and comradery at the barn that makes everyone feel welcome.</p>
+                                <p>Her passion is helping her students to achieve their goals by building a strong foundation and helping riders to see their full potential. In addition to her training program, Tiffany is also involved in IEA, a program for middle and high school students where they can compete at events on horses provided by donations. She has coached her students to top placings at the national level including reserve champion middle school team and champion high school team in 2022.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- CTA Section -->
+            <section class="py-12 md:py-20">
+                <div class="container mx-auto px-6 lg:px-8">
+                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <a href="events.html" class="group block relative rounded-lg overflow-hidden shadow-lg h-64 md:h-80">
+                            <img src="img/image-7.png" alt="Horse jumping at an event" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://placehold.co/722x575/777777/FFFFFF?text=Events';">
+                            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center p-4">
+                                <div class="btn-fancy rounded-full px-8 py-4 transition-all duration-300">
+                                    <h3 class="text-black font-marcellus text-2xl md:text-3xl">Events Calendar</h3>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="lease-sale-horses.html" class="group block relative rounded-lg overflow-hidden shadow-lg h-64 md:h-80">
+                            <img src="img/image-8.png" alt="A horse available for sale or lease" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://placehold.co/719x575/888888/FFFFFF?text=Horses';">
+                            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center p-4">
+                                <div class="btn-fancy rounded-full px-8 py-4 transition-all duration-300">
+                                   <h3 class="text-black font-marcellus text-2xl md:text-3xl">Lease/Sale Horses</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gallery Preview Section -->
+            <section class="bg-brand-dark py-12 md:py-20">
+                <div class="container mx-auto px-6 lg:px-8 text-center">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <img src="img/image-9@2x.png" alt="Gallery image 1" class="rounded-lg shadow-md w-full h-auto object-cover" onerror="this.onerror=null;this.src='https://placehold.co/321x217/333333/FFFFFF?text=Gallery';">
+                        <img src="img/image@2x.png" alt="Gallery image 2" class="rounded-lg shadow-md w-full h-auto object-cover" onerror="this.onerror=null;this.src='https://placehold.co/321x217/333333/FFFFFF?text=Gallery';">
+                        <img src="img/image-2@2x.png" alt="Gallery image 3" class="rounded-lg shadow-md w-full h-auto object-cover" onerror="this.onerror=null;this.src='https://placehold.co/321x217/333333/FFFFFF?text=Gallery';">
+                    </div>
+                    <a href="gallery.html" class="mt-12 inline-block bg-white/90 font-marcellus text-brand-dark text-xl px-10 py-4 rounded-full shadow-lg hover:bg-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">Visit The Gallery</a>
+                </div>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section class="py-12 md:py-20 bg-brand-gray">
+                <div class="container mx-auto px-6 lg:px-8 text-center">
+                    <h2 class="text-4xl md:text-5xl font-marcellus text-gray-800 mb-2 text-shadow">Testimonials</h2>
+                    <div class="w-20 h-1 bg-brand-teal mx-auto mb-12"></div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Testimonial 1 -->
+                        <div class="bg-white p-8 rounded-lg shadow-lg">
+                            <div class="flex justify-center mb-4 text-yellow-400">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            </div>
+                            <p class="text-gray-600 italic">"This is a test testimonial. This is a test testimonial. This is a test testimonial."</p>
+                            <p class="font-marcellus text-lg text-gray-800 font-semibold mt-6">- Brooke A.</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-lg shadow-lg">
+                            <div class="flex justify-center mb-4 text-yellow-400"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg></div>
+                            <p class="text-gray-600 italic">"This is a test testimonial. This is a test testimonial. This is a test testimonial."</p>
+                            <p class="font-marcellus text-lg text-gray-800 font-semibold mt-6">- Brooke A.</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-lg shadow-lg">
+                           <div class="flex justify-center mb-4 text-yellow-400"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg></div>
+                            <p class="text-gray-600 italic">"This is a test testimonial. This is a test testimonial. This is a test testimonial."</p>
+                            <p class="font-marcellus text-lg text-gray-800 font-semibold mt-6">- Brooke A.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Footer -->
+       <footer class="bg-brand-teal text-black border-t border-black mt-12">
+            <div class="container mx-auto px-6 lg:px-8 py-8 relative">
+                <!-- Footer Logo -->
+                <div class="flex justify-center mb-6 -mt-20">
+                     <img class="h-32 w-32 bg-white rounded-full p-2 shadow-lg border-4 border-brand-teal" src="img/image-1-2@2x.png" alt="Tiffany & Equestrians Logo" onerror="this.onerror=null;this.src='https://placehold.co/197x197/FFFFFF/000000?text=Logo';">
+                </div>
+                
+                <!-- Social Media -->
+                <div class="text-center mb-8">
+                    <h3 class="font-marcellus text-2xl mb-2">Follow Us On <br class="sm:hidden">Social Media</h3>
+                    <div class="flex justify-center space-x-6">
+                        <a href="https://facebook.com/tpmaulden" target="_blank" rel="noopener noreferrer" class="text-black hover:text-white transition-colors">
+                           <img src="img/ic-outline-facebook.png" alt="Facebook" class="h-10 w-10" onerror="this.onerror=null;this.src='https://placehold.co/50x50/000000/FFFFFF?text=F';">
+                        </a>
+                        <a href="https://instagram.com/tiffany_and_eq" target="_blank" rel="noopener noreferrer" class="text-black hover:text-white transition-colors">
+                           <img src="img/mdi-instagram.png" alt="Instagram" class="h-10 w-10" onerror="this.onerror=null;this.src='https://placehold.co/50x50/000000/FFFFFF?text=I';">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Footer Links -->
+                 <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center font-marcellus text-lg leading-loose">
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">About</h4>
+                        <a href="trainers.html" class="block hover:text-white">Owner</a>
+                        <a href="facility.html" class="block hover:text-white">Facility</a>
+                        <a href="meet-the-horses.html" class="block hover:text-white">Meet The Horses</a>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Services</h4>
+                        <a href="programs.html" class="block hover:text-white">Programs</a>
+                        <a href="lease-sale-horses.html" class="block hover:text-white">Lease/Sale horses</a>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Events</h4>
+                        <a href="events.html" class="block hover:text-white">Show Schedule</a>
+                        <a href="pony-camps.html" class="block hover:text-white">Pony Camps</a>
+                    </div>
+                     <div>
+                        <h4 class="text-xl font-bold mb-2">Gallery</h4>
+                        <a href="gallery.html" class="block hover:text-white">Visit Gallery</a>
+                    </div>
+                </div>
+                 <!-- Contact Info -->
+                <div class="mt-10 pt-6 border-t border-black/20 text-center font-inter">
+                     <p class="font-bold"><a href="https://www.google.com/maps/search/?api=1&query=7620+260th+Ave+NE+Redmond+WA+98053" target="_blank" rel="noopener noreferrer" class="hover:text-white">7620 260th Ave NE, Redmond, WA 98053</a></p>
+                     <p>Phone: <a href="tel:+12069002700" class="hover:text-white">(206) 900-2700</a><br>Email: <a href="mailto:tiffany@tiffanyandequestrians.com" class="hover:text-white uppercase">tiffany@tiffanyandequestrians.com</a></p>
+                </div>
+            </div>
+        </footer>
     </div>
-  </a>
-</div>
 
-        <div class="testimonials-section">
-          <div class="text-wrapper-10">Testimonials</div>
-          <div class="rectangle"></div>
-          <div class="rectangle-2"></div>
-          <div class="group-2">
-            <div class="group-3">
-              <img class="star" src="img/star-5-2.svg" />
-              <img class="star-2" src="img/star-5-2.svg" />
-              <img class="star-3" src="img/star-5-2.svg" />
-              <img class="star-4" src="img/star-5-2.svg" />
-              <img class="star-5" src="img/star-5-2.svg" />
-            </div>
-            <div class="overlap-group-2">
-              <div class="text-wrapper-11">Brooke A.</div>
-              <div class="rectangle-3"></div>
-              <p class="p">
-                This is a test testimonial. This is a test testimonial. This is a test testimonial. This is a test
-                testimonial. This is a test testimonial. This is a test testimonial.
-              </p>
-            </div>
-          </div>
-          <div class="group-4">
-            <div class="group-3">
-              <img class="star" src="img/star-5-2.svg" />
-              <img class="star-2" src="img/star-5-2.svg" />
-              <img class="star-3" src="img/star-5-2.svg" />
-              <img class="star-4" src="img/star-5-2.svg" />
-              <img class="star-5" src="img/star-5-2.svg" />
-            </div>
-            <div class="overlap-group-2">
-              <div class="text-wrapper-11">Brooke A.</div>
-              <div class="rectangle-3"></div>
-              <p class="p">
-                This is a test testimonial. This is a test testimonial. This is a test testimonial. This is a test
-                testimonial. This is a test testimonial. This is a test testimonial.
-              </p>
-            </div>
-          </div>
-          <div class="group-5">
-            <div class="group-3">
-              <img class="star" src="img/star-5-2.svg" />
-              <img class="star-2" src="img/star-5-2.svg" />
-              <img class="star-3" src="img/star-5-2.svg" />
-              <img class="star-4" src="img/star-5-2.svg" />
-              <img class="star-5" src="img/star-5-2.svg" />
-            </div>
-            <div class="overlap-group-2">
-              <div class="text-wrapper-11">Brooke A.</div>
-              <div class="rectangle-3"></div>
-              <p class="p">
-                This is a test testimonial. This is a test testimonial. This is a test testimonial. This is a test
-                testimonial. This is a test testimonial. This is a test testimonial.
-              </p>
-            </div>
-          </div>
-          <!--img class="chevron-left" src="img/icons8-chevron-left-round.svg" />
-          <img class="vector" src="img/vector.svg" /-->
-        </div>
-        <div class="contact-section">
-          <img class="image-9" src="img/image-3.png" />
-          <div class="overlap-2">
-            <div class="overlap-3">
-              <img class="image-10" src="img/image-1-1.png" />
-              <p class="phone">
-    Phone: <a href="tel:+12069002700">(206) 900-2700</a><br>
-    Email: <a href="mailto:tiffany@tiffanyandequestrians.com">TIFFANY@TIFFANYANDEQUESTRIANS.COM</a>
-  </p>
-               <p class="element-ave-NE">
-  <a
-    href="https://www.google.com/maps/search/?api=1&query=7620+260th+Ave+NE+Redmond+WA+98053"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    7620 260th Ave NE<br />
-    Redmond, WA 98053
-  </a>
-</p>
-            </div>
-            <div class="text-wrapper-12">Address</div>
-            <div class="text-wrapper-13">Contact Info</div>
-          </div>
-        </div>
-        <div class="footer-section">
-          <div class="overlap-4">
-            <div class="rectangle-4"></div>
-            <img class="image-11" src="img/image-1-2@2x.png" />
-            <div class="group-6">
-              <div class="overlap-group-3">
-                <p class="follow-us-on-social">Follow Us On <br />Social Media</p>
-                <a
-  href="https://facebook.com/tpmaulden"
-  class="facebook-link"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <img
-    class="ic-outline-facebook"
-    src="img/ic-outline-facebook.png"
-    alt="Facebook"
-  />
-</a>
-                </a>
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const openIcon = document.getElementById('menu-open-icon');
+        const closeIcon = document.getElementById('menu-close-icon');
 
-   <a
-  href="https://instagram.com/tiffany_and_eq"
-  class="instagram-link"
-  rel="noopener noreferrer"
->
-  <img
-    class="mdi-instagram"
-    src="img/mdi-instagram.png"
-    alt="Instagram"
-  />
-</a>
-              </div>
-            </div>
-            <p class="about-owner-facility">
-  <span class="span">About<br /></span>
-  <a href="trainers.html" class="trainer-footer-link">Owner</a><br />
-  <a href="facility.html" class="trainer-footer-link">Facility</a><br />
-  <a href="meet-the-horses.html" class="trainer-footer-link">Meet The Horses</a>
-</p>
-
-            <p class="services-programs">
-  <span class="span">Services<br /></span>
-  <a href="programs.html" class="trainer-footer-link">Programs</a><br />
-  <a href="lease-sale-horses.html" class="trainer-footer-link">Lease/Sale horses</a>
-</p>
-
-           <p class="events-show-schedule">
-  <span class="span">Events<br /></span>
-  <a href="events.html" class="trainer-footer-link">Show Schedule</a><br />
-  <a href="pony-camps.html" class="trainer-footer-link">Pony Camps</a>
-</p>
-
-           <span class="text-wrapper-15">
-  <a href="gallery.html" class="trainer-footer-link">Gallery</a>
-</span>
-
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            openIcon.classList.toggle('hidden');
+            openIcon.classList.toggle('block');
+            closeIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('block');
+        });
+    </script>
+</body>
 </html>
