@@ -1,0 +1,1 @@
+[22-Apr-2025 03:42:10 UTC] PHP Warning:  Undefined variable $block_editor_context in /home3/cnthohmy/public_html/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/includes/WP_Admin.php on line 170
