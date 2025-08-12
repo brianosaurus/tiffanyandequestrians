@@ -68,56 +68,7 @@
     <!-- Main Container -->
     <div class="w-full max-w-screen-xl mx-auto">
 
-        <!-- Header and Navigation -->
-        <header class="relative z-20 font-marcellus">
-            <nav class="nav-gradient backdrop-blur-sm shadow-md fixed top-0 left-0 right-0">
-                <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="flex items-center justify-between md:justify-center h-20">
-                        
-                        <!-- Desktop Centered Nav -->
-                        <div class="hidden md:flex items-center space-x-8">
-                             <a href="index.html" title="Home" class="flex-shrink-0">
-                                <img class="h-16 w-auto" src="img/image-1.png" alt="Tiffany & Equestrians Logo" onerror="this.onerror=null;this.src='https://placehold.co/109x109/FFFFFF/000000?text=Logo';">
-                            </a>
-                            <div class="flex items-baseline space-x-4">
-                                <a href="index.html" class="text-black hover:text-[#4a90e2] px-3 py-2 rounded-md text-lg">About</a>
-                                <a href="programs.html" class="text-black hover:text-[#4a90e2] px-3 py-2 rounded-md text-lg">Services</a>
-                                <a href="events.html" class="text-black hover:text-[#4a90e2] px-3 py-2 rounded-md text-lg">Events</a>
-                                <a href="gallery.html" class="text-black hover:text-[#4a90e2] px-3 py-2 rounded-md text-lg">Gallery</a>
-                                <a href="contact.html" class="text-black hover:text-[#4a90e2] px-3 py-2 rounded-md text-lg">Contact</a>
-                            </div>
-                        </div>
-
-                        <!-- Mobile Nav -->
-                        <div class="flex items-center justify-between w-full md:hidden">
-                            <a href="index.html" title="Home" class="flex-shrink-0">
-                                <img class="h-16 w-auto" src="img/image-1.png" alt="Tiffany & Equestrians Logo" onerror="this.onerror=null;this.src='https://placehold.co/109x109/FFFFFF/000000?text=Logo';">
-                            </a>
-                            <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-white hover:bg-brand-teal-dark focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-                                <span class="sr-only">Open main menu</span>
-                                <svg id="menu-open-icon" class="h-6 w-6 block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                                </svg>
-                                <svg id="menu-close-icon" class="h-6 w-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                                </svg>
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- Mobile Menu, show/hide based on menu state. -->
-                <div id="mobile-menu" class="md:hidden hidden">
-                    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                        <a href="index.html" class="text-black hover:bg-brand-teal hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
-                        <a href="programs.html" class="text-black hover:bg-brand-teal hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
-                        <a href="events.html" class="text-black hover:bg-brand-teal hover:text-white block px-3 py-2 rounded-md text-base font-medium">Events</a>
-                        <a href="gallery.html" class="text-black hover:bg-brand-teal hover:text-white block px-3 py-2 rounded-md text-base font-medium">Gallery</a>
-                        <a href="contact.html" class="text-black hover:bg-brand-teal hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
-                    </div>
-                </div>
-            </nav>
-        </header>
+        <?php include '_nav.html'; ?>
 
         <main class="pt-20">
             <!-- Gallery Section -->
@@ -127,106 +78,46 @@
                         <h1 class="font-marcellus text-4xl md:text-5xl text-gray-800 text-shadow">Gallery</h1>
                     </div>
 
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <?php
+                        // Get all image files from the gallery directory
+                        $gallery_dir = 'gallery/';
+                        $allowed_extensions = array('jpg', 'jpeg', 'png', 'gif', 'webp');
+                        $images = array();
                         
-                        <!-- Gallery Item 1 -->
-                        <div class="gallery-item relative rounded-lg shadow-lg overflow-hidden group">
-                           <img src="img/image-5.png" alt="Gallery image" class="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/FFFFFF?text=Gallery';">
-                           <div class="overlay absolute inset-0 bg-black/50 flex items-center justify-center p-4">
-                                <p class="text-white font-marcellus text-2xl text-center">Text Can Be Here If You Want</p>
-                           </div>
-                        </div>
-
-                        <!-- Gallery Item 2 -->
-                        <div class="gallery-item relative rounded-lg shadow-lg overflow-hidden group">
-                           <img src="img/image-13.png" alt="Gallery image" class="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/FFFFFF?text=Gallery';">
-                        </div>
-
-                        <!-- Gallery Item 3 -->
-                        <div class="gallery-item relative rounded-lg shadow-lg overflow-hidden group">
-                           <img src="img/image-14.png" alt="Gallery image" class="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/FFFFFF?text=Gallery';">
-                        </div>
+                        if (is_dir($gallery_dir)) {
+                            $files = scandir($gallery_dir);
+                            foreach ($files as $file) {
+                                $extension = strtolower(pathinfo($file, PATHINFO_EXTENSION));
+                                if (in_array($extension, $allowed_extensions)) {
+                                    $images[] = $file;
+                                }
+                            }
+                        }
                         
-                        <!-- Gallery Item 4 -->
-                        <div class="gallery-item relative rounded-lg shadow-lg overflow-hidden group">
-                           <img src="img/image-2.png" alt="Gallery image" class="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/FFFFFF?text=Gallery';">
-                           <div class="overlay absolute inset-0 bg-black/50 flex items-center justify-center p-4">
-                                <p class="text-white font-marcellus text-2xl text-center">Text Can Be Here If You Want</p>
-                           </div>
-                        </div>
-
-                        <!-- Gallery Item 5 -->
-                         <div class="gallery-item relative rounded-lg shadow-lg overflow-hidden group">
-                           <img src="img/image-14@2x.png" alt="Gallery image" class="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/FFFFFF?text=Gallery';">
-                           <div class="overlay absolute inset-0 bg-black/50 flex items-center justify-center p-4">
-                                <p class="text-white font-marcellus text-2xl text-center">Text Can Be Here If You Want</p>
-                           </div>
-                        </div>
-
-                         <!-- Gallery Item 6 -->
-                        <div class="gallery-item relative rounded-lg shadow-lg overflow-hidden group">
-                           <img src="img/image-2.png" alt="Gallery image" class="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/FFFFFF?text=Gallery';">
-                           <div class="overlay absolute inset-0 bg-black/50 flex items-center justify-center p-4">
-                                <p class="text-white font-marcellus text-2xl text-center">Text Can Be Here If You Want</p>
-                           </div>
-                        </div>
-
+                        // Sort images alphabetically
+                        sort($images);
+                        
+                        // Display each image
+                        foreach ($images as $image) {
+                            $image_path = $gallery_dir . $image;
+                            $alt_text = pathinfo($image, PATHINFO_FILENAME);
+                            ?>
+                            <div class="gallery-item relative rounded-lg shadow-lg overflow-hidden group">
+                                <img src="<?php echo $image_path; ?>" 
+                                     alt="<?php echo htmlspecialchars($alt_text); ?>" 
+                                     class="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-500" 
+                                     onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/FFFFFF?text=Gallery';">
+                            </div>
+                            <?php
+                        }
+                        ?>
                     </div>
                 </div>
             </section>
         </main>
         
-        <!-- Footer -->
-       <footer class="bg-brand-teal text-black border-t border-black mt-12">
-            <div class="container mx-auto px-6 lg:px-8 py-8 relative">
-                <!-- Footer Logo -->
-                <div class="flex justify-center mb-6 -mt-20">
-                     <img class="h-32 w-32 bg-white rounded-full p-2 shadow-lg border-4 border-brand-teal" src="img/image-1-2@2x.png" alt="Tiffany & Equestrians Logo" onerror="this.onerror=null;this.src='https://placehold.co/197x197/FFFFFF/000000?text=Logo';">
-                </div>
-                
-                <!-- Social Media -->
-                <div class="text-center mb-8">
-                    <h3 class="font-marcellus text-2xl mb-2">Follow Us On <br class="sm:hidden">Social Media</h3>
-                    <div class="flex justify-center space-x-6">
-                        <a href="https://facebook.com/tpmaulden" target="_blank" rel="noopener noreferrer" class="text-black hover:text-white transition-colors">
-                           <img src="img/ic-outline-facebook.png" alt="Facebook" class="h-10 w-10" onerror="this.onerror=null;this.src='https://placehold.co/50x50/000000/FFFFFF?text=F';">
-                        </a>
-                        <a href="https://instagram.com/tiffany_and_eq" target="_blank" rel="noopener noreferrer" class="text-black hover:text-white transition-colors">
-                           <img src="img/mdi-instagram.png" alt="Instagram" class="h-10 w-10" onerror="this.onerror=null;this.src='https://placehold.co/50x50/000000/FFFFFF?text=I';">
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Footer Links -->
-                 <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center font-marcellus text-lg leading-loose">
-                    <div>
-                        <h4 class="text-xl font-bold mb-2">About</h4>
-                        <a href="trainers.html" class="block hover:text-white">Owner</a>
-                        <a href="facility.html" class="block hover:text-white">Facility</a>
-                        <a href="meet-the-horses.html" class="block hover:text-white">Meet The Horses</a>
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-bold mb-2">Services</h4>
-                        <a href="programs.html" class="block hover:text-white">Programs</a>
-                        <a href="lease-sale-horses.html" class="block hover:text-white">Lease/Sale horses</a>
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-bold mb-2">Events</h4>
-                        <a href="events.html" class="block hover:text-white">Show Schedule</a>
-                        <a href="pony-camps.html" class="block hover:text-white">Pony Camps</a>
-                    </div>
-                     <div>
-                        <h4 class="text-xl font-bold mb-2">Gallery</h4>
-                        <a href="gallery.html" class="block hover:text-white">Visit Gallery</a>
-                    </div>
-                </div>
-                 <!-- Contact Info -->
-                <div class="mt-10 pt-6 border-t border-black/20 text-center font-inter text-sm">
-                     <p class="font-bold"><a href="https://www.google.com/maps/search/?api=1&query=7620+260th+Ave+NE+Redmond+WA+98053" target="_blank" rel="noopener noreferrer" class="hover:text-white">7620 260th Ave NE, Redmond, WA 98053</a></p>
-                     <p>Phone: <a href="tel:+12069002700" class="hover:text-white">(206) 900-2700</a> | Email: <a href="mailto:tiffany@tiffanyandequestrians.com" class="hover:text-white uppercase">tiffany@tiffanyandequestrians.com</a></p>
-                </div>
-            </div>
-        </footer>
+        <?php include '_footer.html'; ?>
     </div>
 
     <script>

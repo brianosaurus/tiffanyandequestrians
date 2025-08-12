@@ -61,43 +61,7 @@
     <!-- Main Container -->
     <div class="w-full max-w-screen-xl mx-auto">
 
-        <!-- Header and Navigation -->
-        <header class="relative z-20 font-marcellus">
-            <nav class="nav-gradient backdrop-blur-sm shadow-md fixed top-0 left-0 right-0">
-                <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="flex items-center justify-between md:justify-center h-20">
-                        
-                        <!-- Desktop Centered Nav -->
-                        <div class="hidden md:flex items-center space-x-8">
-                             <a href="index.html" title="Home" class="flex-shrink-0">
-                                <img class="h-16 w-auto" src="img/image-1.png" alt="Tiffany & Equestrians Logo" onerror="this.onerror=null;this.src='https://placehold.co/109x109/FFFFFF/000000?text=Logo';">
-                            </a>
-                            <div class="flex items-baseline space-x-4">
-                                <a href="index.html" class="text-black hover:text-[#4a90e2] px-3 py-2 rounded-md text-lg">About</a>
-                                <a href="programs.html" class="text-black hover:text-[#4a90e2] px-3 py-2 rounded-md text-lg">Services</a>
-                                <a href="events.html" class="text-black hover:text-[#4a90e2] px-3 py-2 rounded-md text-lg">Events</a>
-                                <a href="gallery.html" class="text-black hover:text-[#4a90e2] px-3 py-2 rounded-md text-lg">Gallery</a>
-                                <a href="contact.html" class="text-black hover:text-[#4a90e2] px-3 py-2 rounded-md text-lg">Contact</a>
-                            </div>
-                        </div>
-
-                        <!-- Mobile Nav -->
-                        <div class="flex items-center justify-between w-full md:hidden">
-                            <a href="index.html" title="Home" class="flex-shrink-0">
-                                <img class="h-16 w-auto" src="img/image-1.png" alt="Tiffany & Equestrians Logo" onerror="this.onerror=null;this.src='https://placehold.co/109x109/FFFFFF/000000?text=Logo';">
-                            </a>
-                            <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-white hover:bg-brand-teal-dark focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-                                <span class="sr-only">Open main menu</span>
-                                <svg id="menu-open-icon" class="h-6 w-6 block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                                </svg>
-                                <svg id="menu-close-icon" class="h-6 w-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                                </svg>
-                            </button>
-                        </div>
-
-                    </div>
+        <?php include '_nav.html'; ?>
                 </div>
                 <!-- Mobile Menu, show/hide based on menu state. -->
                 <div id="mobile-menu" class="md:hidden hidden">
@@ -121,137 +85,42 @@
                     </div>
 
                     <div class="space-y-16">
-
-                        <!-- Horse 1: Bentley -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-start">
-                            <div class="space-y-4">
-                                <img src="img/img-0820-1@2x.png" alt="Island Bordeaux aka Bentley" class="rounded-lg shadow-xl w-full h-auto max-h-[500px] object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/FFFFFF?text=Bentley';">
-                                <img src="img/img-2438-1.png" alt="Bentley" class="rounded-lg shadow-xl w-full h-auto max-h-[300px] object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/FFFFFF?text=Bentley';">
-                            </div>
-                            <div>
-                                <h2 class="font-marcellus text-3xl text-gray-800">Island Bordeaux <br><span class="text-2xl text-gray-500">aka Bentley</span></h2>
-                                <div class="w-20 h-1 bg-brand-teal my-4"></div>
-                                <p class="text-gray-700 leading-relaxed">A brief description of Bentley would go here, detailing his personality, history, and role in the program. This section is currently missing text in the original file.</p>
-                            </div>
-                        </div>
-
-                        <!-- Horse 2: Cormann -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-start">
-                            <div class="md:order-2">
-                                <img src="img/dsc-0231@2x.png" alt="Cormann" class="rounded-lg shadow-xl w-full h-auto max-h-[600px] object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/FFFFFF?text=Cormann';">
-                            </div>
-                            <div class="md:order-1">
-                                <h2 class="font-marcellus text-3xl text-gray-800">Cormann</h2>
-                                <div class="w-20 h-1 bg-brand-teal my-4"></div>
-                                <p class="text-gray-700 leading-relaxed">Cormann was born on 6/17/2008, he is a 17.0 Bay Holsteiner Gelding who was imported from Europe in 2017 but joined team on 9/12/2024. Cormann used to jump the really big sticks and you can see that by the way he goes, he has a lot of power in that hind end. But don’t let that fool you, he is the sweetest and kindest horse you can find wishing to never hurt a fly! He still likes to jump the big sticks but the vets would prefer he stays lower lever and he is happy with that for now.</p>
-                            </div>
-                        </div>
-
-                        <!-- Horse 3: Chino -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-start">
-                            <div class="space-y-4">
-                                 <img src="img/dsc-0114-1@2x.png" alt="Frappachino aka Chino" class="rounded-lg shadow-xl w-full h-auto max-h-[450px] object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/FFFFFF?text=Chino';">
-                                 <img src="img/img-6496@2x.png" alt="Chino" class="rounded-lg shadow-xl w-full h-auto max-h-[350px] object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/FFFFFF?text=Chino';">
-                            </div>
-                            <div>
-                                <h2 class="font-marcellus text-3xl text-gray-800">Frappachino <br><span class="text-2xl text-gray-500">aka Chino</span></h2>
-                                <div class="w-20 h-1 bg-brand-teal my-4"></div>
-                                <p class="text-gray-700 leading-relaxed">Frappachino aka Chino was born somewhere in 2005, we think, and is a 15.2h Palomino Quarter Horse Gelding. He joined team on 11/19/2024 and has been an absolute delight. He quickly put on some weight and muscling and is proving to be the bestest and safest boy. He tends to greet with you with pinned back ears but that is just his hello, give him a scratch on the withers and he is a happy boy. Chino has come so far in his trust of us and we couldn’t be happier with this addition to our team!</p>
-                            </div>
-                        </div>
-
-                         <!-- Horse 4: Charlie -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-start">
-                            <div class="md:order-2">
-                                <img src="https://placehold.co/600x800/CCCCCC/FFFFFF?text=Charlie" alt="Mastermind aka Charlie" class="rounded-lg shadow-xl w-full h-auto max-h-[600px] object-cover">
-                            </div>
-                            <div class="md:order-1">
-                                <h2 class="font-marcellus text-3xl text-gray-800">Mastermind <br><span class="text-2xl text-gray-500">aka Charlie</span></h2>
-                                <div class="w-20 h-1 bg-brand-teal my-4"></div>
-                                <p class="text-gray-700 leading-relaxed">Mastermind aka Charlie is a 13.2h Dunn Welsh Pony Gelding, born 05/15/2007. Charlie is the matriarch to Tiffany & Equestrians beginning August of 2017, he is the pony who started it all. He is also the best friend to Lennox, Tiffany’s heart horse. Charlie has a large personality and often feels misunderstood. He always wants to be the first one picked to ride and doesn’t understand when he isn’t. Charlie is a fancy pants who has done almost everything a pony can do. He is hopefully on his way to Pony Finals this year to knock that event off of his bucket list with his rider Izma Alam.</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Horse 5: Cappy -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-start">
-                            <div>
-                                <img src="img/img-2394-1.png" alt="Capelo du Milon aka Cappy" class="rounded-lg shadow-xl w-full h-auto max-h-[600px] object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/FFFFFF?text=Cappy';">
-                            </div>
-                            <div>
-                                <h2 class="font-marcellus text-3xl text-gray-800">Capelo du Milon <br><span class="text-2xl text-gray-500">aka Cappy</span></h2>
-                                <div class="w-20 h-1 bg-brand-teal my-4"></div>
-                                <p class="text-gray-700 leading-relaxed">Capelo du Milon aka Cappy is 13 years old, 16.2h and we welcomed him to the team on March 19, 2024. Cappy is a stunning grey who was imported from France many years ago. He used to jump the 1.45m but is now playing in the Hunters with his owner Vanessa Bernhoft.</p>
-                            </div>
-                        </div>
-
-                        <!-- Horse 6: Dublin -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-start">
-                            <div class="md:order-2">
-                                <img src="https://placehold.co/600x800/CCCCCC/FFFFFF?text=Dublin" alt="Alderwood aka Dublin" class="rounded-lg shadow-xl w-full h-auto max-h-[600px] object-cover">
-                            </div>
-                            <div class="md:order-1">
-                                <h2 class="font-marcellus text-3xl text-gray-800">Alderwood <br><span class="text-2xl text-gray-500">aka Dublin</span></h2>
-                                <div class="w-20 h-1 bg-brand-teal my-4"></div>
-                                <p class="text-gray-700 leading-relaxed">Alderwood aka Dublin born on 6/9/2019 a 16.2h Bay Oldenburg Gelding who joined the team on 12/5/2022 and is owned by Susanna Janska. Dublin is a funny quirky guy who makes funny faces but deep down is is the sweetest boy. He tries hard and doesn’t want to do it wrong. We have been working at developing him and can’t wait to see where these two end up in the show ring.</p>
-                            </div>
-                        </div>
-
+                        <?php
+                        require_once('wp-load.php');
+                        if (!function_exists('get_meet_horses')) {
+                            echo '<p class="text-gray-600">Plugin not active. Please activate "Meet the Horses" plugin.</p>';
+                        } else {
+                            $horses = get_meet_horses();
+                            if (!empty($horses)) {
+                                foreach ($horses as $index => $horse) {
+                                    $isEven = ($index % 2) === 1; // alternate layout
+                                    $image = $horse['image'] ?: 'https://placehold.co/600x400/CCCCCC/FFFFFF?text=Horse';
+                                    $aka = trim($horse['aka']);
+                                    $akaHtml = $aka !== '' ? '<br><span class="text-2xl text-gray-500">aka ' . esc_html($aka) . '</span>' : '';
+                                    ?>
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-start">
+                                        <div class="<?php echo $isEven ? 'md:order-2' : ''; ?> <?php echo $isEven ? '' : 'space-y-4'; ?>">
+                                            <img src="<?php echo esc_url($image); ?>" alt="<?php echo esc_attr($horse['title']); ?>" class="rounded-lg shadow-xl w-full h-auto max-h-[600px] object-cover">
+                                        </div>
+                                        <div class="<?php echo $isEven ? 'md:order-1' : ''; ?>">
+                                            <h2 class="font-marcellus text-3xl text-gray-800"><?php echo esc_html($horse['title']); ?> <?php echo $akaHtml; ?></h2>
+                                            <div class="w-20 h-1 bg-brand-teal my-4"></div>
+                                            <p class="text-gray-700 leading-relaxed"><?php echo nl2br(esc_html($horse['description'])); ?></p>
+                                        </div>
+                                    </div>
+                                    <?php
+                                }
+                            } else {
+                                echo '<p class="text-gray-600 italic">No horses added yet.</p>';
+                            }
+                        }
+                        ?>
                     </div>
                 </div>
             </section>
         </main>
         
-        <!-- Footer -->
-       <footer class="bg-brand-teal text-black border-t border-black mt-12">
-            <div class="container mx-auto px-6 lg:px-8 py-8 relative">
-                <!-- Footer Logo -->
-                <div class="flex justify-center mb-6 -mt-20">
-                     <img class="h-32 w-32 bg-white rounded-full p-2 shadow-lg border-4 border-brand-teal" src="img/image-1-2@2x.png" alt="Tiffany & Equestrians Logo" onerror="this.onerror=null;this.src='https://placehold.co/197x197/FFFFFF/000000?text=Logo';">
-                </div>
-                
-                <!-- Social Media -->
-                <div class="text-center mb-8">
-                    <h3 class="font-marcellus text-2xl mb-2">Follow Us On <br class="sm:hidden">Social Media</h3>
-                    <div class="flex justify-center space-x-6">
-                        <a href="https://facebook.com/tpmaulden" target="_blank" rel="noopener noreferrer" class="text-black hover:text-white transition-colors">
-                           <img src="img/ic-outline-facebook.png" alt="Facebook" class="h-10 w-10" onerror="this.onerror=null;this.src='https://placehold.co/50x50/000000/FFFFFF?text=F';">
-                        </a>
-                        <a href="https://instagram.com/tiffany_and_eq" target="_blank" rel="noopener noreferrer" class="text-black hover:text-white transition-colors">
-                           <img src="img/mdi-instagram.png" alt="Instagram" class="h-10 w-10" onerror="this.onerror=null;this.src='https://placehold.co/50x50/000000/FFFFFF?text=I';">
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Footer Links -->
-                 <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center font-marcellus text-lg leading-loose">
-                    <div>
-                        <h4 class="text-xl font-bold mb-2">About</h4>
-                        <a href="trainers.html" class="block hover:text-white">Owner</a>
-                        <a href="facility.html" class="block hover:text-white">Facility</a>
-                        <a href="meet-the-horses.html" class="block hover:text-white">Meet The Horses</a>
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-bold mb-2">Services</h4>
-                        <a href="programs.html" class="block hover:text-white">Programs</a>
-                        <a href="lease-sale-horses.html" class="block hover:text-white">Lease/Sale horses</a>
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-bold mb-2">Events</h4>
-                        <a href="events.html" class="block hover:text-white">Show Schedule</a>
-                        <a href="pony-camps.html" class="block hover:text-white">Pony Camps</a>
-                    </div>
-                     <div>
-                        <h4 class="text-xl font-bold mb-2">Gallery</h4>
-                        <a href="gallery.html" class="block hover:text-white">Visit Gallery</a>
-                    </div>
-                </div>
-                 <!-- Contact Info -->
-                <div class="mt-10 pt-6 border-t border-black/20 text-center font-inter text-sm">
-                     <p class="font-bold"><a href="https://www.google.com/maps/search/?api=1&query=7620+260th+Ave+NE+Redmond+WA+98053" target="_blank" rel="noopener noreferrer" class="hover:text-white">7620 260th Ave NE, Redmond, WA 98053</a></p>
-                     <p>Phone: <a href="tel:+12069002700" class="hover:text-white">(206) 900-2700</a> | Email: <a href="mailto:tiffany@tiffanyandequestrians.com" class="hover:text-white uppercase">tiffany@tiffanyandequestrians.com</a></p>
-                </div>
-            </div>
-        </footer>
+        <?php include '_footer.html'; ?>
     </div>
 
     <script>

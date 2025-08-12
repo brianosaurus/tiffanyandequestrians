@@ -64,62 +64,13 @@
     <!-- Main Container -->
     <div class="w-full max-w-screen-xl mx-auto">
 
-        <!-- Header and Navigation -->
-        <header class="relative z-20 font-marcellus">
-            <nav class="nav-gradient backdrop-blur-sm shadow-md fixed top-0 left-0 right-0">
-                <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="flex items-center justify-between md:justify-center h-20">
-                        
-                        <!-- Desktop Centered Nav -->
-                        <div class="hidden md:flex items-center space-x-8">
-                             <a href="index.html" title="Home" class="flex-shrink-0">
-                                <img class="h-16 w-auto" src="img/image-1.png" alt="Tiffany & Equestrians Logo" onerror="this.onerror=null;this.src='https://placehold.co/109x109/FFFFFF/000000?text=Logo';">
-                            </a>
-                            <div class="flex items-baseline space-x-4">
-                                <a href="index.html" class="text-black hover:text-[#4a90e2] px-3 py-2 rounded-md text-lg">About</a>
-                                <a href="programs.html" class="text-black hover:text-[#4a90e2] px-3 py-2 rounded-md text-lg">Services</a>
-                                <a href="events.html" class="text-black hover:text-[#4a90e2] px-3 py-2 rounded-md text-lg">Events</a>
-                                <a href="gallery.html" class="text-black hover:text-[#4a90e2] px-3 py-2 rounded-md text-lg">Gallery</a>
-                                <a href="contact.html" class="text-black hover:text-[#4a90e2] px-3 py-2 rounded-md text-lg">Contact</a>
-                            </div>
-                        </div>
-
-                        <!-- Mobile Nav -->
-                        <div class="flex items-center justify-between w-full md:hidden">
-                            <a href="index.html" title="Home" class="flex-shrink-0">
-                                <img class="h-16 w-auto" src="img/image-1.png" alt="Tiffany & Equestrians Logo" onerror="this.onerror=null;this.src='https://placehold.co/109x109/FFFFFF/000000?text=Logo';">
-                            </a>
-                            <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-white hover:bg-brand-teal-dark focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-                                <span class="sr-only">Open main menu</span>
-                                <svg id="menu-open-icon" class="h-6 w-6 block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                                </svg>
-                                <svg id="menu-close-icon" class="h-6 w-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                                </svg>
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- Mobile Menu, show/hide based on menu state. -->
-                <div id="mobile-menu" class="md:hidden hidden">
-                    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                        <a href="index.html" class="text-black hover:bg-brand-teal hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
-                        <a href="programs.html" class="text-black hover:bg-brand-teal hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
-                        <a href="events.html" class="text-black hover:bg-brand-teal hover:text-white block px-3 py-2 rounded-md text-base font-medium">Events</a>
-                        <a href="gallery.html" class="text-black hover:bg-brand-teal hover:text-white block px-3 py-2 rounded-md text-base font-medium">Gallery</a>
-                        <a href="contact.html" class="text-black hover:bg-brand-teal hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
-                    </div>
-                </div>
-            </nav>
-        </header>
+        <?php include '_nav.html'; ?>
 
         <main class="pt-20">
             <!-- Hero Section -->
-            <section class="relative h-[60vh] md:h-[80vh] bg-cover bg-center" style="background-image: url('img/hero-section.png');">
+            <section class="relative h-[60vh] md:h-[80vh] bg-cover bg-center" style="background-image: url('img/team-photo.jpg');">
                 <div class="absolute inset-0 bg-black/30"></div>
-                <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+                <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4" style="top: -150px">
                     <h1 class="font-marcellus text-4xl md:text-6xl lg:text-7xl font-bold text-shadow-strong">Tiffany & Equestrians</h1>
                     <p class="font-marcellus mt-4 text-lg md:text-2xl max-w-2xl text-shadow-strong">Building partnerships between horse and rider through proper horsemanship knowledge and skills.</p>
                 </div>
@@ -140,14 +91,14 @@
                            </div>
                         </a>
                         <a href="facility.html" class="group block bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
-                           <img src="https://placehold.co/400x300/AAAAAA/FFFFFF?text=Facility" alt="Facility" class="w-full h-56 object-cover">
+                           <img src="img/image-11.png" alt="Facility" class="w-full h-56 object-cover">
                            <div class="p-6">
                                <h3 class="font-marcellus text-2xl text-gray-800">Facility</h3>
                                <p class="text-gray-600 mt-2">Explore our top-tier training and rehabilitation center.</p>
                            </div>
                         </a>
                         <a href="meet-the-horses.html" class="group block bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
-                            <img src="https://placehold.co/400x300/BBBBBB/FFFFFF?text=Horses" alt="Horses" class="w-full h-56 object-cover">
+                            <img src="img/image-8-1.png" alt="Horses" class="w-full h-56 object-cover">
                            <div class="p-6">
                                <h3 class="font-marcellus text-2xl text-gray-800">Meet The Horses</h3>
                                <p class="text-gray-600 mt-2">Get to know the amazing horses in our program.</p>
@@ -164,7 +115,7 @@
                      <div class="w-20 h-1 bg-white mx-auto my-4"></div>
                      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
                          <a href="programs.html" class="group block relative rounded-lg overflow-hidden shadow-xl h-80">
-                             <img src="img/image-6.png" alt="Riding lesson" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/FFFFFF?text=Programs';">
+                             <img src="img/nic_pony_finals.png" alt="Riding lesson" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/FFFFFF?text=Programs';">
                              <div class="absolute inset-0 bg-black/40 flex items-center justify-center p-4">
                                 <h3 class="text-white font-marcellus text-4xl border-2 border-white rounded-full px-8 py-4 bg-white/20 backdrop-blur-sm group-hover:bg-white/90 group-hover:text-brand-teal-dark transition-all duration-300">Programs</h3>
                              </div>
@@ -179,97 +130,10 @@
                  </div>
             </section>
 
-            <!-- Testimonials Section -->
-            <section class="py-12 md:py-20 bg-brand-gray">
-                <div class="container mx-auto px-6 lg:px-8 text-center">
-                    <h2 class="text-4xl md:text-5xl font-marcellus text-gray-800 mb-2 text-shadow">Testimonials</h2>
-                    <div class="w-20 h-1 bg-brand-teal mx-auto mb-12"></div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <div class="bg-white p-8 rounded-lg shadow-lg">
-                            <div class="flex justify-center mb-4 text-yellow-400">
-                               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            </div>
-                            <p class="text-gray-600 italic">"This is a test testimonial. This is a test testimonial. This is a test testimonial."</p>
-                            <p class="font-marcellus text-lg text-gray-800 font-semibold mt-6">- Brooke A.</p>
-                        </div>
-                        <div class="bg-white p-8 rounded-lg shadow-lg">
-                             <div class="flex justify-center mb-4 text-yellow-400">
-                               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            </div>
-                            <p class="text-gray-600 italic">"This is a test testimonial. This is a test testimonial. This is a test testimonial."</p>
-                            <p class="font-marcellus text-lg text-gray-800 font-semibold mt-6">- Brooke A.</p>
-                        </div>
-                         <div class="bg-white p-8 rounded-lg shadow-lg">
-                             <div class="flex justify-center mb-4 text-yellow-400">
-                               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            </div>
-                            <p class="text-gray-600 italic">"This is a test testimonial. This is a test testimonial. This is a test testimonial."</p>
-                            <p class="font-marcellus text-lg text-gray-800 font-semibold mt-6">- Brooke A.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <?php include '_testimonials.php'; ?>
         </main>
         
-        <!-- Footer -->
-       <footer class="bg-brand-teal text-black border-t border-black mt-12">
-            <div class="container mx-auto px-6 lg:px-8 py-8 relative">
-                <div class="flex justify-center mb-6 -mt-20">
-                     <img class="h-32 w-32 bg-white rounded-full p-2 shadow-lg border-4 border-brand-teal" src="img/image-1-2@2x.png" alt="Tiffany & Equestrians Logo" onerror="this.onerror=null;this.src='https://placehold.co/197x197/FFFFFF/000000?text=Logo';">
-                </div>
-                
-                <div class="text-center mb-8">
-                    <h3 class="font-marcellus text-2xl mb-2">Follow Us On <br class="sm:hidden">Social Media</h3>
-                    <div class="flex justify-center space-x-6">
-                        <a href="https://facebook.com/tpmaulden" target="_blank" rel="noopener noreferrer" class="text-black hover:text-white transition-colors">
-                           <img src="img/ic-outline-facebook.png" alt="Facebook" class="h-10 w-10" onerror="this.onerror=null;this.src='https://placehold.co/50x50/000000/FFFFFF?text=F';">
-                        </a>
-                        <a href="https://instagram.com/tiffany_and_eq" target="_blank" rel="noopener noreferrer" class="text-black hover:text-white transition-colors">
-                           <img src="img/mdi-instagram.png" alt="Instagram" class="h-10 w-10" onerror="this.onerror=null;this.src='https://placehold.co/50x50/000000/FFFFFF?text=I';">
-                        </a>
-                    </div>
-                </div>
-
-                 <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center font-marcellus text-lg leading-loose">
-                    <div>
-                        <h4 class="text-xl font-bold mb-2">About</h4>
-                        <a href="trainers.html" class="block hover:text-white">Owner</a>
-                        <a href="facility.html" class="block hover:text-white">Facility</a>
-                        <a href="meet-the-horses.html" class="block hover:text-white">Meet The Horses</a>
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-bold mb-2">Services</h4>
-                        <a href="programs.html" class="block hover:text-white">Programs</a>
-                        <a href="lease-sale-horses.html" class="block hover:text-white">Lease/Sale horses</a>
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-bold mb-2">Events</h4>
-                        <a href="events.html" class="block hover:text-white">Show Schedule</a>
-                        <a href="pony-camps.html" class="block hover:text-white">Pony Camps</a>
-                    </div>
-                     <div>
-                        <h4 class="text-xl font-bold mb-2">Gallery</h4>
-                        <a href="gallery.html" class="block hover:text-white">Visit Gallery</a>
-                    </div>
-                </div>
-                <div class="mt-10 pt-6 border-t border-black/20 text-center font-inter text-sm">
-                     <p class="font-bold"><a href="https://www.google.com/maps/search/?api=1&query=7620+260th+Ave+NE+Redmond+WA+98053" target="_blank" rel="noopener noreferrer" class="hover:text-white">7620 260th Ave NE, Redmond, WA 98053</a></p>
-                     <p>Phone: <a href="tel:+12069002700" class="hover:text-white">(206) 900-2700</a> | Email: <a href="mailto:tiffany@tiffanyandequestrians.com" class="hover:text-white uppercase">tiffany@tiffanyandequestrians.com</a></p>
-                </div>
-            </div>
-        </footer>
+        <?php include '_footer.html'; ?>
     </div>
 
     <script>
