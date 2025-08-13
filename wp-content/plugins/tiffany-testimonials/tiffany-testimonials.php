@@ -20,6 +20,8 @@ class TiffanyTestimonialsManager {
         add_action('admin_enqueue_scripts', array($this, 'enqueue_admin_scripts'));
         add_action('manage_testimonial_posts_custom_column', array($this, 'manage_testimonial_columns'), 10, 2);
         add_filter('manage_testimonial_posts_columns', array($this, 'add_testimonial_columns'));
+        add_filter('manage_edit-testimonial_sortable_columns', array($this, 'make_columns_sortable'));
+        add_action('pre_get_posts', array($this, 'set_default_admin_order'));
     }
     
     /**
@@ -53,7 +55,10 @@ class TiffanyTestimonialsManager {
             'menu_position' => 23,
             'menu_icon' => 'dashicons-format-quote',
             'supports' => array('title'),
-            'show_in_rest' => true
+            'show_in_rest' => true,
+            'orderby' => 'meta_value_num',
+            'meta_key' => '_testimonial_display_order',
+            'order' => 'ASC'
         );
         
         register_post_type('testimonial', $args);
@@ -84,6 +89,7 @@ class TiffanyTestimonialsManager {
         $testimonial_text = get_post_meta($post->ID, '_testimonial_text', true);
         $author_name = get_post_meta($post->ID, '_author_name', true);
         $star_rating = get_post_meta($post->ID, '_star_rating', true);
+        $display_order = get_post_meta($post->ID, '_testimonial_display_order', true);
         
         ?>
         <style>
@@ -142,6 +148,14 @@ class TiffanyTestimonialsManager {
             </select>
             <p class="description">Select the star rating for this testimonial (1-5 stars).</p>
         </div>
+        
+        <div class="testimonial-field">
+            <label for="testimonial_display_order">Display Order</label>
+            <input type="number" id="testimonial_display_order" name="testimonial_display_order" 
+                   value="<?php echo esc_attr($display_order); ?>" class="small-text" 
+                   min="1" placeholder="1" />
+            <p class="description">Order in which this testimonial appears (lower numbers appear first).</p>
+        </div>
         <?php
     }
     
@@ -180,6 +194,37 @@ class TiffanyTestimonialsManager {
                 update_post_meta($post_id, '_star_rating', $rating);
             }
         }
+        
+        if (isset($_POST['testimonial_display_order'])) {
+            update_post_meta($post_id, '_testimonial_display_order', intval($_POST['testimonial_display_order']));
+        }
+    }
+    
+    /**
+     * Set default admin order for testimonials list
+     */
+    public function set_default_admin_order($query) {
+        if (!is_admin()) {
+            return;
+        }
+        
+        global $pagenow, $post_type;
+        
+        if ($pagenow === 'edit.php' && $post_type === 'testimonial' && !isset($_GET['orderby'])) {
+            $query->set('orderby', 'meta_value_num');
+            $query->set('meta_key', '_testimonial_display_order');
+            $query->set('order', 'ASC');
+        }
+    }
+    
+    /**
+     * Make columns sortable
+     */
+    public function make_columns_sortable($columns) {
+        $columns['display_order'] = 'display_order';
+        $columns['author_name'] = 'author_name';
+        $columns['star_rating'] = 'star_rating';
+        return $columns;
     }
     
     /**
@@ -189,6 +234,7 @@ class TiffanyTestimonialsManager {
         $new_columns = array();
         $new_columns['cb'] = $columns['cb'];
         $new_columns['title'] = 'Title';
+        $new_columns['display_order'] = 'Order';
         $new_columns['author_name'] = 'Author';
         $new_columns['star_rating'] = 'Rating';
         $new_columns['testimonial_excerpt'] = 'Testimonial';
@@ -202,6 +248,15 @@ class TiffanyTestimonialsManager {
      */
     public function manage_testimonial_columns($column, $post_id) {
         switch ($column) {
+            case 'display_order':
+                $order = get_post_meta($post_id, '_testimonial_display_order', true);
+                if ($order) {
+                    echo '<strong style="background: #0073aa; color: white; padding: 2px 8px; border-radius: 12px; font-size: 12px;">' . esc_html($order) . '</strong>';
+                } else {
+                    echo '<span style="color: #999;">Not set</span>';
+                }
+                break;
+                
             case 'author_name':
                 echo esc_html(get_post_meta($post_id, '_author_name', true));
                 break;
@@ -228,6 +283,14 @@ class TiffanyTestimonialsManager {
         
         if ($post_type === 'testimonial') {
             wp_enqueue_style('tiffany-testimonials', plugin_dir_url(__FILE__) . 'css/admin.css');
+            
+            // Add custom CSS for admin columns
+            wp_add_inline_style('wp-admin', '
+                .column-display_order { width: 80px; text-align: center; }
+                .column-author_name { width: 120px; }
+                .column-star_rating { width: 100px; text-align: center; }
+                .column-testimonial_excerpt { width: 200px; }
+            ');
         }
     }
 }
@@ -238,13 +301,14 @@ new TiffanyTestimonialsManager();
 /**
  * Function to get testimonials for display
  */
-function get_tiffany_testimonials() {
+function get_tiffany_testimonials($limit = -1) {
     $args = array(
         'post_type' => 'testimonial',
         'post_status' => 'publish',
         'posts_per_page' => -1,
-        'orderby' => 'date',
-        'order' => 'DESC'
+        'orderby' => 'meta_value_num',
+        'meta_key' => '_testimonial_display_order',
+        'order' => 'ASC'
     );
     
     $testimonials = array();
@@ -257,10 +321,21 @@ function get_tiffany_testimonials() {
                 'id' => get_the_ID(),
                 'text' => get_post_meta(get_the_ID(), '_testimonial_text', true),
                 'author' => get_post_meta(get_the_ID(), '_author_name', true),
-                'rating' => get_post_meta(get_the_ID(), '_star_rating', true)
+                'rating' => get_post_meta(get_the_ID(), '_star_rating', true),
+                'order' => get_post_meta(get_the_ID(), '_testimonial_display_order', true) ?: 999
             );
         }
         wp_reset_postdata();
+        
+        // Sort by order to ensure proper sequence
+        usort($testimonials, function($a, $b) {
+            return $a['order'] - $b['order'];
+        });
+        
+        // Apply limit after sorting
+        if ($limit > 0) {
+            $testimonials = array_slice($testimonials, 0, $limit);
+        }
     }
     
     return $testimonials;

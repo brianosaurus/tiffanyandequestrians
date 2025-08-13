@@ -163,67 +163,58 @@
                 <div class="container mx-auto px-6 lg:px-8 text-center">
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         <?php
-                        // Get images from the gallery directory with similar proportions
-                        $gallery_dir = 'gallery/';
-                        $allowed_extensions = array('jpg', 'jpeg', 'png', 'gif', 'webp');
-                        $images_with_dimensions = array();
+                        require_once('wp-load.php');
                         
-                        if (is_dir($gallery_dir)) {
-                            $files = scandir($gallery_dir);
-                            foreach ($files as $file) {
-                                $extension = strtolower(pathinfo($file, PATHINFO_EXTENSION));
-                                if (in_array($extension, $allowed_extensions)) {
-                                    $image_path = $gallery_dir . $file;
-                                    $image_info = getimagesize($image_path);
-                                    if ($image_info) {
-                                        $width = $image_info[0];
-                                        $height = $image_info[1];
-                                        $aspect_ratio = $width / $height;
-                                        $images_with_dimensions[] = array(
-                                            'file' => $file,
-                                            'path' => $image_path,
-                                            'width' => $width,
-                                            'height' => $height,
-                                            'aspect_ratio' => $aspect_ratio
-                                        );
+                        // Debug: Check if function exists
+                        echo '<!-- Debug: Function exists check: ' . (function_exists('get_tiffany_gallery') ? 'YES' : 'NO') . ' -->';
+                        echo '<!-- Debug: WordPress loaded: ' . (function_exists('wp_get_current_user') ? 'YES' : 'NO') . ' -->';
+                        
+                        if (function_exists('get_tiffany_gallery')) {
+                            $gallery_preview = get_tiffany_gallery(3); // Get first 3 images in display order
+                            
+                            if (!empty($gallery_preview)) {
+                                // Debug output
+                                echo '<!-- Debug: Programs gallery preview found ' . count($gallery_preview) . ' images -->';
+                                echo '<!-- Debug: Programs gallery preview orders: ' . implode(', ', array_column($gallery_preview, 'order')) . ' -->';
+                                
+                                foreach ($gallery_preview as $image) {
+                                    if ($image['image']) {
+                                        ?>
+                                        <div class="aspect-square w-full">
+                                            <img src="<?php echo esc_url($image['image']); ?>" 
+                                                 alt="<?php echo esc_attr($image['title']); ?>" 
+                                                 class="w-full h-full object-cover rounded-lg shadow-md" 
+                                                 onerror="this.onerror=null;this.src='https://placehold.co/321x321/333333/FFFFFF?text=Gallery';">
+                                        </div>
+                                        <?php
                                     }
                                 }
+                            } else {
+                                // Fallback if no gallery images
+                                ?>
+                                <div class="aspect-square w-full">
+                                    <img src="img/image-9@2x.png" alt="Gallery image 1" class="w-full h-full object-cover rounded-lg shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/321x321/333333/FFFFFF?text=Gallery';">
+                                </div>
+                                <div class="aspect-square w-full">
+                                    <img src="img/image@2x.png" alt="Gallery image 2" class="w-full h-full object-cover rounded-lg shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/321x321/333333/FFFFFF?text=Gallery';">
+                                </div>
+                                <div class="aspect-square w-full">
+                                    <img src="img/image-2@2x.png" alt="Gallery image 3" class="w-full h-full object-cover rounded-lg shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/321x321/333333/FFFFFF?text=Gallery';">
+                                </div>
+                                <?php
                             }
-                        }
-                        
-                        // Sort by aspect ratio to group similar proportions
-                        usort($images_with_dimensions, function($a, $b) {
-                            return $a['aspect_ratio'] <=> $b['aspect_ratio'];
-                        });
-                        
-                        // Find three images with similar aspect ratios (within 10% tolerance)
-                        $selected_images = array();
-                        $target_aspect_ratio = 755 / 556; // Target ratio similar to 755x556
-                        $tolerance = 0.1; // 10% tolerance
-                        
-                        foreach ($images_with_dimensions as $image) {
-                            $ratio_diff = abs($image['aspect_ratio'] - $target_aspect_ratio) / $target_aspect_ratio;
-                            if ($ratio_diff <= $tolerance) {
-                                $selected_images[] = $image;
-                                if (count($selected_images) >= 3) {
-                                    break;
-                                }
-                            }
-                        }
-                        
-                        // If we don't have 3 similar images, take the first 3 with closest ratios
-                        if (count($selected_images) < 3) {
-                            $selected_images = array_slice($images_with_dimensions, 0, 3);
-                        }
-                        
-                        // Display the selected images
-                        foreach ($selected_images as $index => $image) {
-                            $alt_text = 'Gallery image ' . ($index + 1);
+                        } else {
+                            // Fallback if plugin not active
                             ?>
-                            <img src="<?php echo $image['path']; ?>" 
-                                 alt="<?php echo htmlspecialchars($alt_text); ?>" 
-                                 class="rounded-lg shadow-md w-full h-64 object-cover" 
-                                 onerror="this.onerror=null;this.src='https://placehold.co/321x217/333333/FFFFFF?text=Gallery';">
+                            <div class="aspect-square w-full">
+                                <img src="img/image-9@2x.png" alt="Gallery image 1" class="w-full h-full object-cover rounded-lg shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/321x321/333333/FFFFFF?text=Gallery';">
+                            </div>
+                            <div class="aspect-square w-full">
+                                <img src="img/image@2x.png" alt="Gallery image 2" class="w-full h-full object-cover rounded-lg shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/321x321/333333/FFFFFF?text=Gallery';">
+                            </div>
+                            <div class="aspect-square w-full">
+                                <img src="img/image-2@2x.png" alt="Gallery image 3" class="w-full h-full object-cover rounded-lg shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/321x321/333333/FFFFFF?text=Gallery';">
+                            </div>
                             <?php
                         }
                         ?>

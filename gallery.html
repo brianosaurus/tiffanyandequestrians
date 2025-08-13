@@ -61,6 +61,80 @@
         .gallery-item:hover .overlay {
             opacity: 1;
         }
+        
+        /* Force all gallery images to be exactly the same size */
+        .gallery-item {
+            width: 100% !important;
+            height: 300px !important;
+            min-height: 300px !important;
+            max-height: 300px !important;
+            position: relative !important;
+            overflow: hidden !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+        }
+        
+        .gallery-item img {
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover !important;
+            display: block !important;
+            flex-shrink: 0 !important;
+        }
+        
+        /* Ensure grid items are uniform */
+        .gallery-grid {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+        
+        /* Override any Tailwind classes that might interfere */
+        .gallery-item.h-80,
+        .gallery-item.h-64,
+        .gallery-item.h-auto {
+            height: 300px !important;
+        }
+        
+        /* Force grid consistency */
+        .gallery-grid > * {
+            height: 300px !important;
+        }
+        
+        /* Ensure images don't have any default sizing */
+        .gallery-item img[class*="h-"] {
+            height: 100% !important;
+        }
+        
+        .gallery-item img[class*="w-"] {
+            width: 100% !important;
+        }
+        
+        /* CSS Reset for gallery to ensure consistency */
+        .gallery-grid .gallery-item,
+        .gallery-grid .gallery-item * {
+            box-sizing: border-box !important;
+        }
+        
+        /* Nuclear option - override everything */
+        .gallery-grid .gallery-item {
+            height: 300px !important;
+            width: 100% !important;
+            min-height: 300px !important;
+            max-height: 300px !important;
+        }
+        
+        .gallery-grid .gallery-item img {
+            height: 300px !important;
+            width: 100% !important;
+            object-fit: cover !important;
+        }
+        
+        /* Remove any inline styles that might interfere */
+        .gallery-grid .gallery-item[style*="height"],
+        .gallery-grid .gallery-item[style*="width"] {
+            height: 300px !important;
+            width: 100% !important;
+        }
     </style>
 </head>
 <body class="bg-white">
@@ -78,38 +152,43 @@
                         <h1 class="font-marcellus text-4xl md:text-5xl text-gray-800 text-shadow">Gallery</h1>
                     </div>
 
-                                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                                        <div class="gallery-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         <?php
-                        // Get all image files from the gallery directory
-                        $gallery_dir = 'gallery/';
-                        $allowed_extensions = array('jpg', 'jpeg', 'png', 'gif', 'webp');
-                        $images = array();
-                        
-                        if (is_dir($gallery_dir)) {
-                            $files = scandir($gallery_dir);
-                            foreach ($files as $file) {
-                                $extension = strtolower(pathinfo($file, PATHINFO_EXTENSION));
-                                if (in_array($extension, $allowed_extensions)) {
-                                    $images[] = $file;
-                                }
+                        require_once('wp-load.php');
+                        if (function_exists('get_tiffany_gallery')) {
+                            $gallery_images = get_tiffany_gallery();
+                            
+                            // Debug output for main gallery
+                            echo '<!-- Debug: Main gallery found ' . count($gallery_images) . ' images -->';
+                            if (!empty($gallery_images)) {
+                                echo '<!-- Debug: Main gallery orders: ' . implode(', ', array_column($gallery_images, 'order')) . ' -->';
+                                echo '<!-- Debug: Main gallery titles: ' . implode(', ', array_column($gallery_images, 'order')) . ' -->';
                             }
-                        }
-                        
-                        // Sort images alphabetically
-                        sort($images);
-                        
-                        // Display each image
-                        foreach ($images as $image) {
-                            $image_path = $gallery_dir . $image;
-                            $alt_text = pathinfo($image, PATHINFO_FILENAME);
-                            ?>
-                            <div class="gallery-item relative rounded-lg shadow-lg overflow-hidden group">
-                                <img src="<?php echo $image_path; ?>" 
-                                     alt="<?php echo htmlspecialchars($alt_text); ?>" 
-                                     class="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-500" 
-                                     onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/FFFFFF?text=Gallery';">
-                            </div>
-                            <?php
+                            
+                            if (!empty($gallery_images)) {
+                                foreach ($gallery_images as $image) {
+                                    if ($image['image']) {
+                                        ?>
+                                        <div class="gallery-item relative rounded-lg shadow-lg overflow-hidden group">
+                                            <img src="<?php echo esc_url($image['image']); ?>" 
+                                                 alt="<?php echo esc_attr($image['title']); ?>" 
+                                                 class="transform group-hover:scale-105 transition-transform duration-500" 
+                                                 onerror="this.onerror=null;this.src='https://placehold.co/600x600/CCCCCC/FFFFFF?text=Gallery';">
+                                            <?php if ($image['caption']): ?>
+                                                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-75 text-white p-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                                                    <p class="text-sm font-medium"><?php echo esc_html($image['title']); ?></p>
+                                                    <p class="text-xs opacity-90"><?php echo esc_html($image['caption']); ?></p>
+                                                </div>
+                                            <?php endif; ?>
+                                        </div>
+                                        <?php
+                                    }
+                                }
+                            } else {
+                                echo '<p class="text-gray-600 col-span-full text-center">No gallery images found. Please add some images in WordPress Admin → Gallery.</p>';
+                            }
+                        } else {
+                            echo '<p class="text-gray-600 col-span-full text-center">Gallery plugin not active. Please activate the Tiffany Gallery plugin.</p>';
                         }
                         ?>
                     </div>

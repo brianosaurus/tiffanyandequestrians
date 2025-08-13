@@ -19,6 +19,7 @@ class TiffanyEventsManager {
         add_action('save_post', array($this, 'save_events_meta'));
         add_action('admin_enqueue_scripts', array($this, 'enqueue_admin_scripts'));
         add_action('wp_ajax_get_events_data', array($this, 'get_events_data'));
+        add_action('pre_get_posts', array($this, 'set_default_admin_order'));
     }
     
     /**
@@ -53,7 +54,10 @@ class TiffanyEventsManager {
             'menu_position' => 20,
             'menu_icon' => 'dashicons-calendar-alt',
             'supports' => array('title', 'editor', 'thumbnail'),
-            'show_in_rest' => true
+            'show_in_rest' => true,
+            'orderby' => 'meta_value_num',
+            'meta_key' => '_event_display_order',
+            'order' => 'ASC'
         );
         
         register_post_type('tiffany_event', $args);
@@ -84,6 +88,7 @@ class TiffanyEventsManager {
         $city_state = get_post_meta($post->ID, '_event_city_state', true);
         $event_date = get_post_meta($post->ID, '_event_date', true);
         $flyer_url = get_post_meta($post->ID, '_event_flyer_url', true);
+        $display_order = get_post_meta($post->ID, '_event_display_order', true);
         
         ?>
         <table class="form-table">
@@ -118,6 +123,17 @@ class TiffanyEventsManager {
                            value="<?php echo esc_attr($flyer_url); ?>" class="regular-text" 
                            placeholder="https://example.com/flyer.pdf" />
                     <p class="description">Enter the URL to the event flyer (optional).</p>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    <label for="event_display_order">Display Order</label>
+                </th>
+                <td>
+                    <input type="number" id="event_display_order" name="event_display_order" 
+                           value="<?php echo esc_attr($display_order); ?>" class="small-text" 
+                           min="1" placeholder="1" />
+                    <p class="description">Order in which this event appears (lower numbers appear first).</p>
                 </td>
             </tr>
         </table>
@@ -156,6 +172,27 @@ class TiffanyEventsManager {
         if (isset($_POST['event_flyer_url'])) {
             update_post_meta($post_id, '_event_flyer_url', esc_url_raw($_POST['event_flyer_url']));
         }
+        
+        if (isset($_POST['event_display_order'])) {
+            update_post_meta($post_id, '_event_display_order', intval($_POST['event_display_order']));
+        }
+    }
+    
+    /**
+     * Set default admin order for events list
+     */
+    public function set_default_admin_order($query) {
+        if (!is_admin()) {
+            return;
+        }
+        
+        global $pagenow, $post_type;
+        
+        if ($pagenow === 'edit.php' && $post_type === 'tiffany_event' && !isset($_GET['orderby'])) {
+            $query->set('orderby', 'meta_value_num');
+            $query->set('meta_key', '_event_display_order');
+            $query->set('order', 'ASC');
+        }
     }
     
     /**
@@ -166,6 +203,14 @@ class TiffanyEventsManager {
         
         if ($post_type === 'tiffany_event') {
             wp_enqueue_media();
+            
+            // Add custom CSS for admin columns
+            wp_add_inline_style('wp-admin', '
+                .column-display_order { width: 80px; text-align: center; }
+                .column-event_date { width: 120px; }
+                .column-city_state { width: 120px; }
+                .column-flyer { width: 100px; }
+            ');
         }
     }
     
@@ -182,8 +227,8 @@ class TiffanyEventsManager {
             'post_type' => 'tiffany_event',
             'post_status' => 'publish',
             'posts_per_page' => -1,
-            'orderby' => 'meta_value',
-            'meta_key' => '_event_date',
+            'orderby' => 'meta_value_num',
+            'meta_key' => '_event_display_order',
             'order' => 'ASC'
         );
         
@@ -202,7 +247,8 @@ class TiffanyEventsManager {
                 'image_url' => $image_url,
                 'city_state' => get_post_meta($event->ID, '_event_city_state', true),
                 'date' => get_post_meta($event->ID, '_event_date', true),
-                'flyer' => get_post_meta($event->ID, '_event_flyer_url', true)
+                'flyer' => get_post_meta($event->ID, '_event_flyer_url', true),
+                'order' => get_post_meta($event->ID, '_event_display_order', true) ?: 999
             );
         }
         
@@ -213,11 +259,44 @@ class TiffanyEventsManager {
 // Initialize the plugin
 new TiffanyEventsManager();
 
+// Make the function globally available
+function get_tiffany_events($limit = -1) {
+    $query = new WP_Query([
+        'post_type' => 'tiffany_event',
+        'post_status' => 'publish',
+        'posts_per_page' => $limit,
+        'orderby' => 'meta_value_num',
+        'meta_key' => '_event_display_order',
+        'order' => 'ASC',
+    ]);
+    $events = [];
+    if ($query->have_posts()) {
+        while ($query->have_posts()) { $query->the_post();
+            $id = get_the_ID();
+            $image_id = get_post_thumbnail_id($id);
+            $events[] = [
+                'id' => $id,
+                'title' => get_the_title(),
+                'content' => get_the_content(),
+                'image' => $image_id ? wp_get_attachment_image_url($image_id, 'large') : '',
+                'thumbnail' => $image_id ? wp_get_attachment_image_url($image_id, 'medium') : '',
+                'city_state' => get_post_meta($id, '_event_city_state', true),
+                'date' => get_post_meta($id, '_event_date', true),
+                'flyer' => get_post_meta($id, '_event_flyer_url', true),
+                'order' => get_post_meta($id, '_event_display_order', true) ?: 999,
+            ];
+        }
+        wp_reset_postdata();
+    }
+    return $events;
+}
+
 // Add custom columns to events list
 add_filter('manage_tiffany_event_posts_columns', function($columns) {
     $new_columns = array();
     $new_columns['cb'] = $columns['cb'];
     $new_columns['title'] = $columns['title'];
+    $new_columns['display_order'] = 'Order';
     $new_columns['event_date'] = 'Event Date';
     $new_columns['city_state'] = 'Location';
     $new_columns['flyer'] = 'Flyer';
@@ -229,6 +308,14 @@ add_filter('manage_tiffany_event_posts_columns', function($columns) {
 // Populate custom columns
 add_action('manage_tiffany_event_posts_custom_column', function($column, $post_id) {
     switch ($column) {
+        case 'display_order':
+            $order = get_post_meta($post_id, '_event_display_order', true);
+            if ($order) {
+                echo '<strong style="background: #0073aa; color: white; padding: 2px 8px; border-radius: 12px; font-size: 12px;">' . esc_html($order) . '</strong>';
+            } else {
+                echo '<span style="color: #999;">Not set</span>';
+            }
+            break;
         case 'event_date':
             echo get_post_meta($post_id, '_event_date', true);
             break;
@@ -248,6 +335,7 @@ add_action('manage_tiffany_event_posts_custom_column', function($column, $post_i
 
 // Make columns sortable
 add_filter('manage_edit-tiffany_event_sortable_columns', function($columns) {
+    $columns['display_order'] = 'display_order';
     $columns['event_date'] = 'event_date';
     $columns['city_state'] = 'city_state';
     return $columns;

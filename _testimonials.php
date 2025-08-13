@@ -1,6 +1,17 @@
 <?php
 require_once('wp-load.php');
+
+// Debug output
+echo '<!-- Debug: Function exists check: ' . (function_exists('get_tiffany_testimonials') ? 'YES' : 'NO') . ' -->';
+echo '<!-- Debug: WordPress loaded: ' . (function_exists('wp_get_current_user') ? 'YES' : 'NO') . ' -->';
+
 $testimonials = get_tiffany_testimonials();
+
+// Debug output
+echo '<!-- Debug: Found ' . count($testimonials) . ' testimonials -->';
+if (!empty($testimonials)) {
+    echo '<!-- Debug: Testimonial orders: ' . implode(', ', array_column($testimonials, 'order')) . ' -->';
+}
 ?>
 <!-- Testimonials Section -->
 <section class="py-12 md:py-20 bg-brand-gray">

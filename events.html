@@ -76,60 +76,53 @@
                         // Load WordPress
                         require_once('wp-load.php');
                         
-                        // Get events from WordPress custom post type
-                        $args = array(
-                            'post_type' => 'tiffany_event',
-                            'post_status' => 'publish',
-                            'posts_per_page' => -1,
-                            'orderby' => 'meta_value',
-                            'meta_key' => '_event_date',
-                            'order' => 'ASC'
-                        );
+                        // Debug output
+                        echo '<!-- Debug: Function exists check: ' . (function_exists('get_tiffany_events') ? 'YES' : 'NO') . ' -->';
+                        echo '<!-- Debug: WordPress loaded: ' . (function_exists('wp_get_current_user') ? 'YES' : 'NO') . ' -->';
                         
-                        $events_query = new WP_Query($args);
-                        
-                        if ($events_query->have_posts()) {
-                            while ($events_query->have_posts()) {
-                                $events_query->the_post();
-                                
-                                // Get event meta data
-                                $city_state = get_post_meta(get_the_ID(), '_event_city_state', true);
-                                $event_date = get_post_meta(get_the_ID(), '_event_date', true);
-                                $flyer_url = get_post_meta(get_the_ID(), '_event_flyer_url', true);
-                                
-                                // Get featured image
-                                $image_id = get_post_thumbnail_id();
-                                $image_url = $image_id ? wp_get_attachment_image_url($image_id, 'medium') : '';
-                                
-                                // Fallback to default image if no featured image
-                                if (!$image_url) {
-                                    $image_url = 'img/image-6@2x.png'; // Default event image
-                                }
-                                ?>
-                                <div class="bg-white/90 backdrop-blur-sm rounded-lg shadow-2xl overflow-hidden flex flex-col">
-                                    <img src="<?php echo esc_url($image_url); ?>" 
-                                         alt="<?php echo esc_attr(get_the_title()); ?>" 
-                                         class="w-full h-48 object-cover" 
-                                         onerror="this.onerror=null;this.src='https://placehold.co/349x278/CCCCCC/FFFFFF?text=Event';">
-                                    <div class="p-6 text-center flex-grow flex flex-col">
-                                        <h3 class="font-marcellus text-2xl text-gray-800"><?php echo esc_html(get_the_title()); ?></h3>
-                                        <p class="text-gray-600 mt-2 flex-grow"><?php echo esc_html($city_state); ?><br><?php echo esc_html($event_date); ?></p>
-                                        <?php if ($flyer_url): ?>
-                                            <a href="<?php echo esc_url($flyer_url); ?>" 
-                                               target="_blank" 
-                                               class="mt-4 inline-block bg-brand-teal text-white font-marcellus px-6 py-2 rounded-full hover:bg-brand-teal-dark transition-colors">
-                                                Flyer
-                                            </a>
-                                        <?php endif; ?>
-                                    </div>
-                                </div>
-                                <?php
+                        if (function_exists('get_tiffany_events')) {
+                            $events = get_tiffany_events();
+                            
+                            // Debug output
+                            echo '<!-- Debug: Found ' . count($events) . ' events -->';
+                            if (!empty($events)) {
+                                echo '<!-- Debug: Event orders: ' . implode(', ', array_column($events, 'order')) . ' -->';
                             }
-                            wp_reset_postdata();
+                            
+                            if (!empty($events)) {
+                                foreach ($events as $event) {
+                                    // Get featured image
+                                    $image_url = $event['image'] ?: 'img/image-6@2x.png'; // Default event image
+                                    ?>
+                                    <div class="bg-white/90 backdrop-blur-sm rounded-lg shadow-2xl overflow-hidden flex flex-col">
+                                        <img src="<?php echo esc_url($image_url); ?>" 
+                                             alt="<?php echo esc_attr($event['title']); ?>" 
+                                             class="w-full h-48 object-cover" 
+                                             onerror="this.onerror=null;this.src='https://placehold.co/349x278/CCCCCC/FFFFFF?text=Event';">
+                                        <div class="p-6 text-center flex-grow flex flex-col">
+                                            <h3 class="font-marcellus text-2xl text-gray-800"><?php echo esc_html($event['title']); ?></h3>
+                                            <p class="text-gray-600 mt-2 flex-grow"><?php echo esc_html($event['city_state']); ?><br><?php echo esc_html($event['date']); ?></p>
+                                            <?php if ($event['flyer']): ?>
+                                                <a href="<?php echo esc_url($event['flyer']); ?>" 
+                                                   target="_blank" 
+                                                   class="mt-4 inline-block bg-brand-teal text-white font-marcellus px-6 py-2 rounded-full hover:bg-brand-teal-dark transition-colors">
+                                                    Flyer
+                                                </a>
+                                            <?php endif; ?>
+                                        </div>
+                                    </div>
+                                    <?php
+                                }
+                            } else {
+                                // If no events found, show a fallback message
+                                echo '<div class="col-span-full text-center py-8">';
+                                echo '<p class="text-gray-600">No events scheduled at this time. Please check back soon!</p>';
+                                echo '</div>';
+                            }
                         } else {
-                            // If no events found, show a fallback message
+                            // Fallback if plugin not active
                             echo '<div class="col-span-full text-center py-8">';
-                            echo '<p class="text-gray-600">No events scheduled at this time. Please check back soon!</p>';
+                            echo '<p class="text-gray-600">Events plugin not active. Please activate the Tiffany Events plugin.</p>';
                             echo '</div>';
                         }
                         ?>

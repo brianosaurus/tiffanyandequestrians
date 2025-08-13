@@ -186,9 +186,66 @@
             <section class="bg-brand-dark py-12 md:py-20">
                 <div class="container mx-auto px-6 lg:px-8 text-center">
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <img src="img/image-9@2x.png" alt="Gallery image 1" class="rounded-lg shadow-md w-full h-auto object-cover" onerror="this.onerror=null;this.src='https://placehold.co/321x217/333333/FFFFFF?text=Gallery';">
-                        <img src="img/image@2x.png" alt="Gallery image 2" class="rounded-lg shadow-md w-full h-auto object-cover" onerror="this.onerror=null;this.src='https://placehold.co/321x217/333333/FFFFFF?text=Gallery';">
-                        <img src="img/image-2@2x.png" alt="Gallery image 3" class="rounded-lg shadow-md w-full h-auto object-cover" onerror="this.onerror=null;this.src='https://placehold.co/321x217/333333/FFFFFF?text=Gallery';">
+                        <?php
+                        require_once('wp-load.php');
+                        
+                        // Debug: Check if function exists
+                        echo '<!-- Debug: Function exists check: ' . (function_exists('get_tiffany_gallery') ? 'YES' : 'NO') . ' -->';
+                        echo '<!-- Debug: WordPress loaded: ' . (function_exists('wp_get_current_user') ? 'YES' : 'NO') . ' -->';
+                        
+                        if (function_exists('get_tiffany_gallery')) {
+                            $gallery_preview = get_tiffany_gallery(3); // Get first 3 images in display order
+                            
+                            // Debug output
+                            echo '<!-- Debug: Function exists, found ' . count($gallery_preview) . ' images -->';
+                            if (!empty($gallery_preview)) {
+                                echo '<!-- Debug: Orders: ' . implode(', ', array_column($gallery_preview, 'order')) . ' -->';
+                                echo '<!-- Debug: Titles: ' . implode(', ', array_column($gallery_preview, 'title')) . ' -->';
+                            }
+                            
+                            if (!empty($gallery_preview)) {
+                                foreach ($gallery_preview as $image) {
+                                    if ($image['image']) {
+                                        ?>
+                                        <div class="aspect-square w-full">
+                                            <img src="<?php echo esc_url($image['image']); ?>" 
+                                                 alt="<?php echo esc_attr($image['title']); ?>" 
+                                                 class="w-full h-full object-cover rounded-lg shadow-md" 
+                                                 onerror="this.onerror=null;this.src='https://placehold.co/321x321/333333/FFFFFF?text=Gallery';">
+                                            <!-- Debug: Order <?php echo esc_html($image['order']); ?> -->
+                                        </div>
+                                        <?php
+                                    }
+                                }
+                            } else {
+                                // Fallback if no gallery images
+                                ?>
+                                <div class="aspect-square w-full">
+                                    <img src="img/image-9@2x.png" alt="Gallery image 1" class="w-full h-full object-cover rounded-lg shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/321x321/333333/FFFFFF?text=Gallery';">
+                                </div>
+                                <div class="aspect-square w-full">
+                                    <img src="img/image@2x.png" alt="Gallery image 2" class="w-full h-full object-cover rounded-lg shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/321x321/333333/FFFFFF?text=Gallery';">
+                                </div>
+                                <div class="aspect-square w-full">
+                                    <img src="img/image-2@2x.png" alt="Gallery image 3" class="w-full h-full object-cover rounded-lg shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/321x321/333333/FFFFFF?text=Gallery';">
+                                </div>
+                                <?php
+                            }
+                        } else {
+                            // Fallback if plugin not active
+                            ?>
+                            <div class="aspect-square w-full">
+                                <img src="img/image-9@2x.png" alt="Gallery image 1" class="w-full h-full object-cover rounded-lg shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/321x321/333333/FFFFFF?text=Gallery';">
+                            </div>
+                            <div class="aspect-square w-full">
+                                <img src="img/image@2x.png" alt="Gallery image 2" class="w-full h-full object-cover rounded-lg shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/321x321/333333/FFFFFF?text=Gallery';">
+                            </div>
+                            <div class="aspect-square w-full">
+                                <img src="img/image-2@2x.png" alt="Gallery image 3" class="w-full h-full object-cover rounded-lg shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/321x321/333333/FFFFFF?text=Gallery';">
+                            </div>
+                            <?php
+                        }
+                        ?>
                     </div>
                     <a href="gallery.html" class="mt-12 inline-block bg-white/90 font-marcellus text-brand-dark text-xl px-10 py-4 rounded-full shadow-lg hover:bg-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">Visit The Gallery</a>
                 </div>
