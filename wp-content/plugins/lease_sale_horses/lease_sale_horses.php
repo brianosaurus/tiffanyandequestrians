@@ -18,6 +18,7 @@ class LeaseSaleHorsesPlugin {
         add_action('add_meta_boxes', array($this, 'add_horses_meta_boxes'));
         add_action('save_post', array($this, 'save_horses_meta'));
         add_action('admin_enqueue_scripts', array($this, 'enqueue_admin_scripts'));
+        add_action('pre_get_posts', array($this, 'set_default_admin_order'));
     }
     
     /**
@@ -52,7 +53,10 @@ class LeaseSaleHorsesPlugin {
             'menu_position' => 21,
             'menu_icon' => 'dashicons-pets',
             'supports' => array('title', 'editor', 'thumbnail'),
-            'show_in_rest' => true
+            'show_in_rest' => true,
+            'orderby' => 'meta_value_num',
+            'meta_key' => '_display_order',
+            'order' => 'ASC'
         );
         
         register_post_type('tiffany_horse', $args);
@@ -364,6 +368,23 @@ class LeaseSaleHorsesPlugin {
     }
     
     /**
+     * Set default admin order for horses list
+     */
+    public function set_default_admin_order($query) {
+        if (!is_admin()) {
+            return;
+        }
+        
+        global $pagenow, $post_type;
+        
+        if ($pagenow === 'edit.php' && $post_type === 'tiffany_horse' && !isset($_GET['orderby'])) {
+            $query->set('orderby', 'meta_value_num');
+            $query->set('meta_key', '_display_order');
+            $query->set('order', 'ASC');
+        }
+    }
+    
+    /**
      * Enqueue admin scripts
      */
     public function enqueue_admin_scripts($hook) {
@@ -372,12 +393,71 @@ class LeaseSaleHorsesPlugin {
         if ($post_type === 'tiffany_horse') {
             wp_enqueue_media();
             wp_enqueue_script('jquery');
+            
+            // Add custom CSS for admin columns
+            wp_add_inline_style('wp-admin', '
+                .column-display_order { width: 80px; text-align: center; }
+                .column-horse_type { width: 100px; text-align: center; }
+                .column-price { width: 120px; }
+            ');
         }
     }
 }
 
 // Initialize the plugin
 new LeaseSaleHorsesPlugin();
+
+// Make the function globally available
+function get_tiffany_horses($limit = -1) {
+    $query = new WP_Query([
+        'post_type' => 'tiffany_horse',
+        'post_status' => 'publish',
+        'posts_per_page' => $limit,
+        'orderby' => 'meta_value_num',
+        'meta_key' => '_display_order',
+        'order' => 'ASC',
+    ]);
+    $horses = [];
+    if ($query->have_posts()) {
+        while ($query->have_posts()) { $query->the_post();
+            $id = get_the_ID();
+            $image_id = get_post_thumbnail_id($id);
+            $horses[] = [
+                'id' => $id,
+                'title' => get_the_title(),
+                'content' => get_the_content(),
+                'image' => $image_id ? wp_get_attachment_image_url($image_id, 'large') : '',
+                'thumbnail' => $image_id ? wp_get_attachment_image_url($image_id, 'medium') : '',
+                'horse_type' => get_post_meta($id, '_horse_type', true),
+                'horse_details' => get_post_meta($id, '_horse_details', true),
+                'horse_description' => get_post_meta($id, '_horse_description', true),
+                'horse_qualities' => get_post_meta($id, '_horse_qualities', true),
+                'lease_details' => get_post_meta($id, '_lease_details', true),
+                'lease_price' => get_post_meta($id, '_lease_price', true),
+                'lease_urgency' => get_post_meta($id, '_lease_urgency', true),
+                'lease_location' => get_post_meta($id, '_lease_location', true),
+                'sale_price' => get_post_meta($id, '_sale_price', true),
+                'sale_details' => get_post_meta($id, '_sale_details', true),
+                'video_url' => get_post_meta($id, '_video_url', true),
+                'video_text' => get_post_meta($id, '_video_text', true),
+                'image_position' => get_post_meta($id, '_image_position', true) ?: 'left',
+                'order' => get_post_meta($id, '_display_order', true) ?: 999,
+            ];
+        }
+        wp_reset_postdata();
+        
+        // Sort by order to ensure proper sequence
+        usort($horses, function($a, $b) {
+            return $a['order'] - $b['order'];
+        });
+        
+        // Apply limit after sorting
+        if ($limit > 0) {
+            $horses = array_slice($horses, 0, $limit);
+        }
+    }
+    return $horses;
+}
 
 // Add custom columns to horses list
 add_filter('manage_tiffany_horse_posts_columns', function($columns) {
@@ -408,7 +488,12 @@ add_action('manage_tiffany_horse_posts_custom_column', function($column, $post_i
             }
             break;
         case 'display_order':
-            echo get_post_meta($post_id, '_display_order', true);
+            $order = get_post_meta($post_id, '_display_order', true);
+            if ($order) {
+                echo '<strong style="background: #0073aa; color: white; padding: 2px 8px; border-radius: 12px; font-size: 12px;">' . esc_html($order) . '</strong>';
+            } else {
+                echo '<span style="color: #999;">Not set</span>';
+            }
             break;
     }
 }, 10, 2);

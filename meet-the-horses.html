@@ -91,6 +91,15 @@
                             echo '<p class="text-gray-600">Plugin not active. Please activate "Meet the Horses" plugin.</p>';
                         } else {
                             $horses = get_meet_horses();
+                            
+                            // Debug output
+                            echo '<!-- Debug: Function exists check: YES -->';
+                            echo '<!-- Debug: WordPress loaded: ' . (function_exists('wp_get_current_user') ? 'YES' : 'NO') . ' -->';
+                            echo '<!-- Debug: Found ' . count($horses) . ' horses -->';
+                            if (!empty($horses)) {
+                                echo '<!-- Debug: Horse orders: ' . implode(', ', array_column($horses, 'order')) . ' -->';
+                            }
+                            
                             if (!empty($horses)) {
                                 foreach ($horses as $index => $horse) {
                                     $isEven = ($index % 2) === 1; // alternate layout

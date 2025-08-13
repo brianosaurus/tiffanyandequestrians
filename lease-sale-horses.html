@@ -122,54 +122,44 @@
                             return $output;
                         }
                         
-                        // Get horses from WordPress custom post type
-                        $args = array(
-                            'post_type' => 'tiffany_horse',
-                            'post_status' => 'publish',
-                            'posts_per_page' => -1,
-                            'orderby' => 'meta_value_num',
-                            'meta_key' => '_display_order',
-                            'order' => 'ASC'
-                        );
+                        // Get horses from WordPress using the new function
+                        $horses = get_tiffany_horses();
                         
-                        $horses_query = new WP_Query($args);
+                        // Debug output
+                        echo '<!-- Debug: Function exists check: ' . (function_exists('get_tiffany_horses') ? 'YES' : 'NO') . ' -->';
+                        echo '<!-- Debug: WordPress loaded: ' . (function_exists('wp_get_current_user') ? 'YES' : 'NO') . ' -->';
+                        echo '<!-- Debug: Found ' . count($horses) . ' horses -->';
+                        if (!empty($horses)) {
+                            echo '<!-- Debug: Horse orders: ' . implode(', ', array_column($horses, 'order')) . ' -->';
+                        }
                         
-                        if ($horses_query->have_posts()) {
+                        if (!empty($horses)) {
                             $first_horse = true;
                             
-                            while ($horses_query->have_posts()) {
-                                $horses_query->the_post();
-                                
-                                // Get horse meta data
-                                $horse_type = get_post_meta(get_the_ID(), '_horse_type', true);
-                                $horse_details = get_post_meta(get_the_ID(), '_horse_details', true);
-                                $horse_description = get_post_meta(get_the_ID(), '_horse_description', true);
-                                $horse_qualities = get_post_meta(get_the_ID(), '_horse_qualities', true);
-                                $image_position = get_post_meta(get_the_ID(), '_image_position', true);
+                            foreach ($horses as $horse) {
+                                // Get horse data from the array
+                                $horse_type = $horse['horse_type'];
+                                $horse_details = $horse['horse_details'];
+                                $horse_description = $horse['horse_description'];
+                                $horse_qualities = $horse['horse_qualities'];
+                                $image_position = $horse['image_position'];
                                 
                                 // Lease-specific fields
-                                $lease_details = get_post_meta(get_the_ID(), '_lease_details', true);
-                                $lease_price = get_post_meta(get_the_ID(), '_lease_price', true);
-                                $lease_urgency = get_post_meta(get_the_ID(), '_lease_urgency', true);
-                                $lease_location = get_post_meta(get_the_ID(), '_lease_location', true);
+                                $lease_details = $horse['lease_details'];
+                                $lease_price = $horse['lease_price'];
+                                $lease_urgency = $horse['lease_urgency'];
+                                $lease_location = $horse['lease_location'];
                                 
                                 // Sale-specific fields
-                                $sale_price = get_post_meta(get_the_ID(), '_sale_price', true);
-                                $sale_details = get_post_meta(get_the_ID(), '_sale_details', true);
+                                $sale_price = $horse['sale_price'];
+                                $sale_details = $horse['sale_details'];
                                 
                                 // Video fields
-                                $video_url = get_post_meta(get_the_ID(), '_video_url', true);
-                                $video_text = get_post_meta(get_the_ID(), '_video_text', true);
-                                $video_text = $video_text ? $video_text : 'Video';
+                                $video_url = $horse['video_url'];
+                                $video_text = $horse['video_text'] ?: 'Video';
                                 
-                                // Get featured image
-                                $image_id = get_post_thumbnail_id();
-                                $image_url = $image_id ? wp_get_attachment_image_url($image_id, 'large') : '';
-                                
-                                // Fallback to default image if no featured image
-                                if (!$image_url) {
-                                    $image_url = 'img/image-15@2x.png';
-                                }
+                                // Get image URL
+                                $image_url = $horse['image'] ?: 'img/image-15@2x.png';
                                 
                                 // Determine layout classes based on image position
                                 $image_div_class = '';
@@ -199,7 +189,7 @@
                                     <!-- Content Section -->
                                     <div class="<?php echo $content_div_class; ?> space-y-6">
                                         <h2 class="font-marcellus text-3xl text-gray-800">
-                                            <?php echo esc_html(get_the_title()); ?>
+                                            <?php echo esc_html($horse['title']); ?>
                                             <?php if ($horse_details): ?>
                                                 <br><span class="text-2xl text-gray-500"><?php echo esc_html($horse_details); ?></span>
                                             <?php endif; ?>
@@ -311,6 +301,11 @@
                                 <p class="text-gray-600 text-lg">Please check back later for new listings.</p>
                             </div>
                             <?php
+                        }
+                        
+                        // Reset post data if needed
+                        if (function_exists('wp_reset_postdata')) {
+                            wp_reset_postdata();
                         }
                         ?>
                     </div>
