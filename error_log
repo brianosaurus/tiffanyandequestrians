@@ -1,2 +1,9 @@
 [22-Apr-2025 03:44:38 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
 [22-Apr-2025 04:42:21 UTC] Cron reschedule event error for hook: wpseo_indexable_index_batch, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"fifteen_minutes","args":[],"interval":900}
+[11-Aug-2025 01:05:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_tiffany_testimonials() in /home3/cnthohmy/public_html/_testimonials.php:3
+Stack trace:
+#0 /home3/cnthohmy/public_html/index.html(133): include()
+#1 {main}
+  thrown in /home3/cnthohmy/public_html/_testimonials.php on line 3
+[11-Aug-2025 01:12:33 UTC] PHP Warning:  Attempt to read property "ID" on null in /home3/cnthohmy/public_html/wp-content/plugins/siteseo/functions.php on line 149
+[11-Aug-2025 01:12:36 UTC] PHP Warning:  Attempt to read property "ID" on null in /home3/cnthohmy/public_html/wp-content/plugins/siteseo/functions.php on line 149
