@@ -1,0 +1,119 @@
+<?php
+/**
+ * The base configuration for WordPress
+ *
+ * The wp-config.php creation script uses this file during the installation.
+ * You don't have to use the web site, you can copy this file to "wp-config.php"
+ * and fill in the values.
+ *
+ * This file contains the following configurations:
+ *
+ * * Database settings
+ * * Secret keys
+ * * Database table prefix
+ * * Localized language
+ * * ABSPATH
+ *
+ * @link https://wordpress.org/support/article/editing-wp-config-php/
+ *
+ * @package WordPress
+ */
+
+// ** Database settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define( 'DB_NAME', 'cnthohmy_WPyXw' );
+
+/** Database username */
+define( 'DB_USER', 'cnthohmy_WPyXw' );
+
+/** Database password */
+define( 'DB_PASSWORD', 'k4tgVbWNK3mB6OIZvMiu' );
+
+/** Database hostname */
+define( 'DB_HOST', 'localhost' );
+
+/** Database charset to use in creating database tables. */
+define( 'DB_CHARSET', 'utf8' );
+
+/** The database collate type. Don't change this if in doubt. */
+define( 'DB_COLLATE', '' );
+
+/**#@+
+ * Authentication unique keys and salts.
+ *
+ * Change these to different unique phrases! You can generate these using
+ * the {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}.
+ *
+ * You can change these at any point in time to invalidate all existing cookies.
+ * This will force all users to have to log in again.
+ *
+ * @since 2.6.0
+ */
+define( 'AUTH_KEY',          'vP@O6Iy]p:[JQyl5Fal?gE5D4?QUxPT1suCq5+sE3., WpfoOXRdgSBCt3{!)Rma' );
+define( 'SECURE_AUTH_KEY',   'wOJ][ooC?aq?SFTY7Ihr%psv34 st.]uqv+9tBp6xBaP(V!6X)*gfQ`YO>+pg5X=' );
+define( 'LOGGED_IN_KEY',     'qX4J}}<d;+6+H<uBRL4L+.X5GwhsBN31^w?-D2vS6w.w:kg%WtMyv(3+ffLrP[QI' );
+define( 'NONCE_KEY',         'gCv~m.6L#29!:U::tdU/0RC4~ZWDix[/w,)bB>__3COhSrps235@Yw1abIu6j_Z#' );
+define( 'AUTH_SALT',         'j1@CccUb0(sC /*7/BYL~(I<Bf31yBr`s|{Vb@{ICD*7f`2KNXESrsoH^ A0#_4}' );
+define( 'SECURE_AUTH_SALT',  'e>qZ0*M!1RUk/]ETB0y!GO`j/p2m)/jQMg{bl)/-lp96W&vi%IoDT5;[TsT2vN$d' );
+define( 'LOGGED_IN_SALT',    '<=F81xvAn~dxfF~k,6u0I8CH|*B.ZUV=1z*uo%BCT$GB+A2PVNsPz`4~M`,g&2OY' );
+define( 'NONCE_SALT',        'D{JY?#NRJ&$E6lf+_t vBa4j6ym.(kC9U,v[)M]b8N1Qx5bBi8zX`KCYZi]4@0i%' );
+define( 'WP_CACHE_KEY_SALT', 'JUSD-`1@w>,Ut}]Wf^Ydo7&30Q)(Ry,SI5lAzsq)j1d+UNlB5R2Qf+_sAv2>!Lku' );
+
+
+/**#@-*/
+
+/**
+ * WordPress database table prefix.
+ *
+ * You can have multiple installations in one database if you give each
+ * a unique prefix. Only numbers, letters, and underscores please!
+ */
+$table_prefix = 'Czo_';
+
+
+/* Add any custom values between this line and the "stop editing" line. */
+
+
+
+/**
+ * For developers: WordPress debugging mode.
+ *
+ * Change this to true to enable the display of notices during development.
+ * It is strongly recommended that plugin and theme developers use WP_DEBUG
+ * in their development environments.
+ *
+ * For information on other constants that can be used for debugging,
+ * visit the documentation.
+ *
+ * @link https://wordpress.org/support/article/debugging-in-wordpress/
+ */
+if ( ! defined( 'WP_DEBUG' ) ) {
+	define( 'WP_DEBUG', false );
+}
+
+define( 'AUTOSAVE_INTERVAL', 300 );
+define( 'WP_POST_REVISIONS', 20 );
+define( 'EMPTY_TRASH_DAYS', 7 );
+define( 'WP_AUTO_UPDATE_CORE', true );
+define( 'WP_CRON_LOCK_TIMEOUT', 120 );
+/* That's all, stop editing! Happy publishing. */
+
+/** Absolute path to the WordPress directory. */
+// Settings modified by hosting provider
+define('DISALLOW_FILE_EDIT', true);
+define('WP_REDIS_DATABASE', 0);
+define('WP_REDIS_DISABLED', 0);
+define('WP_REDIS_GRACEFUL', 1);
+define('WP_REDIS_MAXTTL', 86400);
+define('WP_REDIS_PASSWORD', ['cnthohmy','fehuspEj5wmVwjnug']);
+define('WP_REDIS_PATH', '/var/lib/redis/redis.sock');
+define('WP_REDIS_PREFIX', 'cnthohmy__b3VhU__');
+define('WP_REDIS_SCHEME', 'unix');
+define('WP_REDIS_SELECTIVE_FLUSH', 1);
+define('WP_REDIS_USERNAME', 'cnthohmy');
+if ( ! defined( 'ABSPATH' ) ) {
+	define( 'ABSPATH', __DIR__ . '/' );
+}
+
+/** Sets up WordPress vars and included files. */
+require_once ABSPATH . 'wp-settings.php';
